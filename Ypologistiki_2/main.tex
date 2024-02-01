@@ -53,10 +53,10 @@
 \usepackage{listings}
 
 %--------------------------------------------%
-\numberwithin{equation}{section}
 
 \begin{document}
 
+\newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
 \renewcommand{\contentsname}{Περιεχόμενα}
 \renewcommand{\tablename}{Πίνακας}
 \renewcommand{\figurename}{Σχήμα}
@@ -71,11 +71,10 @@
 \clearpage
 \pagenumbering{arabic}
 
-
 \newpage
-
 \subfile{Intro}
-
+\numberwithin{equation}{section}
+\setcounter{equation}{0}
 
 \end{document}
 
