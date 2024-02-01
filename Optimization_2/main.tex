@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage[calc]{datetime2}
+
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\newfontfamily{\greekfont}{CMU Serif}
+\newfontfamily{\greekfontsf}{CMU Sans Serif}
+\newfontfamily{\greekfonttt}{inconsolata}
+
+\setdefaultlanguage{greek}
+\setotherlanguages{english}
+
+\usepackage{subfiles} 
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
+
+\usepackage{wrapfig}
+
+\usepackage{booktabs}
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,245mm},
+ left=20mm,
+ top=30mm,
+ }
+
+\defaultfontfeatures{Ligatures=TeX}
+
+% Code display packages
+
+\usepackage{listings}
+
+%--------------------------------------------%
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\renewcommand{\contentsname}{Περιεχόμενα}
+\renewcommand{\tablename}{Πίνακας}
+\renewcommand{\figurename}{Σχήμα}
+\renewcommand{\arraystretch}{1.5}
+
+\thispagestyle{empty}
+\subfile{Title}
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\clearpage
+\pagenumbering{arabic}
+
+
+\newpage
+
+\subfile{Intro}
+\subfile{1_sect}
+\subfile{2_primal}
+\subfile{3_FD}
+\newpage
+\subfile{4_DA}
+\subfile{5_CADerivation}
+\subfile{6_CACalc}
+\subfile{7_Sigkrisi}
+\subfile{8_opt}
+
+
+\end{document}
+

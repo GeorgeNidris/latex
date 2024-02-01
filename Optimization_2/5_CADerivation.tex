@@ -1,0 +1,52 @@
+\section{Συνεχής συζυγής μέθοδος}
+
+Πριν ακόμα απο τη διακριτοποίηση των εξισώσεων, δημιουργούμε την επαυξημένη αντικειμενική συνάρτηση $F_{aug}$ αφαιρώντας την έκφραση των υπολοίπων $R$ πολλαπλασιασμένα με μια συνάρτηση $\Psi$. Σημειώνεται πως αφού τα υπόλοιπα θα είναι ίσα με μηδέν, μπορούμε αντίστοιχα να προσθέσουμε την παραπάνω ποσότητα, ωστόσο για να μπορέσουμε να συγκρίνουμε τα συζυγή πεδία που προκύπτουν απο τη διακριτή και τη συνεχή συζυγή μέθοδο χρησιμοποιούμε το ίδιο πρόσημο (αφαιρούμε). Διαφορίζοντας την επαυξημένη αντικειμενική συνάρτηση έχουμε:
+
+\begin{equation}
+   \delta F_{aug} = \displaystyle\int_{0}^{L}\delta\Bigg(\dfrac{U_{\infty}\pi\mu}{2U(x)}\Bigg)dx - \displaystyle\int_{0}^{L}\Psi \delta \Bigg(\Big(\dfrac{2}{\pi}-\dfrac{1}{2}\Big)\dfrac{U_{\infty}}{\nu}U(x)\dfrac{dU}{dx} + \dfrac{v_0(x)}{\nu}U(x) - \dfrac{\pi}{2}\Bigg)dx
+    \label{eq:caAug}
+\end{equation}
+
+Μετά απο πράξεις, η σχέση \ref{eq:caAug} διαμορφώνεται ως:
+
+\begin{equation}
+ \begin{aligned}
+    \delta F_{aug} = &\int^L_0\delta u\Bigg(-\dfrac{U_{\infty}\pi\mu}{2u^2(x)} + \Big(\dfrac{2}{\pi} - \dfrac{1}{2}\Big)\dfrac{d\Psi}{dx}u(x) - \dfrac{\Psi}{\nu}v_0(x) \Bigg)dx - \Big(\dfrac{2}{\pi} - \dfrac{1}{2}\Big)\Big[\Psi  u(x)\delta u\Big]_0^L\\
+- &\int_0^L\dfrac{\Psi}{\nu}\delta v_0(x)u(x)dx
+\end{aligned}   
+    \label{eq:finCaAug}
+\end{equation}
+
+Επομένως, πλέον απο την σχέση \ref{eq:finCaAug} μπορούμε να απαλείψουμε κατάλληλα τους δυο πρώτους όρους, και να υπολογίσουμε τις παραγώγους ευαισθησίας απο τον τρίτο όρο. 
+
+Αρχικά, για να απαλειφθεί ο πρώτος όρος, ορίζουμε την συνεχή συζυγή εξίσωση (Field Adjoint Equation) (\ref{eq:FAE}):
+
+\begin{equation}
+    -\dfrac{U\pi\mu}{2u^2(x)} + \Big(\dfrac{2}{\pi} - \dfrac{1}{2}\Big)\dfrac{d\Psi}{dx}u(x) - \dfrac{\Psi}{v}\nu_0(x) = 0 
+    \label{eq:FAE}
+\end{equation}
+
+Επιπλέον, στον δεύτερο όρο της \ref{eq:finCaAug} έχουμε:
+
+\begin{itemize}
+    \item $x=0$: Επειδή εφαρμόζουμε τις συνοριακές μας συνθήκες στη θέση $x=0$ τότε η τιμή της μεταβλητής κατάστασης είναι ανεξάρτητη των μεταβλητών σχεδιασμού και $\delta u = 0$
+    \item $x=L$: Για να εξασφαλίσουμε τον μηδενισμό του δεύτερου όρου, ορίζουμε ως συνοριακή συνθήκη της FAE (\ref{eq:FAE}) $\Psi(L)=0$
+\end{itemize}
+
+Επομένως, πλέον, οι παράγωγοι ευαισθησίας της αντικειμενικής συνάρτησης υπολογίζονται απο τον τρίτο όρο της \ref{eq:finCaAug}.
+
+
+\begin{equation}
+    \dfrac{\delta F}{\delta \vec{b}} = - \int_0^L\dfrac{\Psi}{\nu}\dfrac{\delta v_0(x)}{\delta \vec{b}}u(x)dx 
+    \label{eq:CAsens}
+\end{equation}
+
+Και όπως προέκυψε και απο τη σχέση \ref{eq:finpRb}, οι παράγωγοι $\dfrac{\delta v_0(x)}{\partial \vec{b}}$ δίνονται απο τη σχέση \ref{eq:caDesign}.  
+
+\begin{equation}
+    \dfrac{\delta v_0(x)}{\partial \vec{b}} = 
+    \begin{bmatrix}
+        x_i^3 - \dfrac{L^3}{4} & x_i^2 - \dfrac{L^2}{3} & x_i - \dfrac{L}{2}
+    \end{bmatrix}
+\label{eq:caDesign}
+\end{equation}
