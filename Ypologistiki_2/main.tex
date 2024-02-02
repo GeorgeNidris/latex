@@ -48,9 +48,45 @@
 
 \defaultfontfeatures{Ligatures=TeX}
 
+%--------------------------------------------%
 % Code display packages
 
 \usepackage{listings}
+\usepackage{framed}
+
+\renewcommand\lstlistingname{Source Code}
+\renewcommand\lstlistlistingname{Source Code}
+
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.8,0.8,0.8}
+\definecolor{codeorange}{rgb}{1,0.64,0}
+\definecolor{backcolour}{rgb}{0.2,0.2,0.2}
+\definecolor{codeblack}{rgb}{0.1,0.1,0.1}
+\definecolor{codemain}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codeorange},
+    numberstyle=\scriptsize\color{codeblack},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize\color{codemain},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    keepspaces=true,                 
+    language=[90]Fortran,
+    numbers=left,                    
+    frame=single,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    xleftmargin=20pt,
+}
+
+\lstset{style=mystyle}
 
 %--------------------------------------------%
 
@@ -75,6 +111,7 @@
 \subfile{Intro}
 \numberwithin{equation}{section}
 \setcounter{equation}{0}
+\subfile{1_mesh}
 
 \end{document}
 
