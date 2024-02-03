@@ -53,9 +53,12 @@
 
 \usepackage{listings}
 \usepackage{framed}
+\usepackage{caption}
 
-\renewcommand\lstlistingname{Source Code}
-\renewcommand\lstlistlistingname{Source Code}
+\captionsetup[lstlisting]{singlelinecheck=false, justification=justified, labelfont=bf, font=small}
+
+\renewcommand\lstlistingname{\textrm{Τμήμα κώδικα}}
+\renewcommand\lstlistlistingname{\textrm{Τμήμα κώδικα}}
 
 \usepackage{xcolor}
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -63,7 +66,7 @@
 \definecolor{codeorange}{rgb}{1,0.64,0}
 \definecolor{backcolour}{rgb}{0.2,0.2,0.2}
 \definecolor{codeblack}{rgb}{0.1,0.1,0.1}
-\definecolor{codemain}{rgb}{0.95,0.95,0.95}
+\definecolor{codemain}{rgb}{0.98,0.98,0.98}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
@@ -76,6 +79,7 @@
     breaklines=true,                 
     keepspaces=true,                 
     language=[90]Fortran,
+    captionpos=b,
     numbers=left,                    
     frame=single,
     numbersep=5pt,                  
@@ -112,6 +116,8 @@
 \numberwithin{equation}{section}
 \setcounter{equation}{0}
 \subfile{1_mesh}
+\newpage
+\subfile{2_bc_momt}
 
 \end{document}
 
