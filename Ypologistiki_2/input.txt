@@ -1,0 +1,24 @@
+    XMIN      XMAX      XUNI     YMIN    YMAX
+    -40.      80.       20.      0.      12.5   
+  NGRIDX2     NGRIDY1   DX_UNI
+     91      41        0.05d0
+    RATX1     RATX2     RATY      
+    1.01      1.02      1.04
+  DVISC       UINF      
+  1.5e-5      14.        
+  RADIUS      CT        UREF           
+    0.34d0    0.1266    17.67        
+  ITMAX       NSWP      NBACKUP            
+   30000      5         500 
+   EPS        TINY
+  1d-6        1d-20
+  URFU        URFV      URFP     URFTE    URFVIS
+   0.40       0.40      0.350     0.40     0.450
+  TIAMB                                    
+   0.10                                   
+ IBACKUP    RUN_WITH_DISC
+    0       1
+
+
+   0.60       0.
+   60      0.30     0.8      1.0 
