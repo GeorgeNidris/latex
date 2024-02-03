@@ -1,0 +1,28 @@
+\section{Αρχείο παραμέτρων και τελικές τιμές}
+
+Για τη δική μου περίπτωση η ταχύτητα ελεύθερης ροής και η ακτίνα του δρομέα προκύπτουν ίσες με: $U=14m/s$ και $R=0.34m$. Μετά την πρώτη προσομοίωση, η ταχύτητα αναφοράς για την ώση και ο αντίστοιχος συντελεστής ώσης είναι ίσοι με: $U_{ref}=17.67m/s$ και $C_t=0.1266$.
+
+\begin{lstlisting}[caption=\textrm{Αρχείο εισόδου}, label={lst:input}, mathescape=true, breaklines=true, linewidth=.65\textwidth]
+    XMIN      XMAX      XUNI     YMIN    YMAX
+    -40.      80.       20.      0.      12.5   
+  NGRIDX1    NGRIDY1   DX_UNI
+     91      41        0.05d0
+    RATX1     RATX2     RATY      
+    1.01      1.02      1.04
+  DVISC       UINF      
+  1.5e-5      14.        
+  RADIUS      CT        UREF  !CT AND UREF for thrust calculation
+    0.34d0    0.1266    17.67        
+  ITMAX       NSWP      NBACKUP            
+   30000      5         500 
+   EPS        TINY
+  1d-6        1d-20
+  URFU        URFV      URFP     URFTE    URFVIS
+   0.40       0.40      0.350     0.40     0.450
+  TIAMB                                    
+   0.10                                   
+ IBACKUP    RUN_WITH_DISC ! (0 for free, 1 for rotor)
+    0       1
+\end{lstlisting}
+
+Λόγω δυσκολιών στη σύγκλιση, οι συντελεστές υποχαλάρωσης μειώθηκαν συγκριτικά με τους προτεινόμενους με τον μικρότερο να χρησιμοποιείται στην πίεση. Οι ακριβείς συντελεστές υποχαλάρωσης φαίνονται στο αρχείο εισόδου (\ref{lst:input}). Για την προσεγγιστική ανάλυση σε τριδιαγώνια συστήματα έγιναν 5 σαρώσεις ανά κατεύθυνση.

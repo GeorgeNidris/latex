@@ -1,1 +1,206 @@
 \section{Ορισμός συνοριακών συνθηκών - μοντελοποίηση δίσκου ορμής}
+
+Για την κατάστρωση του γενικού συστήματος των εξισώσεων η διατύπωση της γραμμικοποιημένης εξίσωσης για κάθε κελλί φαίνεται στην εξίσωση \ref{eq:lineq}.
+
+\begin{equation}
+    \alpha_Pu_P=\alpha_Eu_E+\alpha_Wu_W+\alpha_Nu_N+\alpha_Su_S + S
+    \label{eq:lineq}
+\end{equation}
+
+Όπου:
+\begin{itemize}
+    \item $\mathbf{u}$: η τιμή του μεγέθους προς επίλυση (π.χ ταχύτητα, πίεση, κινητική ενέργεια τύρβης)
+    \item $\mathbf{\alpha}$: ο συντελεστής συνεισφοράς του εν λόγω μεγέθους στην εξίσωση προς επίλυση
+    \item $\mathbf{S}$: όρος πηγής της εξίσωσης
+\end{itemize}
+
+Και οι δείκτες E,W,N,S αναφέρονται στα γειτονικά κελλιά απο αυτό που διατυπώνουμε την εξίσωση (ανατολικό, δυτικό κ.ο.κ), και ο δείκτης P αναφέρεται στην τιμή του μεγέθους που έχει το δεδομένο κελλί. 
+
+Οι τιμές των συντελεστών (α) προφανώς προκύπτουν αφού φέρουμε την γενική εξίσωση σε γραμμικοποιημένη μορφή.
+
+\subsection{Ορισμός συνοριακών συνθηκών}
+
+Οι οριακές συνθήκες που ορίζουμε σε κάθε περιοχή είναι οι εξής:
+
+\paragraph{Είσοδος}
+
+\begin{itemize}
+    \item $u=1$, αφού έχουμε αδιαστατοποιήσει με την ταχύτητα ελεύθερης ροής
+    \item $v=0$
+    \item $k=1.5(U^2I^2)$, όπου k η κινητική ενέργεια της τύρβης, u το μέτρο της ταχύτητας, και I η ατμοσφαιρική ένταση της τύρβης
+\end{itemize}
+
+\paragraph{Έξοδος}
+
+\begin{itemize}
+    \item $\dpart{u}{x}=0$
+    \item $\dpart{v}{x}=0$
+    \item $\dpart{k}{x}=0$
+\end{itemize}
+
+\paragraph{Άνω σύνορο}
+
+\begin{itemize}
+    \item $u=0$
+    \item $v=0$
+    \item $\dpart{k}{r}=0$
+\end{itemize}
+
+\paragraph{Άξονας συμμετρίας}
+
+\begin{itemize}
+    \item $v=0$
+    \item $\dpart{u}{r}=0$
+    \item $\dpart{v}{r}=0$
+    \item $\dpart{k}{r}=0$
+\end{itemize}
+
+Έτσι, παρακάτω φαίνεται η υλοποίηση των οριακών συνθηκων ακολουθώντας τη γραμμικοποιημένη μορφή της \ref{eq:lineq}. Σημειώνεται πως στον κώδικα BB συμβολίζεται ο όρος πηγής και οι οριακές συνθήκες της μορφής $\dpart{U}{x}=0$ υλοποιούνται εκφράζοντας πεπερασμένες διαφορές ως: $U_i-U_{i-1}=0$.
+
+\begin{lstlisting}[caption=\textrm{Οριακές συνθήκες ταχύτητας u}, label={lst:ubc}, mathescape=true, breaklines=true, linewidth=.6\textwidth]
+    !--- Coefficient matrix initialization
+    AE = 0.d0
+    AW = 0.d0
+    AN = 0.d0
+    AS = 0.d0
+    AP = 0.d0
+    BB = 0.d0
+    DU = 0.d0
+
+    !====INFLOW BOUNDARY CONDITIONS                        
+    do j=1,ngridy-1
+        AP(1,j) = 1.d0
+        BB(1,j) = 1.d0
+        
+        DU(1,j)=1.d0
+    enddo
+
+    !====OUTFLOW BOUNDARY CONDITIONS                        
+
+    do j=2,ngridy-1
+        AW(ngridx,j) = 1.d0
+        AP(ngridx,j) = 1.d0
+
+        DU(ngridx,j)=1.d0      
+    enddo
+
+    !------ BOUNDARY CONDITIONS AT SYMMETRY AXIS   
+
+    do i=2,ngridx
+        AP(i,1)=1.d0
+        AN(i,1)=1.d0
+        
+        DU(i,1)=1.d0     
+    enddo
+
+    !------ BOUNDARY CONDITIONS AT UPPER BOUNDARY  
+    do i=2,ngridx-1
+        AP(i,ngridy-1)=1.d0
+        BB(i,ngridy-1)=0.d0
+        
+        DU(i,ngridy-1)=1.d0
+    end do  
+\end{lstlisting}
+
+\begin{lstlisting}[caption=\textrm{Οριακές συνθήκες ταχύτητας v}, label={lst:vbc}, mathescape=true, breaklines=true, linewidth=.6\textwidth]
+    !--- Coefficient matrix initialization
+    AE = 0.d0
+    AW = 0.d0
+    AN = 0.d0
+    AS = 0.d0
+    AP = 0.d0
+    BB = 0.d0
+    DV = 0.d0
+
+    !====INFLOW BOUNDARY CONDITIONS     
+    
+    do j=1,ngridy
+        AP(1,j)=1.d0
+        BB(1,j)=0.d0
+
+        DV(1,j)=1.d0    
+    enddo
+
+    !====OUTFLOW BOUNDARY CONDITIONS          
+    do j=2,ngridy-1
+        AP(ngridx,j)=1.d0
+        AW(ngridx,j)=1.d0
+
+        DV(ngridx,j)=1.d0    
+    end do
+
+    !-----SYMMETRY AXIS                
+    do i=2,ngridx
+        AP(i,2)=1.d0
+        BB(i,2)=0.d0
+        DV(i,2)=1.d0    
+        
+        AP(i,1)=1.d0
+        BB(i,1)=-VVEL(i,3)
+        DV(i,1)=1.d0
+    enddo
+
+    !-----UPPER BOUNDARY CONDITIONS 
+
+    do i=2,ngridx
+        AP(i,ngridy)=1.d0
+        BB(i,ngridy)=0.d0
+        DV(i,ngridy)=1.d0
+    end do
+\end{lstlisting}
+
+\begin{lstlisting}[caption=\textrm{Οριακές συνθήκες κινητικής ενέργειας τύρβης k}, label={lst:kbc}, mathescape=true, breaklines=true, linewidth=.6\textwidth]
+    !--- Coefficient matrix initialization
+    AE=0.d0
+    AW=0.d0
+    AN=0.d0
+    AS=0.d0
+    AP=0.d0
+    BB=0.d0
+
+    !====INFLOW BOUNDARY CONDITIONS                        
+    do j=1,ngridy-2
+        AP(1,j)=1.d0
+        BB(1,j)=1.5d0*tiamb**2.d0
+    enddo
+
+    !====OUTFLOW BOUNDARY CONDITIONS                        
+
+    do j=2,ngridy-2
+        AP(ngridx-1,j)=1.d0
+        AW(ngridx-1,j)=1.d0
+    enddo
+
+    !------ BOUNDARY CONDITIONS AT SYMMETRY AXIS   
+
+    do i=2,ngridx-1
+        AP(i,1)=1.d0
+        AN(i,1)=1.d0
+    enddo
+
+    !------ BOUNDARY CONDITIONS AT UPPER BOUNDARY  
+    do i=1,ngridx-1
+        AP(i,ngridy-1)=1.d0
+        AS(i,ngridy-1)=1.d0
+    end do  
+
+\end{lstlisting}
+
+
+\subsection{Μοντελοποίηση δρομέα με δίσκο ορμής}
+
+Όπως φαίνεται στο τμήμα \ref{lst:xgen} του κώδικα, αποθηκεύουμε τον δείκτη των κόμβων κατά x στον οποίο βρίσκεται ο δρομέας (x=0). Έτσι, στα κελλιά στη θέση x=0 για τις τιμές της ακτίνας απο 0 μέχρι 1 (ακτίνα δρομέα) προσθέτουμε τον όρο της εξίσωσης \ref{eq:discMom} στον όρο πηγής της εξίσωσης ορμής κατά x του κελλιού. Η τιμή της ταχύτητας αναφοράς ($U_{ref}$) λήφθηκε από το πρώτο τρέξιμο του κώδικα χωρίς τον δρομέα ως η μέση τιμή της οριζόντιας ταχύτητας στη θέση του δρομέα. Με βάση τη ταχύτητα αναφοράς από την εκφώνηση προσδιορίζουμε τον αντίστοιχο συντελεστή ώσης από τα δεδομένα της εκφώνησης. Και οι δύο παράμετροι, καθώς και η επιλογή προσομοίωσης με ή χωρίς τον δρομέα ελέγχονται από κατάλληλες παραμέτρους στο αρχείο εισόδου (\ref{lst:input}).
+
+
+\begin{lstlisting}[caption=\textrm{Προσθήκη όρου πηγής - ορμή κατά x - δίσκος ορμής}, label={lst:discTerm}, mathescape=true, breaklines=true, linewidth=.75\textwidth]
+    !--- Add disc contribution
+    if (disc.eq.1) then
+        !--- Add source term to cells on x=0
+        if (i.eq.x0ind) then
+            !--- Add source term to cells from r=0 to r=R
+            if(y_grid(j).le.1) then
+                BB(i,j) = BB(i,j) - 0.5*ct*2*pi*yc*dygridstgu(j)*uref**2
+            endif
+        endif
+    endif
+\end{lstlisting}
