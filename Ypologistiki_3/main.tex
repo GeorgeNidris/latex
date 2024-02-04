@@ -1,0 +1,127 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage[calc]{datetime2}
+
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\newfontfamily{\greekfont}{CMU Serif}
+\newfontfamily{\greekfontsf}{CMU Sans Serif}
+\newfontfamily{\greekfonttt}{inconsolata}
+
+\setdefaultlanguage{greek}
+\setotherlanguages{english}
+
+\usepackage{subfiles} 
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
+
+\usepackage{wrapfig}
+
+\usepackage{booktabs}
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+
+
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,245mm},
+ left=20mm,
+ top=30mm,
+ }
+
+\defaultfontfeatures{Ligatures=TeX}
+
+%--------------------------------------------%
+% Code display packages
+
+\usepackage{listings}
+\usepackage{framed}
+\usepackage{caption}
+
+\captionsetup[lstlisting]{singlelinecheck=false, justification=justified, labelfont=bf, font=small}
+
+\renewcommand\lstlistingname{\textrm{Τμήμα κώδικα}}
+\renewcommand\lstlistlistingname{\textrm{Τμήμα κώδικα}}
+
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.8,0.8,0.8}
+\definecolor{codeorange}{rgb}{1,0.64,0}
+\definecolor{backcolour}{rgb}{0.2,0.2,0.2}
+\definecolor{codeblack}{rgb}{0.1,0.1,0.1}
+\definecolor{codemain}{rgb}{0.98,0.98,0.98}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codeorange},
+    numberstyle=\scriptsize\color{codeblack},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize\color{codemain},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    keepspaces=true,                 
+    language=[90]Fortran,
+    captionpos=b,
+    numbers=left,                    
+    frame=single,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    xleftmargin=20pt,
+}
+
+\lstset{style=mystyle}
+
+%--------------------------------------------%
+
+\begin{document}
+
+\newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
+\renewcommand{\contentsname}{Περιεχόμενα}
+\renewcommand{\tablename}{Πίνακας}
+\renewcommand{\figurename}{Σχήμα}
+\renewcommand{\arraystretch}{1.5}
+
+\thispagestyle{empty}
+\subfile{Title}
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\clearpage
+\pagenumbering{arabic}
+
+\newpage
+\subfile{Intro}
+\numberwithin{equation}{section}
+\setcounter{equation}{0}
+\subfile{1_mesh}
+\newpage
+\subfile{2_bc_momt}
+\subfile{3_inputs}
+\subfile{4_results}
+\newpage
+\subfile{5_sxolia}
+
+\end{document}
+
