@@ -4,6 +4,11 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
+\usepackage{tikz}
+\usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols}
+\tikzset{>={Latex[width=2mm, length=1.2mm]}}
+
+
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \usepackage[calc]{datetime2}
@@ -97,6 +102,10 @@
 \begin{document}
 
 \newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\half}[]{\dfrac{1}{2}}
+\newcommand{\ub}[]{\tilde{u}}
+\newcommand{\rb}[]{\tilde{\rho}}
+\newcommand{\cb}[]{\tilde{c}}
 \renewcommand{\contentsname}{Περιεχόμενα}
 \renewcommand{\tablename}{Πίνακας}
 \renewcommand{\figurename}{Σχήμα}
@@ -115,6 +124,8 @@
 \subfile{Intro}
 \numberwithin{equation}{section}
 \setcounter{equation}{0}
+\subfile{1_method}
+\subfile{2_pers_data}
 
 \end{document}
 
