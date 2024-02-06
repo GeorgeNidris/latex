@@ -11,13 +11,14 @@
 
 \usepackage{fontspec}
 \usepackage{polyglossia}
+%\usepackage[LGR,T1]{fontenc}
 \usepackage[calc]{datetime2}
 
 \setmainfont{CMU Serif}
 \setsansfont{CMU Sans Serif}
-\newfontfamily{\greekfont}{CMU Serif}
-\newfontfamily{\greekfontsf}{CMU Sans Serif}
-\newfontfamily{\greekfonttt}{inconsolata}
+%\newfontfamily{\greekfont}{CMU Serif}
+%\newfontfamily{\greekfontsf}{CMU Sans Serif}
+%\newfontfamily{\greekfonttt}{inconsolata}
 
 \setdefaultlanguage{greek}
 \setotherlanguages{english}
@@ -67,7 +68,7 @@
 
 \usepackage{xcolor}
 \definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.8,0.8,0.8}
+\definecolor{codegray}{rgb}{0.5,0.8,0.5}
 \definecolor{codeorange}{rgb}{1,0.64,0}
 \definecolor{backcolour}{rgb}{0.2,0.2,0.2}
 \definecolor{codeblack}{rgb}{0.1,0.1,0.1}
@@ -83,7 +84,7 @@
     breakatwhitespace=false,         
     breaklines=true,                 
     keepspaces=true,                 
-    language=[90]Fortran,
+    language=c++,
     captionpos=b,
     numbers=left,                    
     frame=single,
@@ -125,7 +126,14 @@
 \numberwithin{equation}{section}
 \setcounter{equation}{0}
 \subfile{1_method}
+\newpage
 \subfile{2_pers_data}
-
+\newpage
+\subfile{3_results}
+\clearpage
+\appendix
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\roman{subsection}}
+\subfile{appendix}
 \end{document}
 
