@@ -1,17 +1,41 @@
 \section{Πηγαίος κώδικας}
 
-Το λογισμικό που λύνει το μοντέλο υλοποιήθηκε σε γλώσσα C++. Η δομή του κώδικα αποτελείται απο τα εξής. Ενα κύριο αρχείο (main.cpp) με την κύρια συνάρτηση του προγράμματος που περιλαμβάνει την κεντρική δομή του αλγορίθμου, και ένα δευτερεύον βοηθητικό αρχείο (utils.cpp) που περιέχει τους ορισμούς των συναρτήσεων που καλούνται στην κεντρική δομή του αλγορίθμου. Τέλος, έχουμε ένα αρχείο που περιέχει τις γεωμετρικές παραμέτρους του προβλήματος και τις αριθμητικές παραμέτρους του κώδικα. Η δομή του main.cpp ακολουθεί τη ροή του αλγορίθμου που παρουσιάζεται στο σχήμα \ref{fig:flowchart}.
+Το λογισμικό που λύνει το μοντέλο υλοποιήθηκε σε γλώσσα C++. Η δομή του κώδικα αποτελείται απο τα εξής. Ενα αρχείο (main.cpp) με την κύρια συνάρτηση του προγράμματος που περιλαμβάνει την κεντρική δομή του αλγορίθμου, και δευτερεύοντα βοηθητικά αρχεία που περιέχουν τους ορισμούς των συναρτήσεων που καλούνται στην κεντρική δομή του αλγορίθμου. Οι παράμετροι του προβλήματος και τα μητρώα μάζας και δυσκαμψίας διαβάζονται απο αντίστοιχα αρχεία εισόδου.
 Έτσι, παρακάτω παρατίθενται τα αρχεία με την σειρά που αναφέρθηκαν.
 
 \subsection{Κύρια συνάρτηση αλγορίθμου main.cpp}
 
-%\lstinputlisting[]{source/main.cpp}
+\lstinputlisting[]{source/main.cpp}
 
 \vspace{4.5cm}
-\subsection{Βοηθητικό αρχείο συναρτήσεων utils.cpp}
+\subsection{Βοηθητικό αρχείο συναρτήσεων utilities.cpp}
 
-%\lstinputlisting[]{source/utils.cpp}
+\lstinputlisting[]{./source/utilities.cpp}
 
 \vspace{3cm}
-\subsection{Αρχείο παραμέτρων data.h}
-%\lstinputlisting[]{source/data.h}
+\subsection{Αρχείο συναρτήσεων επίλυσης solver.cpp}
+
+\lstinputlisting[]{./source/solver.cpp}
+
+\vspace{3cm}
+\subsection{Αρχείο συναρτήσεων εξισώσεων μόνιμης ροής steady.cpp}
+
+\lstinputlisting[]{./source/steady.cpp}
+\vspace{3cm}
+\subsection{Αρχείο συναρτήσεων εξισώσεων μη-μόνιμης ροής theodorsen.cpp}
+
+\lstinputlisting[]{./source/theodorsen.cpp}
+
+\vspace{3cm}
+\subsection{Βοηθητικό αρχείο ορισμού συναρτήσεων utilities.h}
+
+\lstinputlisting[]{./source/utilities.h}
+
+\vspace{3cm}
+\subsection{Αρχεία εισόδου matrix.dat και input.dat}
+
+\label{AppLastPage}
+\lstinputlisting[]{./source/input.dat}
+\vspace{3cm}
+\lstinputlisting[]{./source/matrix.dat}
+

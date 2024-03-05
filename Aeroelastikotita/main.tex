@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{afterpage}
 
 \usepackage{tikz}
 \usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols}
@@ -27,9 +28,10 @@
 
 \setmainfont[Mapping=tex-text]{CMU Serif}
 \setsansfont[Mapping=tex-text]{CMU Sans Serif}
-%\newfontfamily{\greekfont}{CMU Serif}
-%\newfontfamily{\greekfontsf}{CMU Sans Serif}
-%\newfontfamily{\greekfonttt}{inconsolata}
+% \newfontfamily{\greekfont}[Path=/home/george/.local/share/fonts/]{CMUSansSerif.ttf}
+\newfontfamily{\greekfont}{CMU Serif}
+\newfontfamily{\greekfontsf}{CMU Sans Serif}
+\newfontfamily{\greekfonttt}{inconsolata}
 
 \setdefaultlanguage{greek}
 \setotherlanguages{english}
@@ -132,7 +134,8 @@
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
 \makeatother
-\newcommand{\crefrangeconjunction}{--}
+\newcommand{\crefrangeconjunction}{-}
+\newcommand{\greektext}[1]{{\greekfont #1}}
 
 \thispagestyle{empty}
 \subfile{Title}
@@ -140,32 +143,42 @@
 \thispagestyle{empty}
 \tableofcontents
 \newpage
+\listoffigures
+\newpage
 \clearpage
 
 \pagestyle{fancy}
 \fancyfh{}
 \fancyhead[R]{\thepage}
 \fancyhead[L]{\rightmark}
-\fancyfoot[R]{\text{{Σελίδα \thepage{} από \pageref{LastPage}}}}
+\fancyfoot[R]{\text{{Σελίδα \thepage{} από \pageref{TextLastPage}}}}
 \fancyfoot[C]{}
 \fancyfoot[L]{\myClass}
 
 \pagenumbering{arabic}
 \newpage
 \subfile{Intro}
-\numberwithin{equation}{section}
+ \numberwithin{equation}{section}
 
-\subfile{1_model.tex}
+ \subfile{1_model.tex}
 
-% \newpage
-\subfile{./2_damping.tex}
-\subfile{./3_timeseries.tex}
+ \subfile{./2_damping.tex}
+ \subfile{./3_timeseries.tex}
+
 
 \setcounter{equation}{0}
 \clearpage
 \appendix
+\pagenumbering{roman}
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\thesection.\roman{subsection}}
-%\subfile{appendix}
+\pagestyle{fancy}
+\fancyfh{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\greektext{\rightmark}}
+\fancyfoot[R]{\greektext{{Παράρτημα: Σελίδα \thepage{} από \pageref{AppLastPage}}}}
+\fancyfoot[C]{}
+\fancyfoot[L]{\greektext{\myClass}}
+\subfile{appendix}
 \end{document}
 
