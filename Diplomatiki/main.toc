@@ -1,0 +1,20 @@
+\xpg@aux {}{greek}
+\contentsline {section}{\numberline {1}Εισαγωγή - σκοπός}{1}{section.1}%
+\contentsline {section}{\numberline {2}Θεωρία ελαστικών}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Μηχανισμοί παραγωγής θερμότητας}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Μηχανισμοί απαγωγής θερμότητας}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Μηχανισμοί φθοράς ελαστικού}{1}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Φουσκάλες - blistering}{1}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Κοκκοι- graining}{1}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {3}Υπολογιστικό μοντέλο ελαστικών}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Συνδυαστικό μοντέλο πρόσφυσης}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Θερμικό μοντέλο ελαστικού}{1}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Μοντελοποίηση φθοράς}{1}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Ενσωμάτωση φθοράς και θερμοκρασίας στο μοντέλο ελαστικού}{1}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Ενσωμάτωση μοντέλου ελαστικών σε προσομοιωτή γύρου}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Προσέγγιση μεγεθών ολίσθησης απο χρονοσειρά οχήματος}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Προσδιορισμός παραμέτρων μοντέλου απο πειραματικά δεδομένα}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Δημιουργία διαγράμματος επιδόσεων - διάγραμμα GGV}{1}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Ενσωμάτωση με προσομοιωτή γύρου - openLAP}{1}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Αποτελέσματα}{1}{section.5}%
+\contentsline {section}{\numberline {6}Συμπεράσματα - βελτιώσεις}{1}{section.6}%
