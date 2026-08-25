@@ -1,0 +1,118 @@
+% ============================================================
+%  Σχήμα: Παραμορφωμένο ελαστικό σε πλαϊνή όψη -- brush model
+%  Απαιτεί: tikz + libraries: arrows.meta, decorations.pathreplacing,
+%           calc, positioning (φορτωμένα στο main.tex)
+% ============================================================
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        >={Latex[length=2.2mm,width=1.6mm]},
+        font=\small
+      ]
+      % ------------- Geometry -------------
+      \def\R{4.0}
+      \def\RE{3.7}
+      \def\hCP{0.55}
+      \def\tilt{0.18}
+      \pgfmathsetmacro{\xC}{sqrt(\R*\R - (\RE-\hCP)*(\RE-\hCP))}
+      \pgfmathsetmacro{\aR}{-asin((\RE-\hCP)/\R)}
+      \pgfmathsetmacro{\aL}{180 - \aR}
+
+      \coordinate (O) at (0,\RE);
+
+      % ------------- Ground line + hatching (skip under the contact zone) -------------
+      \draw[thick] (-\xC-3.8, 0) -- (\xC+3.8, 0);
+      \pgfmathsetmacro{\xHg}{-\xC-\tilt}
+      \pgfmathsetmacro{\xDg}{\xC}
+      \foreach \x in {-5.2,-4.7,...,5.2} {
+        \pgfmathparse{(\x < \xHg-0.15) || (\x > \xDg+0.15) ? int(1) : int(0)}
+        \ifnum\pgfmathresult=1
+          \draw[gray] (\x, 0) -- ++(-0.18,-0.28);
+        \fi
+      }
+
+      % ------------- Tire outline: arc stops at top of bristles (y = hCP) -------------
+      \draw[thick] ($ (O) + (\aR:\R) $)
+            arc[start angle=\aR, end angle=\aL, radius=\R];
+      \draw[thick] (-\xC, \hCP) -- (\xC, \hCP);
+
+      % ------------- Bristles (brush model, braking: bottoms drag LEFT) -------------
+      % Sticking region (right, x >= 0): tilt grows linearly from 0 at x=xC to \tilt at x=0
+      % Sliding region  (left,  x < 0):  tilt fixed at \tilt (max deflection)
+      \foreach \x in {0.0, 0.2, 0.4, ..., 2.6} {
+        \pgfmathsetmacro{\loc}{\tilt * (1 - \x/\xC)}
+        \draw[thin] (\x, \hCP) -- ++(-\loc, -\hCP);
+      }
+      \foreach \x in {-0.2, -0.4, -0.6, ..., -2.6} {
+        \draw[thin] (\x, \hCP) -- ++(-\tilt, -\hCP);
+      }
+
+      % ------------- Named points -------------
+      \coordinate (G) at (-\xC, \hCP);
+      \coordinate (E) at (0, \hCP);
+      \coordinate (C) at (\xC, \hCP);
+      \coordinate (H) at (-\xC-\tilt, 0);
+      \coordinate (F) at (-\tilt, 0);
+      \coordinate (D) at (\xC, 0);
+      \coordinate (A) at ($ (O) + (35:\R) $);
+      \coordinate (B) at (\xC+1.1, 0);
+
+      \foreach \p in {G,E,C,H,F,D,A,B} \fill (\p) circle (1.6pt);
+      \node[left=1pt of G]  {G};
+      \node[above=-1pt of E]       {E};
+      \node[right=1pt of C] {C};
+      \node[below left=-1pt of H]  {H};
+      \node[below=-1pt of F]       {F};
+      \node[below right=-2pt of D] {D};
+      \node[above right=-1pt of A] {A};
+      \node[below right=-2pt of B] {B};
+
+      \fill (O) circle (1.6pt);
+
+      % ------------- Rotation Ω -------------
+      \coordinate (Otop) at (0, \RE + \R + 0.35);
+      \draw[thick, ->] ($ (Otop) + (170:0.55) $)
+            arc[start angle=170, end angle=30, radius=0.55];
+      \node[above=1.6cm of Otop, align=center]
+        {Γωνιακή ταχύτητα περιστροφής\\ υπό πέδηση $\Omega$};
+
+      % ------------- V_X -------------
+      \draw[thick, ->] (O) -- ++(1.9, 0) node[below, midway] {$V_X$};
+
+      % ------------- R -------------
+      \draw[thick, ->] (O) -- (A) node[midway, above left=-3pt] {$R$};
+
+      % ------------- R_E -------------
+      \pgfmathsetmacro{\xLE}{-\R-0.4}
+      \draw[thick, |<->|] (\xLE, 0) -- (\xLE, \RE) node[midway, left=1pt] {$R_E$};
+
+      % ------------- V_X - Ω R_E > 0 -------------
+      \node[anchor=west] at (\xC+1.4, 1.6) {$V_X - \Omega R_E > 0$};
+
+      % ------------- Pressure distribution, aligned with ground contact H..D -------------
+      \pgfmathsetmacro{\xHg}{-\xC-\tilt}
+      \pgfmathsetmacro{\xDg}{\xC}
+      \pgfmathsetmacro{\xMid}{(\xHg+\xDg)/2}
+      \pgfmathsetmacro{\wHalf}{(\xDg-\xHg)/2}
+      \foreach \k in {-5,-4,...,5} {
+        \pgfmathsetmacro{\xp}{\xMid + \k*\wHalf/6}
+        \pgfmathsetmacro{\hp}{0.92*(1 - (\k/6)*(\k/6))}
+        \draw[->, gray!60!black, thick] (\xp, -0.05) -- (\xp, -0.05-\hp);
+      }
+      \node[anchor=north] at (\xMid, -1.15) {Κατανομή πίεσης};
+
+      % ------------- Region brackets: separate at F on the ground -------------
+      \def\yb{-2.7}
+      \draw[decorate, decoration={brace, amplitude=5pt, mirror}] ($(F)+(0,\yb)$) -- ($(D)+(0,\yb)$);
+      \node[anchor=north west] at ($(F)+(0.25,\yb-0.18)$) {Περιοχή πρόσφυσης};
+      \draw[decorate, decoration={brace, amplitude=5pt, mirror}] ($(H)+(0,\yb-0.85)$) -- ($(F)+(0,\yb-0.85)$)
+            node[midway, below=6pt] {Περιοχή ολίσθησης};
+
+      \draw[dotted, gray] (H) -- ($(H)+(0,\yb-0.85)$);
+      \draw[dotted, gray] (F) -- ($(F)+(0,\yb-0.85)$);
+      \draw[dotted, gray] (D) -- ($(D)+(0,\yb)$);
+
+    \end{tikzpicture}
+    \caption{Παραμορφωμένο ελαστικό υπό πέδηση -- περιοχές προσκόλλησης \& ολίσθησης.}
+    \label{fig:tire_contact}
+\end{figure}

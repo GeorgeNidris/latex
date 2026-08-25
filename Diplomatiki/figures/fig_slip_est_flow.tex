@@ -1,0 +1,55 @@
+% ----- TikZ: flowchart slip estimation -----
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.52cm and 0.8cm,
+    block/.style={rectangle,draw=black,fill=blue!8,text width=3.6cm,
+                  align=center,rounded corners=4pt,minimum height=0.88cm,font=\small},
+    decision/.style={diamond,draw=black,fill=orange!15,text width=2.2cm,
+                     align=center,font=\scriptsize,inner sep=1pt},
+    io/.style={rectangle,draw=black!60,fill=green!10,text width=3.2cm,
+               align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
+    outbox/.style={rectangle,draw=black!60,fill=red!8,text width=3.3cm,
+                align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
+    arr/.style={->,thick,gray!70!black}
+]
+  \node[io] (inp1) {$R(s)$, $v(s)$\\(track + velocity)};
+
+  \node[block,below=of inp1] (resamp)
+    {Επαναδειγματοληψία\\500 σημεία};
+  \draw[arr] (inp1)--(resamp);
+
+  \node[block,below=of resamp] (kinem)
+    {$a_x = v\,dv/ds$\\ $a_y = v^2/R$\\+ Savitzky-Golay};
+  \draw[arr] (resamp)--(kinem);
+
+  \node[block,below=of kinem] (fz)
+    {Κατανομή $F_{z,i}$\\(weight transfer)};
+  \draw[arr] (kinem)--(fz);
+
+  \node[block,below=of fz] (solver)
+    {Solver 2-DOF\\$\delta$, $\beta$: \texttt{lsqnonlin}\\$\sum F_{\rm global} = m\mathbf{a}$};
+  \draw[arr] (fz)--(solver);
+
+  \node[decision,below=0.6cm of solver] (conv) {converged?};
+  \draw[arr] (solver)--(conv);
+
+  \node[block,below=0.6cm of conv] (vel)
+    {Ταχύτητες τροχών $\mathbf{v}_i^{\rm tyre}$\\(kinematic xforms)};
+  \draw[arr] (conv)--node[right,font=\scriptsize]{ναι}(vel);
+
+  \node[font=\scriptsize,right=1.0cm of conv] (flag) {\textit{flag: unconverged}};
+  \draw[arr,dashed] (conv.east)--(flag.west) node[midway,above,font=\scriptsize]{όχι};
+
+  \node[block,below=of vel] (slip)
+    {$\alpha_i = \arctan(v_y/v_x)$\\$\kappa_i$ από ισορροπία};
+  \draw[arr] (vel)--(slip);
+
+  \node[outbox,below=of slip] (outp)
+    {\textbf{Έξοδος}: $\alpha_i$, $\kappa_i$,\\$F_{z,i}$, $\delta$, $\beta$ ανά $s_k$};
+  \draw[arr] (slip)--(outp);
+\end{tikzpicture}
+\caption{Pipeline εκτίμησης μεγεθών ολίσθησης από δεδομένα χρονοσειράς.}
+\label{fig:slip_est_flow}
+\end{figure}
+% ----- τέλος flowchart -----

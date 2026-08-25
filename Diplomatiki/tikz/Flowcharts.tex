@@ -1,0 +1,170 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+% ============================================================
+% TikZ: Flowcharts -- Pipeline εκτίμησης slip & GGV generation
+%
+% Για compile standalone:
+%   \documentclass[tikz,border=8pt]{standalone}
+%   \usetikzlibrary{shapes.geometric, arrows.meta, chains, positioning}
+% ============================================================
+
+% ---------------------------------------------------------------
+% Σχήμα 1: Pipeline εκτίμησης γωνιών/λόγων ολίσθησης
+%           από χρονοσειρά μαζικού σημείου (mass-point data)
+% ---------------------------------------------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.55cm and 1.1cm,
+    block/.style={rectangle, draw=black, fill=blue!8, text width=3.4cm,
+                  align=center, rounded corners=4pt, minimum height=0.9cm, font=\small},
+    decision/.style={diamond, draw=black, fill=orange!15, text width=2.4cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
+    io/.style={rectangle, draw=black!60, fill=green!10, text width=3.2cm,
+               align=center, rounded corners=2pt, font=\small, minimum height=0.8cm},
+    result/.style={rectangle, draw=black!60, fill=red!8, text width=3.2cm,
+                   align=center, rounded corners=2pt, font=\small, minimum height=0.8cm},
+    arr/.style={->, thick, gray!70!black},
+    every node/.append style={inner sep=4pt}
+]
+
+%% ---- INPUTS ----
+\node[io] (trackInput)  {Προφίλ πίστας\\$R(s)$, $\kappa(s)$\\(XLSX)};
+\node[io, right=1.2cm of trackInput] (velInput) {Προφίλ ταχύτητας\\$v(s)$\\(CSV)};
+
+%% ---- RESAMPLE ----
+\node[block, below=of trackInput, xshift=2.2cm] (resample)
+    {Επαναδειγματοληψία\\σε ομοιόμορφο πλέγμα\\500 σημείων};
+
+\draw[arr] (trackInput.south) |- (resample.west);
+\draw[arr] (velInput.south)   |- (resample.east);
+
+%% ---- KINEMATICS ----
+\node[block, below=of resample] (kinematics)
+    {Κινηματική προεπεξεργασία\\$a_x = v \cdot dv/ds$\\$a_y = v^2/R$\\+ Savitzky-Golay εξομάλυνση};
+
+\draw[arr] (resample) -- (kinematics);
+
+%% ---- WEIGHT TRANSFER ----
+\node[block, below=of kinematics] (vertloads)
+    {Κατανομή κατακόρυφων φορτίων\\$F_{z,i}(a_x, a_y)$\\(\cref{eq:Fz_long,eq:Fz_lat})};
+
+\draw[arr] (kinematics) -- (vertloads);
+
+%% ---- SOLVER ----
+\node[block, below=of vertloads] (solver)
+    {Solver 2-DOF\\Εύρεση $\delta$, $\beta$\\lsqnonlin\\$\sum F_{\text{global}} = m\mathbf{a}$};
+
+\draw[arr] (vertloads) -- (solver);
+
+%% ---- CONVERGENCE CHECK ----
+\node[decision, below=0.6cm of solver] (conv)
+    {Σύγκλιση;\\ residual $< \varepsilon$?};
+
+\draw[arr] (solver) -- (conv);
+
+%% ---- YES path ----
+\node[block, below=0.6cm of conv] (wheelvel)
+    {Ταχύτητες τροχών\\$\mathbf{v}_{i}^{\text{tyre}}$\\(kinematic transforms)};
+
+\draw[arr] (conv) -- node[right, font=\scriptsize]{ναι} (wheelvel);
+
+%% ---- NO path (mark only) ----
+\node[font=\scriptsize, right=0.9cm of conv] (notconv) {\textit{flag: unconverged}};
+\draw[arr, dashed] (conv.east) -- (notconv.west) node[midway, above, font=\scriptsize]{όχι};
+
+%% ---- SLIP ANGLES / RATIOS ----
+\node[block, below=of wheelvel] (slip)
+    {Υπολογισμός ολίσθησης\\$\alpha_i = \arctan(v_y/v_x)$\\$\kappa_i$ (από ισορροπία οδήγησης/πέδησης)};
+
+\draw[arr] (wheelvel) -- (slip);
+
+%% ---- TYRE MODEL ----
+\node[block, below=of slip] (tyremodel)
+    {Μοντέλο ελαστικού\\$F_{x,i}$, $F_{y,i}$\\(combined slip, Pacejka)};
+
+\draw[arr] (slip) -- (tyremodel);
+
+%% ---- OUTPUT ----
+\node[result, below=of tyremodel] (output)
+    {\textbf{Έξοδος}\\$\alpha_i$, $\kappa_i$, $F_i$, $F_{z,i}$, $\delta$, $\beta$\\ανά θέση $s_k$};
+
+\draw[arr] (tyremodel) -- (output);
+
+\end{tikzpicture}
+\caption{Pipeline εκτίμησης μεγεθών ολίσθησης από χρονοσειρά μαζικού σημείου. Είσοδοι: κινηματικά δεδομένα πίστας και ταχύτητα. Έξοδοι: γωνίες ολίσθησης, λόγοι ολίσθησης και κατανομή δυνάμεων ανά τροχό.}
+\label{fig:slip_estimation_flow}
+\end{figure}
+
+
+% ---------------------------------------------------------------
+% Σχήμα 2: Pipeline δημιουργίας GGV διαγράμματος (υψηλό επίπεδο)
+% ---------------------------------------------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.6cm and 1.0cm,
+    block/.style={rectangle, draw=black, fill=blue!8, text width=3.5cm,
+                  align=center, rounded corners=4pt, minimum height=0.85cm, font=\small},
+    decision/.style={diamond, draw=black, fill=orange!15, text width=2.4cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
+    io/.style={rectangle, draw=black!60, fill=green!10, text width=3.2cm,
+               align=center, rounded corners=2pt, font=\small, minimum height=0.8cm},
+    result/.style={rectangle, draw=black!60, fill=red!8, text width=3.2cm,
+                   align=center, rounded corners=2pt, font=\small, minimum height=0.8cm},
+    arr/.style={->, thick, gray!70!black}
+]
+
+%% ---- INPUT ----
+\node[io] (inp) {Παράμετροι οχήματος\\+ θερμοκρασία ελαστικών\\$T_{i}$ (ανά τροχό)};
+
+%% ---- GRID ----
+\node[block, below=of inp] (grid)
+    {Ορισμός πλέγματος\\$(v_j,\, a_{x,k})$\\$j = 1\ldots N_v,\; k = 1\ldots N_a$};
+\draw[arr] (inp) -- (grid);
+
+%% ---- LOOP ----
+\node[block, below=of grid] (loop)
+    {\textbf{Για κάθε $(v_j, a_{x,k})$:}\\Binary search για $R_{\min}$\\τ.ε. ο solver συγκλίνει};
+\draw[arr] (grid) -- (loop);
+
+%% ---- EQUILIBRIUM CHECK ----
+\node[decision, below=0.65cm of loop] (check)
+    {Ισορροπία\\δυνάμεων;\\ residual $<\varepsilon$?};
+\draw[arr] (loop) -- (check);
+
+%% ---- YES ----
+\node[block, below=0.65cm of check] (aymax)
+    {$a_{y,\max} = v^2/R_{\min}$\\αποθήκευση στο GGV map};
+\draw[arr] (check) -- node[right, font=\scriptsize]{ναι} (aymax);
+
+%% ---- NO ----
+\node[font=\scriptsize, right=0.9cm of check] (infeas)
+    {\textit{μη εφικτό σημείο}\\\textit{(εκτός GGV)}};
+\draw[arr, dashed] (check.east) -- (infeas.west) node[midway, above, font=\scriptsize]{όχι};
+
+%% ---- NEXT POINT ----
+\draw[arr] (aymax.east) -- ++(0.6,0) |- (loop.east);
+\node[font=\scriptsize] at (3.8, -3.7) {επόμενο $(v,a_x)$};
+
+%% ---- OUTPUT ----
+\node[result, below=of aymax] (ggvout)
+    {\textbf{Έξοδος}\\GGV map:\\$a_{y,\max}(v, a_x; T_i)$};
+\draw[arr] (aymax) -- (ggvout);
+
+%% ---- INTEGRATION ----
+\node[block, below=of ggvout] (lapsim)
+    {Ενσωμάτωση με\\openLAP\\(QSS lap simulator)};
+\draw[arr] (ggvout) -- (lapsim);
+
+\node[result, below=of lapsim] (laptime)
+    {\textbf{Έξοδος}\\Χρόνος γύρου $t_{\text{lap}}$\\Προφίλ ταχύτητας $v(s)$};
+\draw[arr] (lapsim) -- (laptime);
+
+\end{tikzpicture}
+\caption{Μεθοδολογία δημιουργίας διαγράμματος GGV. Για κάθε συνδυασμό ταχύτητας $(v)$ και διαμήκους επιτάχυνσης $(a_x)$, binary search ορίζει την ελάχιστη ακτίνα στροφής $R_{\min}$ που αντιστοιχεί στη μέγιστη πλευρική επιτάχυνση $a_{y,\max}$. Το GGV τροφοδοτείται στον openLAP για υπολογισμό χρόνου γύρου.}
+\label{fig:ggv_pipeline}
+\end{figure}
+
+\end{document}

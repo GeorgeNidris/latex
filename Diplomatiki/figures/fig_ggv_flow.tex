@@ -1,0 +1,62 @@
+% ----- TikZ: GGV pipeline flowchart -----
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.50cm and 1.0cm,
+    block/.style={rectangle,draw=black,fill=blue!8,text width=3.8cm,
+                  align=center,rounded corners=4pt,minimum height=0.88cm,font=\small},
+    decision/.style={diamond,draw=black,fill=orange!15,text width=2.4cm,
+                     align=center,font=\scriptsize,inner sep=1pt},
+    io/.style={rectangle,draw=black!60,fill=green!10,text width=3.4cm,
+               align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
+    outbox/.style={rectangle,draw=black!60,fill=red!8,text width=3.8cm,
+                align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
+    arr/.style={->,thick,gray!70!black}
+]
+  \node[io] (inp) {$v_j$, $a_{x,k}$, $T_{\rm ref}$\\πλέγμα εισόδου};
+
+  \node[block,below=of inp] (init)
+    {Αρχικοποίηση\\$r_{\rm lo}$, $r_{\rm hi}$};
+  \draw[arr] (inp)--(init);
+
+  \node[block,below=of init] (mid)
+    {$r_{\rm mid} = (r_{\rm lo}+r_{\rm hi})/2$\\$a_y = v^2 / r_{\rm mid}$};
+  \draw[arr] (init)--(mid);
+
+  \node[block,below=of mid] (solver)
+    {2-DOF solver\\$\delta$, $\beta$ για $(v,a_x,a_y)$\\+ tyre forces};
+  \draw[arr] (mid)--(solver);
+
+  \node[decision,below=0.6cm of solver] (feas)
+    {feasible?};
+  \draw[arr] (solver)--(feas);
+
+  % yes branch: tighten r_lo
+  \node[font=\scriptsize,left=1.2cm of feas] (tighten) {$r_{\rm lo} \leftarrow r_{\rm mid}$};
+  \draw[arr] (feas.west)--node[above,font=\scriptsize]{ναι}(tighten.east);
+  \draw[arr,rounded corners=4pt] (tighten.north)|-(mid.west);
+
+  % no branch: widen r_hi
+  \node[font=\scriptsize,right=1.2cm of feas] (widen) {$r_{\rm hi} \leftarrow r_{\rm mid}$};
+  \draw[arr] (feas.east)--node[above,font=\scriptsize]{όχι}(widen.west);
+  \draw[arr,rounded corners=4pt] (widen.north)|-(mid.east);
+
+  \node[decision,below=0.6cm of feas] (conv) {$r_{\rm hi}-r_{\rm lo}<\varepsilon$?};
+  \draw[arr] (feas)--(conv);
+
+  \node[block,below=0.6cm of conv] (store)
+    {$a_{y,\max}(v_j,a_{x,k}) = v_j^2/r_{\rm lo}$\\αποθήκευση};
+  \draw[arr] (conv)--node[right,font=\scriptsize]{ναι}(store);
+
+  \draw[arr,dashed,rounded corners=4pt]
+    (conv.east)--++(0.5,0)
+    node[right,font=\scriptsize]{όχι $\Rightarrow$ επανάληψη};
+
+  \node[outbox,below=of store] (outp)
+    {\textbf{Έξοδος}: GGV array\\$a_{y,\max}(v,a_x,T_{\rm ref})$};
+  \draw[arr] (store)--(outp);
+\end{tikzpicture}
+\caption{Pipeline υπολογισμού διαγράμματος GGV μέσω δυαδικής αναζήτησης. Για κάθε ζεύγος $(v_j, a_{x,k})$ βρίσκεται η ελάχιστη εφικτή ακτίνα καμπυλότητας, άρα η μέγιστη $a_y$.}
+\label{fig:ggv_flow}
+\end{figure}
+% ----- τέλος flowchart -----

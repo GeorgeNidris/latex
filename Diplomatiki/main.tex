@@ -1,12 +1,13 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{afterpage}
 
 \usepackage{tikz}
-\usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols}
+\usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols,patterns}
 \tikzset{>={Latex[width=2mm, length=1.2mm]}}
 
 
@@ -21,14 +22,13 @@
 \Crefname{figure}{Σχήμα}{Σχήματα}
 
 \usepackage{polyglossia}
-%\usepackage[LGR,T1]{fontenc}
 \usepackage[calc]{datetime2}
 \usepackage{fancyhdr}
 \usepackage{nameref}
 \usepackage{lastpage}
 
 
-
+\defaultfontfeatures{Ligatures=TeX}
 \setmainfont[Mapping=tex-text]{CMU Serif}
 \setsansfont[Mapping=tex-text]{CMU Sans Serif}
 % \newfontfamily{\greekfont}[Path=/home/george/.local/share/fonts/]{CMUSansSerif.ttf}
@@ -39,7 +39,11 @@
 \setdefaultlanguage{greek}
 \setotherlanguages{english}
 
-\usepackage{subfiles} 
+\usepackage{subfiles}
+
+% Bibliography: biblatex + biber (handles UTF-8 / Greek natively)
+\usepackage[backend=biber, style=numeric, sorting=none, autolang=other]{biblatex}
+\addbibresource{bibliography/references.bib}
 
 
 \usepackage{subfigure}
@@ -120,9 +124,9 @@
 \begin{document}
 
 
-\newcommand{\myClass}{Αεροελαστικότητα \& Αεροακουστική}
+\newcommand{\myClass}{Διπλωματική εργασία -- Γεώργιος Νιδριώτης}
 
-\newcommand{\myTitle}{Χρονική απόκριση ταλάντωσης αεροτομής σε συνθήκες μόνιμης και μη-μόνιμης αεροδυναμικής}
+\newcommand{\myTitle}{Προσομοίωση γύρου αγωνιστικού οχήματος με ενσωματωμένο θερμοδυναμικό μοντέλο ελαστικών}
 
 \newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
 \newcommand{\half}{\dfrac{1}{2}}

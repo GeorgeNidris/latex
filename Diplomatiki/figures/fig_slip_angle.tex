@@ -1,0 +1,28 @@
+% ----- TikZ: slip angle -----
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.25,
+    wheel/.style={rectangle,draw=black,fill=gray!30,
+                  minimum width=0.32cm,minimum height=1.1cm,rounded corners=2pt},
+    vec/.style={->,thick}
+]
+  % wheel
+  \node[wheel] (W) at (0,0) {};
+  % heading (rolling direction)
+  \draw[vec,black!60] (0,-0.9)--(0,1.3)
+    node[above,font=\small]{κατεύθυνση τροχού};
+  % actual velocity
+  \draw[vec,blue!80!black,very thick] (0,0)--(0.65,1.05)
+    node[right,font=\small,blue!80!black]{$\mathbf{v}_{\rm wheel}$};
+  % alpha arc
+  \draw[->,thin,red] (0,0.52) arc[start angle=90,end angle=58,radius=0.52];
+  \node[red,font=\small] at (0.3,0.72) {$\alpha$};
+  % components
+  \draw[dashed,gray!70] (0,1.05)--(0.65,1.05);
+  \draw[vec,gray!60] (0,0)--(0.65,0) node[below,font=\scriptsize,gray!60]{$v_y$};
+  \draw[vec,gray!60] (0.65,0)--(0.65,1.05) node[right,font=\scriptsize,gray!60]{$v_x$};
+\end{tikzpicture}
+\caption{Ορισμός γωνίας ολίσθησης $\alpha$. Η διαφορά μεταξύ της πραγματικής ταχύτητας $\mathbf{v}$ και της κατεύθυνσης κύλισης δίνει την $\alpha$, η οποία αντιστοιχεί σε πλευρική δύναμη $F_y$.}
+\label{fig:slip_angle}
+\end{figure}
+% ----- τέλος TikZ -----

@@ -1,0 +1,192 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+% ============================================================
+% TikZ: Δίτροχο μοντέλο οχήματος -- συστήματα συντεταγμένων
+%        Slip angle ορισμός -- Μεταφορά φορτίου
+%
+% Χρήση: \subfile{tikz/VehicleModelDiagram} μέσα σε figure env.
+%        Ή compile standalone με:
+%   \documentclass[tikz,border=5pt]{standalone}
+% ============================================================
+
+% ---------------------------------------------------------------
+% Σχήμα 1: Δίτροχο μοντέλο -- κάτοψη (Top View)
+% ---------------------------------------------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0,
+    wheel/.style={rectangle, draw=black, fill=gray!30, minimum width=0.25cm, minimum height=0.7cm, rounded corners=1pt},
+    force/.style={->, thick, blue!70!black},
+    frameaxis/.style={->, thick},
+    carframe/.style={->, thick, red!70!black},
+    tyreframe/.style={->, thick, green!50!black},
+    dim/.style={<->, thin, gray},
+    label/.style={font=\small}
+]
+
+%% --- Karosserie (car body) ---
+\draw[fill=gray!15, draw=black, rounded corners=3pt]
+    (-1.0, -0.55) rectangle (1.0, 0.55);
+\node[font=\scriptsize] at (0,0) {Σώμα};
+
+%% --- Τροχοί (wheels) ---
+% FL (Front Left)
+\node[wheel] (FL) at (-0.65,  0.85) {};
+\node[font=\scriptsize, above=1pt] at (FL.north) {FL};
+
+% FR (Front Right)
+\node[wheel] (FR) at (-0.65, -0.85) {};
+\node[font=\scriptsize, below=1pt] at (FR.south) {FR};
+
+% RL (Rear Left)
+\node[wheel] (RL) at ( 0.65,  0.85) {};
+\node[font=\scriptsize, above=1pt] at (RL.north) {RL};
+
+% RR (Rear Right)
+\node[wheel] (RR) at ( 0.65, -0.85) {};
+\node[font=\scriptsize, below=1pt] at (RR.south) {RR};
+
+%% --- Αδρανειακό σύστημα (Global frame) ---
+\begin{scope}[shift={(-2.5, -1.8)}]
+    \draw[frameaxis, black] (0,0) -- (0.8,0) node[right, font=\small] {$X$ (forward)};
+    \draw[frameaxis, black] (0,0) -- (0,0.8) node[above, font=\small] {$Y$ (left)};
+    \node[font=\scriptsize, below left] at (0,0) {Global};
+\end{scope}
+
+%% --- Σύστημα σώματος (Car frame) -- ευθυγραμμισμένο με τον άξονα οχήματος ---
+%% Το σώμα κινείται προς τα αριστερά στο παράδειγμα (β>0)
+\begin{scope}[shift={(0,0)}, rotate=10]
+    \draw[carframe] (0,0) -- (0.7,0) node[right, font=\scriptsize, text=red!70!black] {$x$};
+    \draw[carframe] (0,0) -- (0,0.7) node[above, font=\scriptsize, text=red!70!black] {$y$};
+\end{scope}
+\node[font=\scriptsize, text=red!70!black] at (0.6, 0.5) {Car frame};
+
+%% --- β angle arc ---
+\draw[->, thin, purple] (0.45,0) arc[start angle=0, end angle=10, radius=0.45];
+\node[font=\scriptsize, purple] at (0.7, 0.15) {$\beta$};
+
+%% --- Γωνία δ (steer angle) -- εμπρός τροχός FL ---
+\begin{scope}[shift={(-0.65, 0.85)}, rotate=20]
+    \draw[tyreframe, green!60!black] (0,0) -- (0.35,0);
+\end{scope}
+\draw[->, thin, green!40!black] (-0.65+0.25, 0.85) arc[start angle=0, end angle=20, radius=0.25];
+\node[font=\scriptsize, green!40!black] at (-0.2, 1.1) {$\delta$};
+
+%% --- Velocity vector ---
+\draw[->, ultra thick, orange!80!black] (0,0) -- (-0.6, 0.25)
+    node[left, font=\scriptsize, orange!80!black] {$\mathbf{v}$};
+
+%% --- Wheelbase & Track labels ---
+\draw[dim] (-0.65, 1.15) -- (0.65, 1.15);
+\node[font=\scriptsize, gray, above] at (0, 1.15) {$L$ (wheelbase)};
+\draw[dim] (-1.05, 0.85) -- (-1.05, -0.85);
+\node[font=\scriptsize, gray, left] at (-1.05, 0) {$t$ (track)};
+
+%% --- Center of Mass ---
+\filldraw[black] (0,0) circle (2pt);
+\node[font=\scriptsize, below right] at (0.05,-0.05) {CG};
+
+\end{tikzpicture}
+\caption{Κάτοψη δίτροχου μοντέλου. Φαίνονται οι τέσσερις τροχοί, το αδρανειακό σύστημα (μαύρο), το σύστημα σώματος (κόκκινο) υπό γωνία πλαϊνής ολίσθησης $\beta$, και η γωνία διεύθυνσης εμπρός τροχού $\delta$ (πράσινο).}
+\label{fig:twotrack_topview}
+\end{figure}
+
+
+% ---------------------------------------------------------------
+% Σχήμα 2: Ορισμός γωνίας ολίσθησης (Slip Angle α)
+% ---------------------------------------------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.2,
+    wheel/.style={rectangle, draw=black, fill=gray!30, minimum width=0.3cm, minimum height=1.0cm, rounded corners=2pt},
+    vec/.style={->, thick},
+    annot/.style={font=\small}
+]
+
+%% Τροχός
+\node[wheel] (W) at (0,0) {};
+
+%% Άξονας κύλισης τροχού (heading direction)
+\draw[vec, black!70] (0,-0.8) -- (0, 1.2) node[above, annot] {κατεύθυνση τροχού};
+
+%% Πραγματικό διάνυσμα ταχύτητας (υπό γωνία α)
+\draw[vec, blue!80!black, very thick] (0,0) -- (0.6, 1.0)
+    node[right, annot, blue!80!black] {$\mathbf{v}_{\text{wheel}}$};
+
+%% Γωνία α
+\draw[->, thin, red] (0, 0.5) arc[start angle=90, end angle=59, radius=0.5];
+\node[annot, red] at (0.28, 0.68) {$\alpha$};
+
+%% Vy component
+\draw[dashed, gray] (0, 1.0) -- (0.6, 1.0);
+\draw[vec, gray!60] (0, 0) -- (0.6, 0) node[below, annot, gray!60] {$v_y$};
+\draw[vec, gray!60] (0.6, 0) -- (0.6, 1.0) node[right, annot, gray!60] {$v_x$};
+
+\node[annot, below=8pt] at (0,0) {$\alpha = \arctan\!\left(\dfrac{v_y}{v_x}\right)$};
+
+\end{tikzpicture}
+\caption{Ορισμός γωνίας ολίσθησης $\alpha$. Η διαφορά μεταξύ της πραγματικής ταχύτητας $\mathbf{v}_{\text{wheel}}$ και της κατεύθυνσης κύλισης του τροχού δίνει τη γωνία $\alpha$, που αντιστοιχεί σε πλευρική δύναμη $F_y$.}
+\label{fig:slip_angle}
+\end{figure}
+
+
+% ---------------------------------------------------------------
+% Σχήμα 3: Μεταφορά φορτίου (Weight Transfer)
+% ---------------------------------------------------------------
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.9,
+    spring/.style={decorate, decoration={coil, amplitude=4pt, segment length=5pt}},
+    vec/.style={->, very thick},
+    dim/.style={<->, thin, gray}
+]
+
+%% Έδαφος
+\draw[thick, gray] (-3.2, 0) -- (3.2, 0);
+\fill[gray!20] (-3.2,-0.15) rectangle (3.2, 0);
+
+%% Τροχοί (πλευρική άποψη -- 2 τροχοί για longitudinal transfer)
+\filldraw[gray!40, draw=black] (-2.0, 0.25) circle (0.25);
+\filldraw[gray!40, draw=black] ( 2.0, 0.25) circle (0.25);
+
+%% Σώμα (πλευρική άποψη)
+\draw[fill=gray!15, draw=black, rounded corners=3pt]
+    (-2.2, 0.5) rectangle (2.2, 1.1);
+
+%% Κέντρο μάζας
+\filldraw[red] (0, 1.1) circle (3pt);
+\node[font=\small, above right, red] at (0.1, 1.1) {CG};
+\draw[dashed, gray] (0, 0.5) -- (0, 1.4);
+
+%% Ύψος CG
+\draw[dim] (-2.5, 0.5) -- (-2.5, 1.1);
+\node[gray, font=\small, left] at (-2.5, 0.8) {$h_{\text{CG}}$};
+
+%% Επιτάχυνση (ax) -- μπροστά
+\draw[vec, orange!90!black] (0, 1.6) -- (1.5, 1.6)
+    node[right, font=\small] {$a_x > 0$ (επιτάχυνση)};
+
+%% Φορτία στατικά
+\draw[vec, blue!70] (-2.0, 0.5) -- (-2.0, -0.7) node[below, font=\small, blue!70] {$F_{z,\text{front}}$};
+\draw[vec, blue!70] ( 2.0, 0.5) -- ( 2.0, -0.9) node[below, font=\small, blue!70] {$F_{z,\text{rear}}$};
+
+%% Μεταβολή φορτίου (ΔFz)
+\draw[vec, red!70, dashed] (-2.0, -0.5) -- (-2.0, -0.1);
+\node[font=\scriptsize, red!70, left] at (-2.0, -0.3) {$-\Delta F_z$};
+\draw[vec, red!70, dashed] (2.0, -0.5) -- (2.0, -0.9);
+\node[font=\scriptsize, red!70, right] at (2.0, -0.7) {$+\Delta F_z$};
+
+%% Wheelbase
+\draw[dim] (-2.0, -1.2) -- (2.0, -1.2);
+\node[gray, font=\small, below] at (0, -1.2) {$L$};
+
+%% Εξίσωση
+\node[font=\small] at (0, -1.7) {$\Delta F_{z} = \dfrac{m \cdot a_x \cdot h_{\text{CG}}}{L}$};
+
+\end{tikzpicture}
+\caption{Διαμήκης μεταφορά φορτίου κατά την επιτάχυνση ($a_x > 0$). Το φορτίο μεταφέρεται από τον εμπρός άξονα (−$\Delta F_z$) στον πίσω (+$\Delta F_z$). Αντίστοιχα ισχύει για πλευρική μεταφορά υπό $a_y$.}
+\label{fig:weight_transfer}
+\end{figure}
+
+\end{document}

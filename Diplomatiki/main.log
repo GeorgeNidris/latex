@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.7.11)  14 AUG 2026 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.8.24)  25 AUG 2026 04:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count273
 \c@section=\count274
@@ -115,6 +115,17 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2965.
 LaTeX Info: Redefining \] on input line 2966.
 )
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
 
@@ -631,7 +642,14 @@ File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
 rymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec.sty
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec.sty
 (C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2026-06-18 L3 programming layer (loader) 
@@ -771,7 +789,8 @@ Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
 
 Package fontspec Info: 
 (fontspec)             Font family 'CMUSerif(0)' created for font 'CMU Serif'
-(fontspec)             with options [Ligatures=TeX,Mapping=tex-text].
+(fontspec)             with options
+(fontspec)             [Ligatures=TeX,Ligatures=TeX,Mapping=tex-text].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -805,7 +824,7 @@ Package fontspec Info:
 Package fontspec Info: 
 (fontspec)             Font family 'CMUSansSerif(0)' created for font 'CMU
 (fontspec)             Sans Serif' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text].
+(fontspec)             [Ligatures=TeX,Ligatures=TeX,Mapping=tex-text].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -816,19 +835,20 @@ Package fontspec Info:
 
 Package fontspec Info: 
 (fontspec)             Font family 'CMUSerif(1)' created for font 'CMU Serif'
-(fontspec)             with options [].
+(fontspec)             with options [Ligatures=TeX].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CMU
-(fontspec)             Serif/OT:script=latn;language=dflt;"
+(fontspec)             Serif/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->"CMU
-(fontspec)             Serif/B/OT:script=latn;language=dflt;"
+(fontspec)             Serif/B/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CMU
-(fontspec)             Serif/I/OT:script=latn;language=dflt;"
+(fontspec)             Serif/I/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"CMU
-(fontspec)             Serif/BI/OT:script=latn;language=dflt;"
+(fontspec)             Serif/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
 
 
 Package fontspec Info: 
@@ -848,19 +868,19 @@ Package fontspec Info:
 
 Package fontspec Info: 
 (fontspec)             Font family 'CMUSansSerif(1)' created for font 'CMU
-(fontspec)             Sans Serif' with options [].
+(fontspec)             Sans Serif' with options [Ligatures=TeX].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CMU Sans
-(fontspec)             Serif/OT:script=latn;language=dflt;"
+(fontspec)             Serif/OT:script=latn;language=dflt;mapping=tex-text;"
 
  (C:\Program Files\MiKTeX\tex/latex/inconsolata\inconsolata.fontspec)
 
 Package fontspec Info: 
 (fontspec)             Font family 'inconsolata(0)' created for font
-(fontspec)             'inconsolata' with options [Extension =
+(fontspec)             'inconsolata' with options [Ligatures=TeX,Extension =
 (fontspec)             .otf,UprightFont = Inconsolatazi4-Regular,BoldFont =
 (fontspec)             Inconsolatazi4-Bold].
 (fontspec)              
@@ -869,10 +889,10 @@ Package fontspec Info:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[Inconsolatazi4-Regular.otf]/OT:script=latn;language
-=dflt;"
+=dflt;mapping=tex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[Inconsolatazi4-Bold.otf]/OT:script=latn;language=df
-lt;"
+lt;mapping=tex-text;"
 
 
 (C:\Program Files\MiKTeX\tex/latex/polyglossia\gloss-greek.ldf
@@ -894,25 +914,263 @@ Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 (C:\Program Files\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 ))
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count360
+
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count361
+\c@listtotal=\count362
+\c@listcount=\count363
+\c@liststart=\count364
+\c@liststop=\count365
+\c@citecount=\count366
+\c@citetotal=\count367
+\c@multicitecount=\count368
+\c@multicitetotal=\count369
+\c@instcount=\count370
+\c@maxnames=\count371
+\c@minnames=\count372
+\c@maxitems=\count373
+\c@minitems=\count374
+\c@citecounter=\count375
+\c@maxcitecounter=\count376
+\c@savedcitecounter=\count377
+\c@uniquelist=\count378
+\c@uniquename=\count379
+\c@refsection=\count380
+\c@refsegment=\count381
+\c@maxextratitle=\count382
+\c@maxextratitleyear=\count383
+\c@maxextraname=\count384
+\c@maxextradate=\count385
+\c@maxextraalpha=\count386
+\c@abbrvpenalty=\count387
+\c@highnamepenalty=\count388
+\c@lownamepenalty=\count389
+\c@maxparens=\count390
+\c@parenlevel=\count391
+\blx@tempcnta=\count392
+\blx@tempcntb=\count393
+\blx@tempcntc=\count394
+\c@blx@maxsection=\count395
+\blx@maxsegment@0=\count396
+\blx@notetype=\count397
+\blx@parenlevel@text=\count398
+\blx@parenlevel@foot=\count399
+\blx@sectionciteorder@0=\count400
+\blx@sectionciteorderinternal@0=\count401
+\blx@entrysetcounter=\count402
+\blx@biblioinstance=\count403
+\labelnumberwidth=\skip69
+\labelalphawidth=\skip70
+\biblabelsep=\skip71
+\bibitemsep=\skip72
+\bibnamesep=\skip73
+\bibinitsep=\skip74
+\bibparsep=\skip75
+\bibhang=\skip76
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language79
+\c@mincomprange=\count404
+\c@maxcomprange=\count405
+\c@mincompwidth=\count406
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count407
+\c@savedafterword=\count408
+\c@annotator=\count409
+\c@savedannotator=\count410
+\c@author=\count411
+\c@savedauthor=\count412
+\c@bookauthor=\count413
+\c@savedbookauthor=\count414
+\c@commentator=\count415
+\c@savedcommentator=\count416
+\c@editor=\count417
+\c@savededitor=\count418
+\c@editora=\count419
+\c@savededitora=\count420
+\c@editorb=\count421
+\c@savededitorb=\count422
+\c@editorc=\count423
+\c@savededitorc=\count424
+\c@foreword=\count425
+\c@savedforeword=\count426
+\c@holder=\count427
+\c@savedholder=\count428
+\c@introduction=\count429
+\c@savedintroduction=\count430
+\c@namea=\count431
+\c@savednamea=\count432
+\c@nameb=\count433
+\c@savednameb=\count434
+\c@namec=\count435
+\c@savednamec=\count436
+\c@translator=\count437
+\c@savedtranslator=\count438
+\c@shortauthor=\count439
+\c@savedshortauthor=\count440
+\c@shorteditor=\count441
+\c@savedshorteditor=\count442
+\c@labelname=\count443
+\c@savedlabelname=\count444
+\c@institution=\count445
+\c@savedinstitution=\count446
+\c@lista=\count447
+\c@savedlista=\count448
+\c@listb=\count449
+\c@savedlistb=\count450
+\c@listc=\count451
+\c@savedlistc=\count452
+\c@listd=\count453
+\c@savedlistd=\count454
+\c@liste=\count455
+\c@savedliste=\count456
+\c@listf=\count457
+\c@savedlistf=\count458
+\c@location=\count459
+\c@savedlocation=\count460
+\c@organization=\count461
+\c@savedorganization=\count462
+\c@origlocation=\count463
+\c@savedoriglocation=\count464
+\c@origpublisher=\count465
+\c@savedorigpublisher=\count466
+\c@publisher=\count467
+\c@savedpublisher=\count468
+\c@language=\count469
+\c@savedlanguage=\count470
+\c@origlanguage=\count471
+\c@savedoriglanguage=\count472
+\c@pageref=\count473
+\c@savedpageref=\count474
+\shorthandwidth=\skip77
+\shortjournalwidth=\skip78
+\shortserieswidth=\skip79
+\shorttitlewidth=\skip80
+\shortauthorwidth=\skip81
+\shorteditorwidth=\skip82
+\locallabelnumberwidth=\skip83
+\locallabelalphawidth=\skip84
+\localshorthandwidth=\skip85
+\localshortjournalwidth=\skip86
+\localshortserieswidth=\skip87
+\localshorttitlewidth=\skip88
+\localshortauthorwidth=\skip89
+\localshorteditorwidth=\skip90
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count475
+\c@textcitetotal=\count476
+\c@textcitemaxnames=\count477
+\c@biburlbigbreakpenalty=\count478
+\c@biburlbreakpenalty=\count479
+\c@biburlnumpenalty=\count480
+\c@biburlucpenalty=\count481
+\c@biburllcpenalty=\count482
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count483
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count484
+\c@bbx:relatedtotal=\count485
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2026-06-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+))
 (C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip69
-\subfigcapskip=\skip70
+\subfigtopskip=\skip91
+\subfigcapskip=\skip92
 \subfigcaptopadj=\dimen286
-\subfigbottomskip=\skip71
+\subfigbottomskip=\skip93
 \subfigcapmargin=\dimen287
-\subfiglabelskip=\skip72
-\c@subfigure=\count360
-\c@lofdepth=\count361
-\c@subtable=\count362
-\c@lotdepth=\count363
+\subfiglabelskip=\skip94
+\c@subfigure=\count486
+\c@lofdepth=\count487
+\c@subtable=\count488
+\c@lotdepth=\count489
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg)
-\subfig@top=\skip73
-\subfig@bottom=\skip74
+\subfig@top=\skip95
+\subfig@bottom=\skip96
 )
 (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
@@ -932,8 +1190,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen295
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count364
-\c@continuedfloat=\count365
+\c@caption@flags=\count490
+\c@continuedfloat=\count491
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 )
@@ -947,20 +1205,20 @@ Package subcaption Info: The counter `subtable' was already defined by
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count366
+\c@tracingmulticols=\count492
 \mult@box=\box90
 \multicol@leftmargin=\dimen296
-\c@unbalance=\count367
-\c@collectmore=\count368
-\doublecol@number=\count369
-\multicoltolerance=\count370
-\multicolpretolerance=\count371
+\c@unbalance=\count493
+\c@collectmore=\count494
+\doublecol@number=\count495
+\multicoltolerance=\count496
+\multicolpretolerance=\count497
 \full@width=\dimen297
 \page@free=\dimen298
 \premulticols=\dimen299
 \postmulticols=\dimen300
-\multicolsep=\skip75
-\multicolbaselineskip=\skip76
+\multicolsep=\skip97
+\multicolbaselineskip=\skip98
 \partial@page=\box91
 \last@line=\box92
 \mc@boxedresult=\box93
@@ -1005,22 +1263,22 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box131
 \@tempa=\box132
 \@tempa=\box133
-\c@minrows=\count372
-\c@columnbadness=\count373
-\c@finalcolumnbadness=\count374
+\c@minrows=\count498
+\c@columnbadness=\count499
+\c@finalcolumnbadness=\count500
 \last@try=\dimen302
 \multicolovershoot=\dimen303
 \multicolundershoot=\dimen304
 \mult@nat@firstbox=\box134
 \colbreak@box=\box135
-\mc@col@check@num=\count375
-\g__mc_curr_col_int=\count376
+\mc@col@check@num=\count501
+\g__mc_curr_col_int=\count502
 )
 (C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip77
-\multirow@cntb=\count377
-\multirow@dima=\skip78
+\multirow@colwidth=\skip99
+\multirow@cntb=\count503
+\multirow@dima=\skip100
 \bigstrutjot=\dimen305
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
@@ -1029,14 +1287,14 @@ Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
 \ar@mcellbox=\box136
 \extrarowheight=\dimen307
 \NC@list=\toks39
-\extratabsurround=\skip79
-\backup@length=\skip80
+\extratabsurround=\skip101
+\backup@length=\skip102
 \ar@cellbox=\box137
 )
 (C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen308
 \WF@size=\dimen309
-\c@WF@wrappedlines=\count378
+\c@WF@wrappedlines=\count504
 \WF@box=\box138
 \WF@everypar=\toks40
 Package: wrapfig 2003/01/31  v 3.6
@@ -1053,12 +1311,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen317
 \cmidrulekern=\dimen318
 \defaultaddspace=\dimen319
-\@cmidla=\count379
-\@cmidlb=\count380
+\@cmidla=\count505
+\@cmidlb=\count506
 \@aboverulesep=\dimen320
 \@belowrulesep=\dimen321
-\@thisruleclass=\count381
-\@lastruleclass=\count382
+\@thisruleclass=\count507
+\@lastruleclass=\count508
 \@thisrulewidth=\dimen322
 )
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
@@ -1067,9 +1325,9 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
 (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count383
-\Gm@cntv=\count384
-\c@Gm@tempcnt=\count385
+\Gm@cnth=\count509
+\Gm@cntv=\count510
+\c@Gm@tempcnt=\count511
 \Gm@bindingoffset=\dimen323
 \Gm@wd@mp=\dimen324
 \Gm@odd@mp=\dimen325
@@ -1082,17 +1340,17 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count386
+\lst@mode=\count512
 \lst@gtempboxa=\box139
 \lst@token=\toks42
-\lst@length=\count387
+\lst@length=\count513
 \lst@currlwidth=\dimen331
-\lst@column=\count388
-\lst@pos=\count389
+\lst@column=\count514
+\lst@pos=\count515
 \lst@lostspace=\dimen332
 \lst@width=\dimen333
-\lst@newlines=\count390
-\lst@lineno=\count391
+\lst@newlines=\count516
+\lst@lineno=\count517
 \lst@maxwidth=\dimen334
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty
@@ -1100,8 +1358,8 @@ File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count392
-\lst@skipnumbers=\count393
+\c@lstnumber=\count518
+\lst@skipnumbers=\count519
 \lst@framebox=\box140
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
@@ -1111,7 +1369,7 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 
 (C:\Program Files\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip81
+\OuterFrameSep=\skip103
 \fb@frw=\dimen335
 \fb@frh=\dimen336
 \FrameRule=\dimen337
@@ -1125,99 +1383,135 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-) (main.aux)
+)
+\@quotelevel=\count520
+\@quotereset=\count521
+ (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-Package hyperref Info: Link coloring OFF on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+Package hyperref Info: Link coloring OFF on input line 124.
  (main.out)
 (main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write5
+\openout5 = `main.out'.
 
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup4
+\symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 120.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 120.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 120.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 120.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 120.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 120.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 120.
-LaTeX Font Info:    Redeclaring math accent \check on input line 120.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 120.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 120.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 120.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 120.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 124.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 124.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 124.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 124.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 124.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 124.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 124.
+LaTeX Font Info:    Redeclaring math accent \check on input line 124.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 124.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 124.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 124.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 120.
+(Font)              `operators' in the math version `normal' on input line 124.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/CMUSerif(0)/m/n on input line 120.
+(Font)                  OT1/cmr/m/n --> TU/CMUSerif(0)/m/n on input line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 120.
+(Font)              `operators' in the math version `bold' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/CMUSerif(0)/m/n on input line 120.
+(Font)                  OT1/cmr/bx/n --> TU/CMUSerif(0)/m/n on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/CMUSerif(0)/m/n --> TU/CMUSerif(0)/m/n on input line
- 120.
+ 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/CMUSerif(0)/m/it on input line 120.
+(Font)                  OT1/cmr/m/it --> TU/CMUSerif(0)/m/it on input line 124.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/CMUSerif(0)/b/n on input line 120.
+(Font)                  OT1/cmr/bx/n --> TU/CMUSerif(0)/b/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/CMUSansSerif(0)/m/n on input line 1
-20.
+24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/CMUSerif(0)/m/n --> TU/CMUSerif(0)/b/n on input line
- 120.
+ 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/CMUSerif(0)/b/it on input line 120
+(Font)                  OT1/cmr/bx/it --> TU/CMUSerif(0)/b/it on input line 124
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/CMUSansSerif(0)/b/n on input line 
-120.
+124.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 124.
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+ (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\american.lbx
+File: american.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'greek'...
+Package biblatex Info: ... file 'greek.lbx' found.
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\greek.lbx
+File: greek.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 124.
+Package biblatex Info: Reference segment=0 on input line 124.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -1242,12 +1536,12 @@ Package caption Info: End \AtBeginDocument code.
 * \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1257,29 +1551,399 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count394
+\c@lstlisting=\count522
 (Title.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 File: pyrforos_bw.jpg Graphic file (type bmp)
 <pyrforos_bw.jpg>
 ) [1
 
-] (main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
+] (main.toc [2])
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
- [2] (main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
 
- [3] (Contents.tex)
+[3] (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
 
-LaTeX Warning: Reference `TextLastPage' on page 1 undefined on input line 170.
+ [4] (Contents.tex (Introduction/Intro.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 1 undefined on input line 60.
 
 [1
 
-]
+]) (Theoria/Theoria.tex (Theoria/TyreForces.tex (figures/fig_tire_contact.tex)
+Overfull \hbox (4.32332pt too wide) in paragraph at lines 38--46
+[]\TU/CMUSerif(1)/m/n/12 Η επιφάνεια του πέλματος διακρίνεται στη βιβλιογραφία 
+στην περιοχή προσκόλλησης (\TU/CMUSerif(1)/m/it/12 adhesion
+ []
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 80.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 2 undefined on input line 54.
+
+[2]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 3 undefined on input line 54.
+
+[3]
+File: figures/force-vs-slip_haney2004.png Graphic file (type bmp)
+<figures/force-vs-slip_haney2004.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 4 undefined on input line 98.
+
+[4]
+
+LaTeX Warning: Reference ` eq:lateral_tyre_force' on page 1 undefined on input 
+line 105.
+
+) (Theoria/TyreTemperature.tex
+! Undefined control sequence.
+l.11 ...κρασία πέλματος περίπου μεταξύ $90\degrees
+                                                  \mathrm{C}$ και
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 $105\degrees
+                 \mathrm{C}$ . Επομένως, σε ένα μοντέλο οχήματος που
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (Theoria/HeatMechanisms.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 5 undefined on input line 1.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 6 undefined on input line 62.
+
+[6]) (Theoria/Methodoi Fthoras.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 7 undefined on input line 45.
+
+[7]))
+Overfull \hbox (11.54784pt too wide) in paragraph at lines 5--5
+[]\TU/CMUSerif(1)/b/n/17.28 Μαθηματική & θερμοδυναμική μοντέλοποίηση ελα-
+ []
+
+(Tyremodel/TyreModel.tex (Tyremodel/CombinedSlip.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 8 undefined on input line 12.
+
+[8] (figures/fig_slip_angle.tex)
+
+LaTeX Warning: Reference ` eq:lateral_tyre_force' on page 1 undefined on input 
+line 44.
+
+! Misplaced alignment tab character &.
+<argument> Tremblett &
+                       Limebeer
+l.48 των \textit{Tremblett & Limebeer}
+                                       \cite{Tremlett2016} αφενός διότι περι...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 9 undefined on input line 55.
+
+[9]) (Tyremodel/ThermalModel.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 10 undefined on input line 17.
+
+[10]
+
+LaTeX Warning: Reference `eq:Q2' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Reference `eq:Q1' on page 1 undefined on input line 39.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 11 undefined on input line 76.
+
+[11])) (VehicleModel/VehicleModel.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 12 undefined on input line 88.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 13 undefined on input line 187.
+
+
+[13])
+Overfull \hbox (12.30722pt too wide) in paragraph at lines 9--9
+[]\TU/CMUSerif(1)/b/n/17.28 Ενσωμάτωση μοντέλου ελαστικών σε προσομοιωτή
+ []
+
+(LapSim/LapSim.tex (LapSim/SlipEstimation.tex (figures/fig_slip_est_flow.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 14 undefined on input line 49.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 15 undefined on input line 49.
+
+[15]) (LapSim/ParameterID.tex
+Overfull \hbox (41.67683pt too wide) in paragraph at lines 36--40
+[]\TU/CMUSerif(1)/m/n/12 Ένα κλασικό πρόβλημα στην παραμετρική αναγνώριση ΟΔΕ ε
+ίναι η \TU/CMUSerif(1)/m/it/12 αναγνωρισιμότητα \TU/CMUSerif(1)/m/n/12 (identif
+iability):
+ []
+
+) (LapSim/GGV.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 16 undefined on input line 12.
+
+[16]
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+(figures/fig_ggv_flow.tex))) (Results/Results.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 17 undefined on input line 12.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 18 undefined on input line 12.
+
+[18]
+Overfull \hbox (15.48427pt too wide) in paragraph at lines 66--70
+[]\TU/CMUSerif(1)/m/n/12 Ο ρυθμός φθοράς $\OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$ \TU/CMUSerif(1)/m/n/12 αντικατοπτρίζει τη 
+συνισταμένη και των τριών μηχανισμών (abrasion,
+ []
+
+) (Conclusions/Conclusions.tex
+Missing character: There is no → in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no → in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 19 undefined on input line 23.
+
+[19])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 20 undefined on input line 15.
+
+[20] (bibliography/bibliography.tex
+Overfull \hbox (13.305pt too wide) in paragraph at lines 2--2
+[]\TU/CMUSerif(1)/m/n/12 Hans B. Pacejka. \TU/CMUSerif(1)/m/it/12 Tyre and Vehi
+cle Dynamics\TU/CMUSerif(1)/m/n/12 . 3η []έκδοση[]. Oxford: Butterworth-Heinema
+nn,
+ []
+
+
+Overfull \hbox (3.48053pt too wide) in paragraph at lines 2--2
+[]\TU/CMUSerif(1)/m/n/12 F. Farroni []κ.ά. []“TRT: thermo racing tyre a physica
+l model to predict the tyre temperature
+ []
+
+
+Overfull \hbox (3.75868pt too wide) in paragraph at lines 2--2
+[]\TU/CMUSerif(1)/m/n/12 Wikipedia contributors. \TU/CMUSerif(1)/m/it/12 Dual-a
+xis steering\TU/CMUSerif(1)/m/n/12 . Wikipedia, The Free Encyclopedia. Accessed
+:
+ []
+
+
+Overfull \hbox (8.15451pt too wide) in paragraph at lines 2--2
+\TU/CMUSerif(1)/m/it/12 Engineers, Part L: Journal of Materials: Design and App
+lications \TU/CMUSerif(1)/m/n/12 233.10 (2019), []σσ. []1997–
+ []
+
+
+Overfull \hbox (11.68643pt too wide) in paragraph at lines 2--2
+[]\TU/CMUSerif(1)/m/n/12 Στο[]: \TU/CMUSerif(1)/m/it/12 Proceedings of the Inst
+itution of Mechanical Engineers, Part D: Journal of Automobile
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 21 undefined on input line 2.
+
+[21]))
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 22 undefined on input line 174.
+
+
+[22]
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 84.
 See the caption package documentation for explanation.
 
 
@@ -1293,22 +1957,19 @@ L3 programming layer <2026-06-18>
 
 LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 58849AFAEE58BAC83945ED4B94BB58A4;14481.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E06672EA8662EFD495590AA9B51C0628;5395
-(rerunfilecheck)             After:  2A377BFE59A4EEDBC724CA0ED42BAB8F;5775.
  ) 
 Here is how much of TeX's memory you used:
- 34475 strings out of 402628
- 732658 string characters out of 5443453
- 1395877 words of memory out of 5000000
- 63010 multiletter control sequences out of 15000+600000
- 632235 words of font info for 91 fonts, out of 8000000 for 9000
+ 43657 strings out of 402628
+ 915399 string characters out of 5443453
+ 1856515 words of memory out of 5000000
+ 72030 multiletter control sequences out of 15000+600000
+ 639893 words of font info for 128 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,131p,563b,398s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,131p,695b,6386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (26 pages).

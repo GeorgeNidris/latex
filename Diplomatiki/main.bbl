@@ -1,0 +1,729 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{West2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b4b134c8b64a8c72da902b80171ba20c}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=07b31df0c56d4ff1031d978e847a05c1}{%
+           family={Limebeer},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi J.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{fullhash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{fullhashraw}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{bibnamehash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{authorbibnamehash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{authornamehash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{authorfullhash}{dc7af23590c3f3239a2926e03b08b4ba}
+      \strng{authorfullhashraw}{dc7af23590c3f3239a2926e03b08b4ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicle System Dynamics}
+      \field{number}{1}
+      \field{title}{Optimal tyre management for a high-performance race car}
+      \field{volume}{60}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1080/00423114.2020.1802047
+      \endverb
+    \endentry
+    \entry{Tremlett2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c6f92076d641b407a935f2485446568d}{%
+           family={Tremlett},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=07b31df0c56d4ff1031d978e847a05c1}{%
+           family={Limebeer},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi J.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{fullhash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{fullhashraw}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{bibnamehash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{authorbibnamehash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{authornamehash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{authorfullhash}{02d709af326a1d8e17b64d6aa8c81b85}
+      \strng{authorfullhashraw}{02d709af326a1d8e17b64d6aa8c81b85}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicle System Dynamics}
+      \field{number}{10}
+      \field{title}{Optimal tyre usage for a formula one car}
+      \field{volume}{54}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1080/00423114.2016.1213861
+      \endverb
+    \endentry
+    \entry{Pacejka2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1b4dbc895c23e3f1394ca7053badfea0}{%
+           family={Pacejka},
+           familyi={P\bibinitperiod},
+           given={Hans\bibnamedelima B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{fullhash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{fullhashraw}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{bibnamehash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{authorbibnamehash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{authornamehash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{authorfullhash}{1b4dbc895c23e3f1394ca7053badfea0}
+      \strng{authorfullhashraw}{1b4dbc895c23e3f1394ca7053badfea0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Tyre and Vehicle Dynamics}
+      \field{year}{2012}
+    \endentry
+    \entry{Farroni2014TRT}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a915be20788a9f58503b38c278970cdf}{%
+           family={Farroni},
+           familyi={F\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f37d6233b72d83fcd1e10da7fbfd6750}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=20b585e7546d5c79b7a520882cbd1746}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eb05e0a9341741f79200c0e90c1d5830}{%
+           family={Timpone},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1eda539ad8d1093dfe1eabad62ea4988}
+      \strng{fullhash}{7e345937c515a1965af7bc85726ba45a}
+      \strng{fullhashraw}{7e345937c515a1965af7bc85726ba45a}
+      \strng{bibnamehash}{1eda539ad8d1093dfe1eabad62ea4988}
+      \strng{authorbibnamehash}{1eda539ad8d1093dfe1eabad62ea4988}
+      \strng{authornamehash}{1eda539ad8d1093dfe1eabad62ea4988}
+      \strng{authorfullhash}{7e345937c515a1965af7bc85726ba45a}
+      \strng{authorfullhashraw}{7e345937c515a1965af7bc85726ba45a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Meccanica}
+      \field{number}{3}
+      \field{title}{{TRT}: thermo racing tyre a physical model to predict the tyre temperature distribution}
+      \field{volume}{49}
+      \field{year}{2014}
+      \field{pages}{707\bibrangedash 723}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s11012-013-9821-9
+      \endverb
+    \endentry
+    \entry{Perantoni2014}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8efbaa168540e6c883d0171b5f181631}{%
+           family={Perantoni},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=07b31df0c56d4ff1031d978e847a05c1}{%
+           family={Limebeer},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi J.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{fullhash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{fullhashraw}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{bibnamehash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{authorbibnamehash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{authornamehash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{authorfullhash}{a5146581ae70150e3a9c131b6627eb43}
+      \strng{authorfullhashraw}{a5146581ae70150e3a9c131b6627eb43}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicle System Dynamics}
+      \field{number}{5}
+      \field{title}{Optimal control for a formula one car with variable parameters}
+      \field{volume}{52}
+      \field{year}{2014}
+      \field{pages}{653\bibrangedash 678}
+      \range{pages}{26}
+    \endentry
+    \entry{Sakhnevych2022}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=24a4e1308e391e24ad7fe1d605f020ee}{%
+           family={Sakhnevych},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{fullhash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{fullhashraw}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{bibnamehash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{authorbibnamehash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{authornamehash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{authorfullhash}{24a4e1308e391e24ad7fe1d605f020ee}
+      \strng{authorfullhashraw}{24a4e1308e391e24ad7fe1d605f020ee}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicles}
+      \field{number}{4}
+      \field{title}{Multiphysical {MF}-based tyre modelling and parametrisation for vehicle and lap time simulations}
+      \field{volume}{4}
+      \field{year}{2022}
+      \field{pages}{1462\bibrangedash 1479}
+      \range{pages}{18}
+    \endentry
+    \entry{haney2025racing}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=96e99682f9516678745a0972ab01fe21}{%
+           family={Haney},
+           familyi={H\bibinitperiod},
+           given={P.W.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAE International}%
+      }
+      \strng{namehash}{96e99682f9516678745a0972ab01fe21}
+      \strng{fullhash}{96e99682f9516678745a0972ab01fe21}
+      \strng{fullhashraw}{96e99682f9516678745a0972ab01fe21}
+      \strng{bibnamehash}{96e99682f9516678745a0972ab01fe21}
+      \strng{authorbibnamehash}{96e99682f9516678745a0972ab01fe21}
+      \strng{authornamehash}{96e99682f9516678745a0972ab01fe21}
+      \strng{authorfullhash}{96e99682f9516678745a0972ab01fe21}
+      \strng{authorfullhashraw}{96e99682f9516678745a0972ab01fe21}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781468610024}
+      \field{title}{The Racing \& High-Performance Tire: Using Tires to Tune for Grip \& Balance. Revised Edition}
+      \field{year}{2025}
+    \endentry
+    \entry{WikipediaDualAxisSteering}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Wikipedia, The Free Encyclopedia}
+      \field{note}{Accessed: 2026-08-25}
+      \field{title}{Dual-axis steering}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Dual-axis_steering
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Dual-axis_steering
+      \endverb
+    \endentry
+    \entry{Grosch1963}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=298f5c7838bf51b55071cc49fd0add3f}{%
+           family={Grosch},
+           familyi={G\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{fullhash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{fullhashraw}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{bibnamehash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{authorbibnamehash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{authornamehash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{authorfullhash}{298f5c7838bf51b55071cc49fd0add3f}
+      \strng{authorfullhashraw}{298f5c7838bf51b55071cc49fd0add3f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences}
+      \field{number}{1356}
+      \field{title}{The Relation between the Friction and Visco-Elastic Properties of Rubber}
+      \field{volume}{274}
+      \field{year}{1963}
+      \field{pages}{21\bibrangedash 39}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1098/rspa.1963.0112
+      \endverb
+    \endentry
+    \entry{Archard1953}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bebccfcf432aaa52c99e885869a392f}{%
+           family={Archard},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{fullhash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{fullhashraw}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{bibnamehash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{authorbibnamehash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{authornamehash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{authorfullhash}{1bebccfcf432aaa52c99e885869a392f}
+      \strng{authorfullhashraw}{1bebccfcf432aaa52c99e885869a392f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{number}{8}
+      \field{title}{Contact and rubbing of flat surfaces}
+      \field{volume}{24}
+      \field{year}{1953}
+      \field{pages}{981\bibrangedash 988}
+      \range{pages}{8}
+    \endentry
+    \entry{Milliken1995}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=34816c0e6523ad37e0c8f41e7a895241}{%
+           family={Milliken},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=47b8767120ee00a8532963c06b1ce897}{%
+           family={Milliken},
+           familyi={M\bibinitperiod},
+           given={Douglas\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Warrendale, PA}%
+      }
+      \list{publisher}{1}{%
+        {SAE International}%
+      }
+      \strng{namehash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{fullhash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{fullhashraw}{a9311211c8b19c54559d149faeead1ae}
+      \strng{bibnamehash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{authorbibnamehash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{authornamehash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{authorfullhash}{a9311211c8b19c54559d149faeead1ae}
+      \strng{authorfullhashraw}{a9311211c8b19c54559d149faeead1ae}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Race Car Vehicle Dynamics}
+      \field{year}{1995}
+    \endentry
+    \entry{Dixon1996}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=db8a4a92ec4b7d4cf16fd5b0b8c89205}{%
+           family={Dixon},
+           familyi={D\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Warrendale, PA}%
+      }
+      \list{publisher}{1}{%
+        {SAE International}%
+      }
+      \strng{namehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{fullhash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{fullhashraw}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{bibnamehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{authorbibnamehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{authornamehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{authorfullhash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \strng{authorfullhashraw}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Tires, Suspension and Handling}
+      \field{year}{1996}
+      \true{nocite}
+    \endentry
+    \entry{Guiggiani2014}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e18baab507107bfd84851fbc73ec658c}{%
+           family={Guiggiani},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{fullhash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{fullhashraw}{e18baab507107bfd84851fbc73ec658c}
+      \strng{bibnamehash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{authorbibnamehash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{authornamehash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{authorfullhash}{e18baab507107bfd84851fbc73ec658c}
+      \strng{authorfullhashraw}{e18baab507107bfd84851fbc73ec658c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Science of Vehicle Dynamics}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{Farroni2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a915be20788a9f58503b38c278970cdf}{%
+           family={Farroni},
+           familyi={F\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=24a4e1308e391e24ad7fe1d605f020ee}{%
+           family={Sakhnevych},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eb05e0a9341741f79200c0e90c1d5830}{%
+           family={Timpone},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{fullhash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{fullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{bibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorbibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authornamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorfullhash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorfullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part L: Journal of Materials: Design and Applications}
+      \field{number}{10}
+      \field{title}{Physical modelling of tyre thermal and wear phenomena for racing applications}
+      \field{volume}{233}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1997\bibrangedash 2011}
+      \range{pages}{15}
+    \endentry
+    \entry{Radrizzani2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=01d3d97b0279b7f6812830af729362ed}{%
+           family={Radrizzani},
+           familyi={R\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d0ce3b13b70cc8fccdd9643aec39ae57}{%
+           family={Panzani},
+           familyi={P\bibinitperiod},
+           given={Giulio},
+           giveni={G\bibinitperiod}}}%
+        {{hash=09c2f8be04a16afc05725cc2aa2cfe51}{%
+           family={Trovato},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ef50b0cded3f03e0bd2d45539830a96b}{%
+           family={Alli},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3f8981ce1bc5a190fca7df70fe5d861f}{%
+           family={Uboldi},
+           familyi={U\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5b0e49e1bc846dca993fd477c6eb6f80}{%
+           family={Savaresi},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{37a695116dc8baa3fe8e89d634017aec}
+      \strng{fullhash}{6fb19e9584558342614af77c7ddc3b26}
+      \strng{fullhashraw}{6fb19e9584558342614af77c7ddc3b26}
+      \strng{bibnamehash}{37a695116dc8baa3fe8e89d634017aec}
+      \strng{authorbibnamehash}{37a695116dc8baa3fe8e89d634017aec}
+      \strng{authornamehash}{37a695116dc8baa3fe8e89d634017aec}
+      \strng{authorfullhash}{6fb19e9584558342614af77c7ddc3b26}
+      \strng{authorfullhashraw}{6fb19e9584558342614af77c7ddc3b26}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicle System Dynamics}
+      \field{number}{5}
+      \field{title}{A tyre wear modelling approach for vehicle dynamics simulation and control-oriented analyses with application to motorcycles}
+      \field{volume}{62}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1080/00423114.2023.2232057
+      \endverb
+    \endentry
+    \entry{Kelly2010}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f132d30b1a4591828584e4de93faafae}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=98154559fec41af44240c448bc7cb19e}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{fullhash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{fullhashraw}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{bibnamehash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{authorbibnamehash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{authornamehash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{authorfullhash}{f1cfc37bba1763cf809e945e8965e251}
+      \strng{authorfullhashraw}{f1cfc37bba1763cf809e945e8965e251}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Vehicle System Dynamics}
+      \field{number}{10}
+      \field{title}{Time-optimal control of the race car: a numerical method to emulate the ideal driver}
+      \field{volume}{48}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{1461\bibrangedash 1476}
+      \range{pages}{16}
+    \endentry
+    \entry{Casanova2000}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d098678272154e7c92ae4990d319c28}{%
+           family={Casanova},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Cranfield University}%
+      }
+      \strng{namehash}{2d098678272154e7c92ae4990d319c28}
+      \strng{fullhash}{2d098678272154e7c92ae4990d319c28}
+      \strng{fullhashraw}{2d098678272154e7c92ae4990d319c28}
+      \strng{bibnamehash}{2d098678272154e7c92ae4990d319c28}
+      \strng{authorbibnamehash}{2d098678272154e7c92ae4990d319c28}
+      \strng{authornamehash}{2d098678272154e7c92ae4990d319c28}
+      \strng{authorfullhash}{2d098678272154e7c92ae4990d319c28}
+      \strng{authorfullhashraw}{2d098678272154e7c92ae4990d319c28}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On minimum time vehicle maneuvering: the theoretical optimal lap}
+      \field{type}{phdthesis}
+      \field{year}{2000}
+      \true{nocite}
+    \endentry
+    \entry{Brayshaw2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a9b87a2b16bfa0e3cdc2afa26547e25e}{%
+           family={Brayshaw},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=40c2b7a722ce561f26ef5ad1a86b28b2}{%
+           family={Harrison},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{fullhash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{fullhashraw}{1e17045204e3a06331e005325fd09f6a}
+      \strng{bibnamehash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{authorbibnamehash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{authornamehash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{authorfullhash}{1e17045204e3a06331e005325fd09f6a}
+      \strng{authorfullhashraw}{1e17045204e3a06331e005325fd09f6a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering}
+      \field{number}{6}
+      \field{title}{A quasi steady state approach to race car lap simulation in order to understand the effects of racing line and vehicle set-up changes}
+      \field{volume}{219}
+      \field{year}{2005}
+      \true{nocite}
+      \field{pages}{725\bibrangedash 739}
+      \range{pages}{15}
+    \endentry
+    \entry{Lot2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=74ddaebe4e24c55c20b0b586029b940c}{%
+           family={Lot},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=756fa74cd03e7e640d6d4e61f90ea965}{%
+           family={Dal\bibnamedelima Bianco},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{fullhash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{fullhashraw}{47b9767c96358d7eca2e638ac9307977}
+      \strng{bibnamehash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{authorbibnamehash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{authornamehash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{authorfullhash}{47b9767c96358d7eca2e638ac9307977}
+      \strng{authorfullhashraw}{47b9767c96358d7eca2e638ac9307977}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part P: Journal of Sports Engineering and Technology}
+      \field{number}{4}
+      \field{title}{The significance of lap time simulations}
+      \field{volume}{230}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{232\bibrangedash 241}
+      \range{pages}{10}
+    \endentry
+    \entry{Limebeer2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=07b31df0c56d4ff1031d978e847a05c1}{%
+           family={Limebeer},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi J.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8efbaa168540e6c883d0171b5f181631}{%
+           family={Perantoni},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{756590863184b6c178c4a82a6de880b7}
+      \strng{fullhash}{756590863184b6c178c4a82a6de880b7}
+      \strng{fullhashraw}{756590863184b6c178c4a82a6de880b7}
+      \strng{bibnamehash}{756590863184b6c178c4a82a6de880b7}
+      \strng{authorbibnamehash}{756590863184b6c178c4a82a6de880b7}
+      \strng{authornamehash}{756590863184b6c178c4a82a6de880b7}
+      \strng{authorfullhash}{756590863184b6c178c4a82a6de880b7}
+      \strng{authorfullhashraw}{756590863184b6c178c4a82a6de880b7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Dynamic Systems, Measurement, and Control}
+      \field{number}{5}
+      \field{title}{Optimal control of a formula one car on a three-dimensional track---Part 1: Track modelling and identification}
+      \field{volume}{137}
+      \field{year}{2015}
+      \true{nocite}
+    \endentry
+    \entry{SavitzkyGolay1964}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=eed90a9049393962ba6ff50ad736e450}{%
+           family={Savitzky},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa8dfb75adb617755e066caaa9acc648}{%
+           family={Golay},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi J.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{873ed4942f475194f61032675c77e9b1}
+      \strng{fullhash}{873ed4942f475194f61032675c77e9b1}
+      \strng{fullhashraw}{873ed4942f475194f61032675c77e9b1}
+      \strng{bibnamehash}{873ed4942f475194f61032675c77e9b1}
+      \strng{authorbibnamehash}{873ed4942f475194f61032675c77e9b1}
+      \strng{authornamehash}{873ed4942f475194f61032675c77e9b1}
+      \strng{authorfullhash}{873ed4942f475194f61032675c77e9b1}
+      \strng{authorfullhashraw}{873ed4942f475194f61032675c77e9b1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytical Chemistry}
+      \field{number}{8}
+      \field{title}{Smoothing and differentiation of data by simplified least squares procedures}
+      \field{volume}{36}
+      \field{year}{1964}
+      \true{nocite}
+      \field{pages}{1627\bibrangedash 1639}
+      \range{pages}{13}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
