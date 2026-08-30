@@ -57,15 +57,14 @@
       \coordinate (A) at ($ (O) + (35:\R) $);
       \coordinate (B) at (\xC+1.1, 0);
 
+      % Draw all point dots and non-conflicting labels here; F and B labels are
+      % drawn LAST (after pressure arrows and hatching) so their white fill covers
+      % whatever is underneath.
       \foreach \p in {G,E,C,H,F,D,A,B} \fill (\p) circle (1.6pt);
       \node[left=1pt of G]  {G};
       \node[above=-1pt of E]       {E};
-      \node[right=1pt of C] {C};
       \node[below left=-1pt of H]  {H};
-      \node[below=-1pt of F]       {F};
-      \node[below right=-2pt of D] {D};
       \node[above right=-1pt of A] {A};
-      \node[below right=-2pt of B] {B};
 
       \fill (O) circle (1.6pt);
 
@@ -99,18 +98,25 @@
         \pgfmathsetmacro{\hp}{0.92*(1 - (\k/6)*(\k/6))}
         \draw[->, gray!60!black, thick] (\xp, -0.05) -- (\xp, -0.05-\hp);
       }
-      \node[anchor=north] at (\xMid, -1.15) {Κατανομή πίεσης};
+   
 
       % ------------- Region brackets: separate at F on the ground -------------
       \def\yb{-2.7}
       \draw[decorate, decoration={brace, amplitude=5pt, mirror}] ($(F)+(0,\yb)$) -- ($(D)+(0,\yb)$);
-      \node[anchor=north west] at ($(F)+(0.25,\yb-0.18)$) {Περιοχή πρόσφυσης};
+      \node[anchor=north west] at ($(F)+(0.25,\yb-0.18)$) {Περιοχή προσκόλλησης};
       \draw[decorate, decoration={brace, amplitude=5pt, mirror}] ($(H)+(0,\yb-0.85)$) -- ($(F)+(0,\yb-0.85)$)
             node[midway, below=6pt] {Περιοχή ολίσθησης};
 
       \draw[dotted, gray] (H) -- ($(H)+(0,\yb-0.85)$);
       \draw[dotted, gray] (F) -- ($(F)+(0,\yb-0.85)$);
       \draw[dotted, gray] (D) -- ($(D)+(0,\yb)$);
+
+      % ------------- F and B labels drawn LAST so white fill covers arrows / hatching
+      \node[below=2pt of F,       fill=white, inner sep=3.5pt] {F};
+      \node[below right=2pt of B, fill=white, inner sep=2.5pt] {B};
+      \node[right=1pt of C, fill=white, inner sep=2.5pt] {C};
+      \node[below right=-2pt of D, fill=white, inner sep=2.5pt] {D};
+      \node[anchor=north,       fill=white, inner sep=2.5pt] at (\xMid, -1.15) {Κατανομή πίεσης};
 
     \end{tikzpicture}
     \caption{Παραμορφωμένο ελαστικό υπό πέδηση -- περιοχές προσκόλλησης \& ολίσθησης.}

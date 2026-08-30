@@ -40,8 +40,8 @@
       \strng{authornamehash}{dc7af23590c3f3239a2926e03b08b4ba}
       \strng{authorfullhash}{dc7af23590c3f3239a2926e03b08b4ba}
       \strng{authorfullhashraw}{dc7af23590c3f3239a2926e03b08b4ba}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -74,8 +74,8 @@
       \strng{authornamehash}{02d709af326a1d8e17b64d6aa8c81b85}
       \strng{authorfullhash}{02d709af326a1d8e17b64d6aa8c81b85}
       \strng{authorfullhashraw}{02d709af326a1d8e17b64d6aa8c81b85}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -109,8 +109,8 @@
       \strng{authornamehash}{1b4dbc895c23e3f1394ca7053badfea0}
       \strng{authorfullhash}{1b4dbc895c23e3f1394ca7053badfea0}
       \strng{authorfullhashraw}{1b4dbc895c23e3f1394ca7053badfea0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3}
@@ -148,8 +148,8 @@
       \strng{authornamehash}{1eda539ad8d1093dfe1eabad62ea4988}
       \strng{authorfullhash}{7e345937c515a1965af7bc85726ba45a}
       \strng{authorfullhashraw}{7e345937c515a1965af7bc85726ba45a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Meccanica}
@@ -184,8 +184,8 @@
       \strng{authornamehash}{a5146581ae70150e3a9c131b6627eb43}
       \strng{authorfullhash}{a5146581ae70150e3a9c131b6627eb43}
       \strng{authorfullhashraw}{a5146581ae70150e3a9c131b6627eb43}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -212,8 +212,8 @@
       \strng{authornamehash}{24a4e1308e391e24ad7fe1d605f020ee}
       \strng{authorfullhash}{24a4e1308e391e24ad7fe1d605f020ee}
       \strng{authorfullhashraw}{24a4e1308e391e24ad7fe1d605f020ee}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicles}
@@ -310,6 +310,221 @@
       \verb 10.1098/rspa.1963.0112
       \endverb
     \endentry
+    \entry{tyreWake}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0526953fcf439f990e694f5dc03652cb}{%
+           family={Sprot},
+           familyi={S\bibinitperiod},
+           given={A.J.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7420386134c388319c34bbe57f583df}{%
+           family={Sims-Williams},
+           familyi={S\bibinithyphendelim W\bibinitperiod},
+           given={D.B.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a78495bc9b3075836acd07b8a6834a42}{%
+           family={Dominy},
+           familyi={D\bibinitperiod},
+           given={R.G.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAE International}%
+      }
+      \strng{namehash}{415339764e3809786633bd7377c9a367}
+      \strng{fullhash}{415339764e3809786633bd7377c9a367}
+      \strng{fullhashraw}{415339764e3809786633bd7377c9a367}
+      \strng{bibnamehash}{415339764e3809786633bd7377c9a367}
+      \strng{authorbibnamehash}{415339764e3809786633bd7377c9a367}
+      \strng{authornamehash}{415339764e3809786633bd7377c9a367}
+      \strng{authorfullhash}{415339764e3809786633bd7377c9a367}
+      \strng{authorfullhashraw}{415339764e3809786633bd7377c9a367}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1946-3995}
+      \field{issue}{2}
+      \field{journaltitle}{SAE International Journal of Passenger Cars - Mechanical Systems}
+      \field{note}{EPrint Processing Status: Full text deposited in DRO}
+      \field{title}{The Aerodynamic Characteristics of a Fully Deformable Formula One Wind Tunnel Tyre}
+      \field{volume}{5}
+      \field{year}{2012}
+      \field{pages}{1026\bibrangedash 1041}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.4271/2012-01-1166
+      \endverb
+      \verb{urlraw}
+      \verb https://durham-repository.worktribe.com/output/1479949
+      \endverb
+      \verb{url}
+      \verb https://durham-repository.worktribe.com/output/1479949
+      \endverb
+    \endentry
+    \entry{WangKTH2017}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=51fb86405cd7ef11aa725760c5f003fb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Taozhi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {KTH Royal Institute of Technology, School of Engineering Sciences}%
+      }
+      \list{location}{1}{%
+        {Stockholm, Sweden}%
+      }
+      \strng{namehash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{fullhash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{fullhashraw}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{bibnamehash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{authorbibnamehash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{authornamehash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{authorfullhash}{51fb86405cd7ef11aa725760c5f003fb}
+      \strng{authorfullhashraw}{51fb86405cd7ef11aa725760c5f003fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analysis on Tyre Wear -- Modelling and Simulations}
+      \field{type}{Degree Project in Vehicle Engineering, Second Cycle}
+      \field{year}{2017}
+    \endentry
+    \entry{Veirh1992}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f1a745e47b82ce685a0c28643c25372}{%
+           family={Veirh},
+           familyi={V\bibinitperiod},
+           given={Alan\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{fullhash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{fullhashraw}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{bibnamehash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{authorbibnamehash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{authornamehash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{authorfullhash}{3f1a745e47b82ce685a0c28643c25372}
+      \strng{authorfullhashraw}{3f1a745e47b82ce685a0c28643c25372}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rubber Chemistry and Technology}
+      \field{title}{A Review of Important Factors Affecting Treadwear}
+      \field{volume}{65}
+      \field{year}{1992}
+      \field{pages}{601\bibrangedash 659}
+      \range{pages}{59}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:137713559
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:137713559
+      \endverb
+    \endentry
+    \entry{persson2001}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e786583d5f7150a062f90ee5b1a38ce8}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{fullhash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{fullhashraw}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{bibnamehash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{authorbibnamehash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{authornamehash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{authorfullhash}{e786583d5f7150a062f90ee5b1a38ce8}
+      \strng{authorfullhashraw}{e786583d5f7150a062f90ee5b1a38ce8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{08}
+      \field{title}{Theory of rubber friction and contact mechanics}
+      \field{volume}{115}
+      \field{year}{2001}
+      \verb{doi}
+      \verb 10.1063/1.1388626
+      \endverb
+    \endentry
+    \entry{suspensionsecrets2020tyre}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8dc5b498252f91d523b9f6b827f7c74b}{%
+           family={{Suspension Secrets}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{fullhash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{fullhashraw}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{bibnamehash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{authorbibnamehash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{authornamehash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{authorfullhash}{8dc5b498252f91d523b9f6b827f7c74b}
+      \strng{authorfullhashraw}{8dc5b498252f91d523b9f6b827f7c74b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{Last modified 2023-01-12}
+      \field{title}{Tyre Failure -- Graining, Tearing, Blistering and Wearing}
+      \field{urlday}{30}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://suspensionsecrets.co.uk/tyre-failure-graining-tearing-blistering-and-wearing/
+      \endverb
+      \verb{url}
+      \verb https://suspensionsecrets.co.uk/tyre-failure-graining-tearing-blistering-and-wearing/
+      \endverb
+    \endentry
+    \entry{Farroni2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a915be20788a9f58503b38c278970cdf}{%
+           family={Farroni},
+           familyi={F\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=24a4e1308e391e24ad7fe1d605f020ee}{%
+           family={Sakhnevych},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eb05e0a9341741f79200c0e90c1d5830}{%
+           family={Timpone},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{fullhash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{fullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{bibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorbibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authornamehash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorfullhash}{5398ba955fffda91e1bb869df31cfa3c}
+      \strng{authorfullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part L: Journal of Materials: Design and Applications}
+      \field{number}{10}
+      \field{title}{Physical modelling of tyre thermal and wear phenomena for racing applications}
+      \field{volume}{233}
+      \field{year}{2019}
+      \field{pages}{1997\bibrangedash 2011}
+      \range{pages}{15}
+    \endentry
     \entry{Archard1953}{article}{}{}
       \name{author}{1}{}{%
         {{hash=1bebccfcf432aaa52c99e885869a392f}{%
@@ -326,8 +541,8 @@
       \strng{authornamehash}{1bebccfcf432aaa52c99e885869a392f}
       \strng{authorfullhash}{1bebccfcf432aaa52c99e885869a392f}
       \strng{authorfullhashraw}{1bebccfcf432aaa52c99e885869a392f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Applied Physics}
@@ -365,8 +580,8 @@
       \strng{authornamehash}{a9311211c8b19c54559d149faeead1ae}
       \strng{authorfullhash}{a9311211c8b19c54559d149faeead1ae}
       \strng{authorfullhashraw}{a9311211c8b19c54559d149faeead1ae}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Race Car Vehicle Dynamics}
@@ -394,8 +609,8 @@
       \strng{authornamehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
       \strng{authorfullhash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
       \strng{authorfullhashraw}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -425,52 +640,13 @@
       \strng{authornamehash}{e18baab507107bfd84851fbc73ec658c}
       \strng{authorfullhash}{e18baab507107bfd84851fbc73ec658c}
       \strng{authorfullhashraw}{e18baab507107bfd84851fbc73ec658c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Science of Vehicle Dynamics}
       \field{year}{2014}
       \true{nocite}
-    \endentry
-    \entry{Farroni2019}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=a915be20788a9f58503b38c278970cdf}{%
-           family={Farroni},
-           familyi={F\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=24a4e1308e391e24ad7fe1d605f020ee}{%
-           family={Sakhnevych},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=eb05e0a9341741f79200c0e90c1d5830}{%
-           family={Timpone},
-           familyi={T\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{fullhash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{fullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{bibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{authorbibnamehash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{authornamehash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{authorfullhash}{5398ba955fffda91e1bb869df31cfa3c}
-      \strng{authorfullhashraw}{5398ba955fffda91e1bb869df31cfa3c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part L: Journal of Materials: Design and Applications}
-      \field{number}{10}
-      \field{title}{Physical modelling of tyre thermal and wear phenomena for racing applications}
-      \field{volume}{233}
-      \field{year}{2019}
-      \true{nocite}
-      \field{pages}{1997\bibrangedash 2011}
-      \range{pages}{15}
     \endentry
     \entry{Radrizzani2023}{article}{}{}
       \name{author}{6}{}{%
@@ -513,8 +689,8 @@
       \strng{authornamehash}{37a695116dc8baa3fe8e89d634017aec}
       \strng{authorfullhash}{6fb19e9584558342614af77c7ddc3b26}
       \strng{authorfullhashraw}{6fb19e9584558342614af77c7ddc3b26}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -548,8 +724,8 @@
       \strng{authornamehash}{f1cfc37bba1763cf809e945e8965e251}
       \strng{authorfullhash}{f1cfc37bba1763cf809e945e8965e251}
       \strng{authorfullhashraw}{f1cfc37bba1763cf809e945e8965e251}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -580,8 +756,8 @@
       \strng{authornamehash}{2d098678272154e7c92ae4990d319c28}
       \strng{authorfullhash}{2d098678272154e7c92ae4990d319c28}
       \strng{authorfullhashraw}{2d098678272154e7c92ae4990d319c28}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On minimum time vehicle maneuvering: the theoretical optimal lap}
@@ -610,8 +786,8 @@
       \strng{authornamehash}{1e17045204e3a06331e005325fd09f6a}
       \strng{authorfullhash}{1e17045204e3a06331e005325fd09f6a}
       \strng{authorfullhashraw}{1e17045204e3a06331e005325fd09f6a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering}
@@ -644,8 +820,8 @@
       \strng{authornamehash}{47b9767c96358d7eca2e638ac9307977}
       \strng{authorfullhash}{47b9767c96358d7eca2e638ac9307977}
       \strng{authorfullhashraw}{47b9767c96358d7eca2e638ac9307977}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part P: Journal of Sports Engineering and Technology}
@@ -678,8 +854,8 @@
       \strng{authornamehash}{756590863184b6c178c4a82a6de880b7}
       \strng{authorfullhash}{756590863184b6c178c4a82a6de880b7}
       \strng{authorfullhashraw}{756590863184b6c178c4a82a6de880b7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Dynamic Systems, Measurement, and Control}
@@ -710,8 +886,8 @@
       \strng{authornamehash}{873ed4942f475194f61032675c77e9b1}
       \strng{authorfullhash}{873ed4942f475194f61032675c77e9b1}
       \strng{authorfullhashraw}{873ed4942f475194f61032675c77e9b1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Analytical Chemistry}

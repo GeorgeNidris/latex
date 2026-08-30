@@ -1,4 +1,4 @@
-PWD C:\Local Drive (to sync with HDD)\Διπλωματική\Diplomatiki latex
+PWD c:\Local Drive (to sync with HDD)\Διπλωματική\Diplomatiki latex
 INPUT C:\Users\user\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT main.tex
 OUTPUT main.log
@@ -351,11 +351,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-case-expl3.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-case-expl3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\subfigure\subfigure.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
@@ -507,10 +502,10 @@ INPUT .\Theoria\Theoria.tex
 INPUT Theoria\Theoria.tex
 INPUT .\Theoria\Theoria.tex
 INPUT Theoria\Theoria.tex
-INPUT .\Theoria\TyreTheory.tex
-INPUT Theoria\TyreTheory.tex
-INPUT .\Theoria\TyreTheory.tex
-INPUT Theoria\TyreTheory.tex
+INPUT .\Theoria\TyreForces.tex
+INPUT Theoria\TyreForces.tex
+INPUT .\Theoria\TyreForces.tex
+INPUT Theoria\TyreForces.tex
 INPUT .\figures\fig_tire_contact.tex
 INPUT .\figures\fig_tire_contact.tex
 INPUT figures\fig_tire_contact.tex
@@ -526,6 +521,10 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\figures\force-vs-slip_haney2004.png
 INPUT .\figures\force-vs-slip_haney2004.png
 INPUT figures\force-vs-slip_haney2004.png
+INPUT .\Theoria\TyreTemperature.tex
+INPUT Theoria\TyreTemperature.tex
+INPUT .\Theoria\TyreTemperature.tex
+INPUT Theoria\TyreTemperature.tex
 INPUT .\Theoria\HeatMechanisms.tex
 INPUT .\Theoria\HeatMechanisms.tex
 INPUT Theoria\HeatMechanisms.tex
@@ -536,12 +535,61 @@ INPUT .\Theoria\Methodoi Fthoras.tex
 INPUT Theoria\Methodoi Fthoras.tex
 INPUT .\Theoria\Methodoi Fthoras.tex
 INPUT Theoria\Methodoi Fthoras.tex
-INPUT .\Theoria\MethodoiFthorasContent.tex
-INPUT .\Theoria\MethodoiFthorasContent.tex
-INPUT Theoria\MethodoiFthorasContent.tex
-INPUT .\Theoria\MethodoiFthorasContent.tex
-INPUT .\Theoria\MethodoiFthorasContent.tex
-INPUT Theoria\MethodoiFthorasContent.tex
+INPUT .\figures\wear-vs-temperature.png
+INPUT .\figures\wear-vs-temperature.png
+INPUT figures\wear-vs-temperature.png
+INPUT .\figures\Tyre-graining.jpg
+INPUT .\figures\Tyre-graining.jpg
+INPUT figures\Tyre-graining.jpg
+INPUT .\figures\Tyre-blistering.jpg
+INPUT .\figures\Tyre-blistering.jpg
+INPUT figures\Tyre-blistering.jpg
+INPUT .\figures\traction-vs-wear.png
+INPUT .\figures\traction-vs-wear.png
+INPUT figures\traction-vs-wear.png
+INPUT .\Tyremodel\TyreModel.tex
+INPUT Tyremodel\TyreModel.tex
+INPUT .\Tyremodel\TyreModel.tex
+INPUT Tyremodel\TyreModel.tex
+INPUT .\Tyremodel\CombinedSlip.tex
+INPUT .\Tyremodel\CombinedSlip.tex
+INPUT Tyremodel\CombinedSlip.tex
+INPUT .\Tyremodel\CombinedSlip.tex
+INPUT .\Tyremodel\CombinedSlip.tex
+INPUT Tyremodel\CombinedSlip.tex
+INPUT .\figures\fig_slip_angle.tex
+INPUT .\figures\fig_slip_angle.tex
+INPUT figures\fig_slip_angle.tex
+INPUT .\figures\fig_slip_angle.tex
+INPUT .\figures\fig_slip_angle.tex
+INPUT figures\fig_slip_angle.tex
+INPUT .\figures\lateral-tyre.jpg
+INPUT .\figures\lateral-tyre.jpg
+INPUT figures\lateral-tyre.jpg
+INPUT .\figures\temp-scaling-factor.jpg
+INPUT .\figures\temp-scaling-factor.jpg
+INPUT figures\temp-scaling-factor.jpg
+INPUT .\figures\wear-scaling-factor.jpg
+INPUT .\figures\wear-scaling-factor.jpg
+INPUT figures\wear-scaling-factor.jpg
+INPUT .\Tyremodel\ThermalModel.tex
+INPUT .\Tyremodel\ThermalModel.tex
+INPUT Tyremodel\ThermalModel.tex
+INPUT .\Tyremodel\ThermalModel.tex
+INPUT .\Tyremodel\ThermalModel.tex
+INPUT Tyremodel\ThermalModel.tex
+INPUT .\Tyremodel\WearModel.tex
+INPUT .\Tyremodel\WearModel.tex
+INPUT Tyremodel\WearModel.tex
+INPUT .\Tyremodel\WearModel.tex
+INPUT .\Tyremodel\WearModel.tex
+INPUT Tyremodel\WearModel.tex
+INPUT .\Tyremodel\ParameterTables.tex
+INPUT .\Tyremodel\ParameterTables.tex
+INPUT Tyremodel\ParameterTables.tex
+INPUT .\Tyremodel\ParameterTables.tex
+INPUT .\Tyremodel\ParameterTables.tex
+INPUT Tyremodel\ParameterTables.tex
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT VehicleModel\VehicleModel.tex
@@ -551,28 +599,6 @@ INPUT VehicleModel\VehicleModel.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\Tyremodel\TyreModel.tex
-INPUT Tyremodel\TyreModel.tex
-INPUT .\Tyremodel\TyreModel.tex
-INPUT Tyremodel\TyreModel.tex
-INPUT .\Tyremodel\CombinedSlip.tex
-INPUT .\Tyremodel\CombinedSlip.tex
-INPUT Tyremodel\CombinedSlip.tex
-INPUT .\Tyremodel\CombinedSlip.tex
-INPUT .\Tyremodel\CombinedSlip.tex
-INPUT Tyremodel\CombinedSlip.tex
-INPUT .\figures\fig_slip_angle.tex
-INPUT .\figures\fig_slip_angle.tex
-INPUT figures\fig_slip_angle.tex
-INPUT .\figures\fig_slip_angle.tex
-INPUT .\figures\fig_slip_angle.tex
-INPUT figures\fig_slip_angle.tex
-INPUT .\Tyremodel\ThermalModel.tex
-INPUT .\Tyremodel\ThermalModel.tex
-INPUT Tyremodel\ThermalModel.tex
-INPUT .\Tyremodel\ThermalModel.tex
-INPUT .\Tyremodel\ThermalModel.tex
-INPUT Tyremodel\ThermalModel.tex
 INPUT .\LapSim\LapSim.tex
 INPUT LapSim\LapSim.tex
 INPUT .\LapSim\LapSim.tex

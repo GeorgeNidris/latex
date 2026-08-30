@@ -1,55 +1,48 @@
-% ----- TikZ: flowchart slip estimation -----
+% ----- TikZ: high-level slip estimation pipeline -----
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node distance=0.52cm and 0.8cm,
-    block/.style={rectangle,draw=black,fill=blue!8,text width=3.6cm,
-                  align=center,rounded corners=4pt,minimum height=0.88cm,font=\small},
-    decision/.style={diamond,draw=black,fill=orange!15,text width=2.2cm,
-                     align=center,font=\scriptsize,inner sep=1pt},
-    io/.style={rectangle,draw=black!60,fill=green!10,text width=3.2cm,
-               align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
-    outbox/.style={rectangle,draw=black!60,fill=red!8,text width=3.3cm,
-                align=center,rounded corners=2pt,font=\small,minimum height=0.78cm},
-    arr/.style={->,thick,gray!70!black}
+    node distance=0.55cm and 1.0cm,
+    block/.style   ={rectangle, draw=black, fill=white,      text width=5.2cm,
+                     align=center, rounded corners=4pt, minimum height=0.9cm, font=\small},
+    io/.style      ={rectangle, draw=black, fill=black!5,    text width=5.2cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small},
+    outbox/.style  ={rectangle, draw=black, fill=black!12,   text width=5.2cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small\bfseries},
+    decision/.style={diamond,   draw=black, fill=white,      text width=2.4cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
+    arr/.style     ={->, thick, black}
 ]
-  \node[io] (inp1) {$R(s)$, $v(s)$\\(track + velocity)};
 
-  \node[block,below=of inp1] (resamp)
-    {Επαναδειγματοληψία\\500 σημεία};
-  \draw[arr] (inp1)--(resamp);
+  \node[io]                       (inp)    {Είσοδοι: γεωμετρία πίστας, ταχύτητα};
+  \node[block, below=of inp]      (resamp) {Επαναδειγματοληψία σε ομοιόμορφο πλέγμα};
+  \node[block, below=of resamp]   (kinem)  {Κινηματική προεπεξεργασία και εξομάλυνση};
+  \node[block, below=of kinem]    (fz)     {Κατανομή κατακόρυφων φορτίων ανά τροχό};
+  \node[block, below=of fz]       (solve)  {Επίλυση ισορροπίας για γωνία διεύθυνσης \\ και πλευρική ολίσθηση αμαξώματος};
+  \node[decision, below=of solve] (conv)   {σύγκλιση;};
+  \node[block, below=of conv]     (wheels) {Υπολογισμός ταχυτήτων ανά τροχό};
+  \node[block, below=of wheels]   (slip)   {Υπολογισμός γωνιών και λόγων ολίσθησης};
+  \node[outbox, below=of slip]    (out)    {Έξοδος: ολισθήσεις και δυνάμεις ανά τροχό};
 
-  \node[block,below=of resamp] (kinem)
-    {$a_x = v\,dv/ds$\\ $a_y = v^2/R$\\+ Savitzky-Golay};
-  \draw[arr] (resamp)--(kinem);
+  \draw[arr] (inp)    -- (resamp);
+  \draw[arr] (resamp) -- (kinem);
+  \draw[arr] (kinem)  -- (fz);
+  \draw[arr] (fz)     -- (solve);
+  \draw[arr] (solve)  -- (conv);
+  \draw[arr] (conv)   -- node[right, font=\scriptsize]{ναι} (wheels);
+  \draw[arr] (wheels) -- (slip);
+  \draw[arr] (slip)   -- (out);
 
-  \node[block,below=of kinem] (fz)
-    {Κατανομή $F_{z,i}$\\(weight transfer)};
-  \draw[arr] (kinem)--(fz);
+  % failure branch
+  \node[font=\scriptsize, right=0.8cm of conv, align=center]
+    (fail) {επισήμανση\\ασύγκλιτου σημείου};
+  \draw[arr, dashed] (conv.east) -- (fail.west)
+      node[midway, above, font=\scriptsize]{όχι};
 
-  \node[block,below=of fz] (solver)
-    {Solver 2-DOF\\$\delta$, $\beta$: \texttt{lsqnonlin}\\$\sum F_{\rm global} = m\mathbf{a}$};
-  \draw[arr] (fz)--(solver);
-
-  \node[decision,below=0.6cm of solver] (conv) {converged?};
-  \draw[arr] (solver)--(conv);
-
-  \node[block,below=0.6cm of conv] (vel)
-    {Ταχύτητες τροχών $\mathbf{v}_i^{\rm tyre}$\\(kinematic xforms)};
-  \draw[arr] (conv)--node[right,font=\scriptsize]{ναι}(vel);
-
-  \node[font=\scriptsize,right=1.0cm of conv] (flag) {\textit{flag: unconverged}};
-  \draw[arr,dashed] (conv.east)--(flag.west) node[midway,above,font=\scriptsize]{όχι};
-
-  \node[block,below=of vel] (slip)
-    {$\alpha_i = \arctan(v_y/v_x)$\\$\kappa_i$ από ισορροπία};
-  \draw[arr] (vel)--(slip);
-
-  \node[outbox,below=of slip] (outp)
-    {\textbf{Έξοδος}: $\alpha_i$, $\kappa_i$,\\$F_{z,i}$, $\delta$, $\beta$ ανά $s_k$};
-  \draw[arr] (slip)--(outp);
 \end{tikzpicture}
-\caption{Pipeline εκτίμησης μεγεθών ολίσθησης από δεδομένα χρονοσειράς.}
+\caption{Ροή εκτίμησης ολισθήσεων και δυνάμεων ανά τροχό από δεδομένα πίστας και
+ταχύτητας. Το ακριβές περιεχόμενο κάθε βήματος (κινηματικές σχέσεις, κριτήριο
+σύγκλισης, μοντέλο κατανομής φορτίων) περιγράφεται στο κείμενο.}
 \label{fig:slip_est_flow}
 \end{figure}
 % ----- τέλος flowchart -----

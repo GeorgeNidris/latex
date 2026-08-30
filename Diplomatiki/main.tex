@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{afterpage}
 
 \usepackage{tikz}
@@ -20,6 +20,16 @@
 
 \crefname{figure}{σχήμα}{σχήματα}
 \Crefname{figure}{Σχήμα}{Σχήματα}
+\crefname{section}{κεφάλαιο}{κεφάλαια}
+\Crefname{section}{Κεφάλαιο}{Κεφάλαια}
+\crefname{subsection}{υποκεφάλαιο}{υποκεφάλαια}
+\Crefname{subsection}{Υποκεφάλαιο}{Υποκεφάλαια}
+\AtBeginDocument{%
+  \renewcommand{\creflastconjunction}{ και }%
+  \renewcommand{\crefpairconjunction}{ και }%
+  \renewcommand{\crefmiddleconjunction}{, }%
+  \renewcommand{\crefrangeconjunction}{ έως }%
+}
 
 \usepackage{polyglossia}
 \usepackage[calc]{datetime2}
@@ -46,8 +56,17 @@
 \addbibresource{bibliography/references.bib}
 
 
-\usepackage{subfigure}
 \usepackage{subcaption}
+\newcommand{\greekalph}[1]{%
+  \ifcase\value{#1}\or α\or β\or γ\or δ\or ε\or ζ\or
+                     η\or θ\or ι\or κ\or λ\or μ\fi}
+
+\renewcommand{\thesubfigure}{\greekalph{subfigure}}
+
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure.}
+\makeatother
+
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{array}
@@ -129,6 +148,7 @@
 \newcommand{\myTitle}{Προσομοίωση γύρου αγωνιστικού οχήματος με ενσωματωμένο θερμοδυναμικό μοντέλο ελαστικών}
 
 \newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\degC}{^{\circ}\mathrm{C}}
 \newcommand{\half}{\dfrac{1}{2}}
 \newcommand{\ub}{\tilde{u}}
 \newcommand{\rb}{\tilde{\rho}}
@@ -162,14 +182,13 @@
 \fancyhead[L]{\rightmark}
 \fancyfoot[R]{\text{{Σελίδα \thepage{} από \pageref{TextLastPage}}}}
 \fancyfoot[C]{}
-\fancyfoot[L]{\myClass}
+\fancyfoot[L]{}%\myClass
 
 \pagenumbering{arabic}
-\newpage
-%\subfile{Intro}
-\subfile{Contents}
  \numberwithin{equation}{section}
-
+\newpage
+\subfile{Contents}
+\label{TextLastPage}
 \setcounter{equation}{0}
 \clearpage
 \appendix

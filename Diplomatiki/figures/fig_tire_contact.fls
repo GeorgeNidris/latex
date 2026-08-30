@@ -1,0 +1,4 @@
+PWD C:\Local Drive (to sync with HDD)\Διπλωματική\Diplomatiki latex\figures
+INPUT C:\Users\user\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
+INPUT fig_tire_contact.tex
+OUTPUT fig_tire_contact.log

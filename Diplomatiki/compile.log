@@ -1,0 +1,859 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\xetex.def)))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty)
+(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty)
+(C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty)))
+(C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty)))
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Program Files\MiKTeX\tex/generic/stringenc\stringenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty)))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hxetex.def
+(C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+(C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty)))
+(C:\Program Files\MiKTeX\tex/latex/tools\afterpage.sty)
+(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)))
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
+tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-xetex.def
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-dvipdfmx.def
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def))))
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
+tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
+ex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
+x)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
+.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
+tex) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
+x) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty))
+ (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex) (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rycalc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytrees.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rypositioning.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.t
+ex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rychains.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.geometric.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geom
+etric.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.pathreplacing.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
+tions.pathreplacing.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.pathmorphing.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
+tions.pathmorphing.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.misc.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc
+.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.symbols.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symb
+ols.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.arrows.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arro
+ws.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.callouts.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.call
+outs.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.multipart.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mult
+ipart.code.tex)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rymatrix.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rypatterns.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex)
+) (C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-xetex.def)))
+(C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec.cfg)))
+(C:\Program Files\MiKTeX\tex/latex/cleveref\cleveref.sty)
+==> First Aid for cleveref.sty applied!
+
+! LaTeX Error: Command \creflastconjunction undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \renewcommand{\creflastconjunction}
+                                        { και }        % "1 και 2"
+
+! LaTeX Error: Command \crefpairconjunction undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \renewcommand{\crefpairconjunction}
+                                        { και }        % pair separator
+
+! LaTeX Error: Command \crefmiddleconjunction undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \renewcommand{\crefmiddleconjunction}
+                                          {, }         % "1, 2, και 3"
+
+! LaTeX Error: Command \crefrangeconjunction undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \renewcommand{\crefrangeconjunction}
+                                         { έως }
+(C:\Program Files\MiKTeX\tex/latex/polyglossia\polyglossia.sty
+(C:\Program Files\MiKTeX\tex/latex/polyglossia\gloss-latex.ldf))
+(C:\Program Files\MiKTeX\tex/latex/datetime2\datetime2.sty
+(C:\Program Files\MiKTeX\tex/latex/tracklang\tracklang.sty
+(C:\Program Files\MiKTeX\tex/generic/tracklang\tracklang.tex))
+(C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex)))
+(C:\Program Files\MiKTeX\tex/latex/datetime2-english\datetime2-en-US.ldf
+(C:\Program Files\MiKTeX\tex/latex/datetime2-english\datetime2-english-base.ldf
+)) (C:\Program Files\MiKTeX\tex/latex/datetime2\datetime2-calc.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfcalendar.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfcalendar.code.tex))))
+(C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty)
+(C:\Program Files\MiKTeX\tex/latex/lastpage\lastpage.sty
+(C:\Program Files\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+(C:\Program Files\MiKTeX\tex/latex/lastpage\lastpagemodern.sty) 
+)) (C:\Program Files\MiKTeX\tex/latex/inconsolata\inconsolata.fontspec)
+(C:\Program Files\MiKTeX\tex/latex/polyglossia\gloss-greek.ldf
+(C:\Program Files\MiKTeX\tex/latex/polyglossia\xgreek-fixes.def))
+(C:\Program Files\MiKTeX\tex/latex/polyglossia\gloss-english.ldf)
+(C:\Program Files\MiKTeX\tex/latex/subfiles\subfiles.sty
+(C:\Program Files\MiKTeX\tex/latex/import\import.sty))
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def))
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-unicode.def)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def)
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx))
+(C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty))
+(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg))
+(C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+(C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty)))
+(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty)
+(C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty)
+(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty)
+(C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty)
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
+(C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg))
+(C:\Program Files\MiKTeX\tex/latex/framed\framed.sty)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty) (main_new.aux)
+(main_new.out) (main_new.out)
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\american.lbx
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx)
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx))
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\greek.lbx)
+No file main_new.bbl.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(Title.tex (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd)) [1] (main_new.toc
+[2]) [3] (main_new.lof) [4] (Contents.tex (Introduction/Intro.tex
+
+LaTeX Warning: Citation 'West2022' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 1 undefined on input line 14.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 1 undefined on input line 55.
+
+[1])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 2 undefined on input line 3.
+
+[2] (Theoria/Theoria.tex (Theoria/TyreForces.tex
+
+LaTeX Warning: Citation 'Pacejka2012' on page 3 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'Farroni2014TRT' on page 3 undefined on input line 7.
+
+(figures/fig_tire_contact.tex)
+
+LaTeX Warning: Citation 'Pacejka2012' on page 3 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Perantoni2014' on page 3 undefined on input line 19.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 3 undefined on input line 20.
+
+[3]
+
+LaTeX Warning: Citation 'Pacejka2012' on page 4 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Perantoni2014' on page 4 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Pacejka2012' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Sakhnevych2022' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Pacejka2012' on page 4 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Sakhnevych2022' on page 4 undefined on input line 45.
+
+
+Overfull \hbox (4.32332pt too wide) in paragraph at lines 38--46
+[]\TU/CMUSerif(1)/m/n/12 Η επιφάνεια του πέλματος διακρίνεται στη βιβλιογραφία 
+στην περιοχή προσκόλλησης (\TU/CMUSerif(1)/m/it/12 adhesion
+
+LaTeX Warning: Citation 'Sakhnevych2022' on page 4 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'Pacejka2012' on page 4 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'haney2025racing' on page 4 undefined on input line 67.
+
+
+
+LaTeX Warning: Citation 'haney2025racing' on page 4 undefined on input line 67.
+
+
+
+LaTeX Warning: Citation 'Pacejka2012' on page 4 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'Perantoni2014' on page 4 undefined on input line 78.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 4 undefined on input line 92.
+
+[4]
+
+LaTeX Warning: Citation 'Pacejka2012' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation 'Sakhnevych2022' on page 5 undefined on input line 108.
+
+
+) (Theoria/TyreTemperature.tex
+
+LaTeX Warning: Citation 'West2022' on page 5 undefined on input line 9.
+
+! Undefined control sequence.
+l.11 ...κρασία πέλματος περίπου μεταξύ $90\degrees
+                                                  \mathrm{C}$ και
+! Undefined control sequence.
+l.12 $105\degrees
+                 \mathrm{C}$ . Επομένως, σε ένα μοντέλο οχήματος που
+
+LaTeX Warning: Citation 'WikipediaDualAxisSteering' on page 5 undefined on inpu
+t line 17.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 5 undefined on input line 19.
+
+[5]
+
+LaTeX Warning: Citation 'Grosch1963' on page 6 undefined on input line 26.
+
+) (Theoria/HeatMechanisms.tex
+
+LaTeX Warning: Citation 'West2022' on page 6 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 6 undefined on input line 8.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 6 undefined on input line 17.
+
+[6]
+
+LaTeX Warning: Citation 'Farroni2014TRT' on page 7 undefined on input line 26.
+
+) (Theoria/Methodoi Fthoras.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 7 undefined on input line 4.
+
+[7]
+
+LaTeX Warning: Citation 'WangKTH2017' on page 8 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'Grosch1963' on page 8 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'WangKTH2017' on page 8 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'West2022' on page 8 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'Grosch1963' on page 8 undefined on input line 58.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 8 undefined on input line 59.
+
+[8]
+
+LaTeX Warning: Citation 'Grosch1963' on page 9 undefined on input line 67.
+
+
+LaTeX Warning: Citation 'West2022' on page 9 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'West2022' on page 9 undefined on input line 77.
+
+
+LaTeX Warning: Citation 'West2022' on page 9 undefined on input line 83.
+
+
+LaTeX Warning: Citation 'Grosch1963' on page 9 undefined on input line 83.
+
+
+LaTeX Warning: Citation 'West2022' on page 9 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 9 undefined on input line 92.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 9 undefined on input line 118.
+
+[9]
+
+LaTeX Warning: Citation 'WangKTH2017' on page 10 undefined on input line 146.
+
+
+LaTeX Warning: Citation 'WangKTH2017' on page 10 undefined on input line 153.
+
+
+LaTeX Warning: Citation 'West2022' on page 10 undefined on input line 168.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 10 undefined on input line 168.
+
+
+LaTeX Warning: Citation 'West2022' on page 10 undefined on input line 173.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 10 undefined on input line 8.
+
+[10])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 11 undefined on input line 6.
+
+[11]
+Overfull \hbox (11.54784pt too wide) in paragraph at lines 7--7
+[]\TU/CMUSerif(1)/b/n/17.28 Μαθηματική & θερμοδυναμική μοντέλοποίηση ελα-
+(Tyremodel/TyreModel.tex (Tyremodel/CombinedSlip.tex
+(figures/fig_slip_angle.tex)
+
+LaTeX Warning: Reference ` eq:lateral_tyre_force' on page 1 undefined on input 
+line 44.
+
+! Misplaced alignment tab character &.
+<argument> Tremblett &
+                       Limebeer
+l.48 των \textit{Tremblett & Limebeer}
+                                       \cite{Tremlett2016} αφενός διότι περι...
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 12 undefined on input line 48.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 12 undefined on input line 55.
+
+[12]) (Tyremodel/ThermalModel.tex
+
+LaTeX Warning: Citation 'Farroni2014TRT' on page 13 undefined on input line 11.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 13 undefined on input line 23.
+
+[13]
+
+LaTeX Warning: Reference `eq:Q2' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Reference `eq:Q1' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Reference `eq:Q3' on page 1 undefined on input line 40.
+
+) (Tyremodel/WearModel.tex
+
+LaTeX Warning: Citation 'West2022' on page 14 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'Grosch1963' on page 14 undefined on input line 9.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 14 undefined on input line 14.
+
+[14]
+
+LaTeX Warning: Citation 'Farroni2019' on page 15 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'West2022' on page 15 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 15 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Grosch1963' on page 15 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'West2022' on page 15 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'Archard1953' on page 15 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'West2022' on page 15 undefined on input line 55.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 15 undefined on input line 67.
+
+[15]
+
+LaTeX Warning: Citation 'West2022' on page 16 undefined on input line 72.
+
+
+LaTeX Warning: Citation 'Tremlett2016' on page 16 undefined on input line 72.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 16 undefined on input line 19.
+
+[16]
+
+LaTeX Warning: Float too large for page by 149.67664pt on input line 86.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 17 undefined on input line 9.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 18 undefined on input line 9.
+
+[18] (VehicleModel/VehicleModel.tex
+
+LaTeX Warning: Citation 'Milliken1995' on page 19 undefined on input line 20.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 19 undefined on input line 150.
+
+
+[19])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 20 undefined on input line 12.
+
+[20]
+Overfull \hbox (12.30722pt too wide) in paragraph at lines 13--13
+[]\TU/CMUSerif(1)/b/n/17.28 Ενσωμάτωση μοντέλου ελαστικών σε προσομοιωτή
+(LapSim/LapSim.tex (LapSim/SlipEstimation.tex (figures/fig_slip_est_flow.tex))
+(LapSim/ParameterID.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 21 undefined on input line 13.
+
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 22 undefined on input line 13.
+
+[22]
+Overfull \hbox (41.67683pt too wide) in paragraph at lines 36--40
+[]\TU/CMUSerif(1)/m/n/12 Ένα κλασικό πρόβλημα στην παραμετρική αναγνώριση ΟΔΕ ε
+ίναι η \TU/CMUSerif(1)/m/it/12 αναγνωρισιμότητα \TU/CMUSerif(1)/m/n/12 (identif
+iability):
+) (LapSim/GGV.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 23 undefined on input line 21.
+
+[23]
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no × in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+(figures/fig_ggv_flow.tex)))
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 24 undefined on input line 15.
+
+[24]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 25 undefined on input line 15.
+
+[25] (Results/Results.tex
+Overfull \hbox (15.48427pt too wide) in paragraph at lines 66--70
+[]\TU/CMUSerif(1)/m/n/12 Ο ρυθμός φθοράς $\OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$ \TU/CMUSerif(1)/m/n/12 αντικατοπτρίζει τη 
+συνισταμένη και των τριών μηχανισμών (abrasion,
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 26 undefined on input line 18.
+
+[26] (Conclusions/Conclusions.tex
+Missing character: There is no → in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+Missing character: There is no → in font CMU Serif Roman/OT:script=latn;languag
+e=dflt;mapping=tex-text;!
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `TextLastPage' on page 27 undefined on input line 21.
+
+[27] (bibliography/bibliography.tex
+
+LaTeX Warning: Empty bibliography on input line 2.
+
+))
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 88.
+See the caption package documentation for explanation.
+
+
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(main_new.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main_new
+(biblatex)                and rerun LaTeX afterwards.
+
+ )
+(see the transcript file for additional information)
+Output written on main_new.pdf (31 pages).
+Transcript written on main_new.log.

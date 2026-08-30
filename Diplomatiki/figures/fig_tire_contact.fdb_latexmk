@@ -1,0 +1,15 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "fig_tire_contact.xdv" "fig_tire_contact.pdf" "fig_tire_contact" 0 -1
+  "fig_tire_contact.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "fig_tire_contact.pdf"
+  (rewritten before read)
+["xelatex"] 1787871920.6712 "fig_tire_contact.tex" "fig_tire_contact.xdv" "fig_tire_contact" 1787871922.0695 2
+  "C:/Users/user/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1787531363 27207138 8911bada72d59e49d1e90872d56009dc ""
+  "fig_tire_contact.aux" 1787871912 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "fig_tire_contact.tex" 1787871659 5123 ccf526e77a9e80a944931d7c093885b7 ""
+  (generated)
+  "fig_tire_contact.aux"
+  "fig_tire_contact.log"
+  "fig_tire_contact.xdv"
+  (rewritten before read)
