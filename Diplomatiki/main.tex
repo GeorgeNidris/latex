@@ -137,6 +137,17 @@
 
 \lstset{style=mystyle}
 
+\usepackage{setspace}
+\setstretch{1.12}      % arbitrary factor
+
+\AtBeginDocument{%
+  \setlength{\abovedisplayskip}{12pt plus 2pt minus 2pt}%
+  \setlength{\belowdisplayskip}{15pt plus 3pt minus 3pt}%
+  \setlength{\abovedisplayshortskip}{6pt plus 2pt minus 2pt}%
+  \setlength{\belowdisplayshortskip}{15pt plus 3pt minus 3pt}%
+}
+
+\usepackage{longtable}
 
 %--------------------------------------------%
 
@@ -174,6 +185,8 @@
 \newpage
 \listoffigures
 \newpage
+\clearpage
+\input{Nomenclature}
 \clearpage
 
 \pagestyle{fancy}
