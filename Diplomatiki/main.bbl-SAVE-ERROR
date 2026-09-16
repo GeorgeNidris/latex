@@ -747,108 +747,6 @@
       \field{pages}{1627\bibrangedash 1639}
       \range{pages}{13}
     \endentry
-    \entry{mathworks_lsqnonlin}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=f7e77d254db6886d60f16d8cc7d84ee7}{%
-           family={{The MathWorks, Inc.}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {MATLAB Optimization Toolbox Documentation}%
-      }
-      \strng{namehash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{fullhash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{fullhashraw}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{bibnamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{authorbibnamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{authornamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{authorfullhash}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \strng{authorfullhashraw}{f7e77d254db6886d60f16d8cc7d84ee7}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{\texttt{lsqnonlin}: Solve nonlinear least-squares (nonlinear data-fitting) problems}
-      \verb{urlraw}
-      \verb https://www.mathworks.com/help/optim/ug/lsqnonlin.html
-      \endverb
-      \verb{url}
-      \verb https://www.mathworks.com/help/optim/ug/lsqnonlin.html
-      \endverb
-    \endentry
-    \entry{nocedal2006numerical}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=88a342d927bf795b0d92af8a5613da31}{%
-           family={Nocedal},
-           familyi={N\bibinitperiod},
-           given={Jorge},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c49efb16d3fa7eef002cc3620d42ab8a}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={Stephen\bibnamedelima J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{fullhash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{fullhashraw}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{bibnamehash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{authorbibnamehash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{authornamehash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{authorfullhash}{5b8fd28f6245ae8b0af119560622fa4f}
-      \strng{authorfullhashraw}{5b8fd28f6245ae8b0af119560622fa4f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{isbn}{978-0-387-30303-1}
-      \field{series}{Springer Series in Operations Research and Financial Engineering}
-      \field{title}{Numerical Optimization}
-      \field{year}{2006}
-      \verb{doi}
-      \verb 10.1007/978-0-387-40065-5
-      \endverb
-    \endentry
-    \entry{suttill2025treadwear}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=0567f74a29c845477393a05e8e7d8193}{%
-           family={Suttill},
-           familyi={S\bibinitperiod},
-           given={Josh},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Raceteq}%
-      }
-      \strng{namehash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{fullhash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{fullhashraw}{0567f74a29c845477393a05e8e7d8193}
-      \strng{bibnamehash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{authorbibnamehash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{authornamehash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{authorfullhash}{0567f74a29c845477393a05e8e7d8193}
-      \strng{authorfullhashraw}{0567f74a29c845477393a05e8e7d8193}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{9}
-      \field{title}{Behind the scenes with {Pirelli} -- how {F1} tread wear is measured}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://www.raceteq.com/articles/2025/09/how-tread-wear-is-measured-f1-pirelli
-      \endverb
-      \verb{url}
-      \verb https://www.raceteq.com/articles/2025/09/how-tread-wear-is-measured-f1-pirelli
-      \endverb
-    \endentry
     \entry{Dixon1996}{book}{}{}
       \name{author}{1}{}{%
         {{hash=db8a4a92ec4b7d4cf16fd5b0b8c89205}{%
@@ -871,8 +769,8 @@
       \strng{authornamehash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
       \strng{authorfullhash}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
       \strng{authorfullhashraw}{db8a4a92ec4b7d4cf16fd5b0b8c89205}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -902,8 +800,8 @@
       \strng{authornamehash}{e18baab507107bfd84851fbc73ec658c}
       \strng{authorfullhash}{e18baab507107bfd84851fbc73ec658c}
       \strng{authorfullhashraw}{e18baab507107bfd84851fbc73ec658c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Science of Vehicle Dynamics}
@@ -1015,8 +913,8 @@
       \strng{authornamehash}{f1cfc37bba1763cf809e945e8965e251}
       \strng{authorfullhash}{f1cfc37bba1763cf809e945e8965e251}
       \strng{authorfullhashraw}{f1cfc37bba1763cf809e945e8965e251}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Vehicle System Dynamics}
@@ -1155,6 +1053,36 @@
       \field{volume}{137}
       \field{year}{2015}
       \true{nocite}
+    \endentry
+    \entry{mathworks_lsqnonlin}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f7e77d254db6886d60f16d8cc7d84ee7}{%
+           family={{The MathWorks, Inc.}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MATLAB Optimization Toolbox Documentation}%
+      }
+      \strng{namehash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{fullhash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{fullhashraw}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{bibnamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{authorbibnamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{authornamehash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{authorfullhash}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \strng{authorfullhashraw}{f7e77d254db6886d60f16d8cc7d84ee7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{\texttt{lsqnonlin}: Solve nonlinear least-squares (nonlinear data-fitting) problems}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.mathworks.com/help/optim/ug/lsqnonlin.html
+      \endverb
+      \verb{url}
+      \verb https://www.mathworks.com/help/optim/ug/lsqnonlin.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

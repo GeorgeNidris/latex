@@ -1,0 +1,86 @@
+\xpg@aux {}{greek}
+\contentsline {section}{Εισαγωγή - σκοπός}{1}{section*.5}%
+\contentsline {section}{\numberline {1}Βασικά στοιχεία θεωρίας ελαστικών}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Βασική θεωρία ελαστικού}{3}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Ανάπτυξη δυνάμεων στο ελαστικό}{3}{subsubsection.1.1.1}%
+\contentsline {paragraph}{Μοντέλο "βούρτσας" (brush model)}{3}{section*.10}%
+\contentsline {paragraph}{Φαινόμενο load sensitivity.}{5}{section*.12}%
+\contentsline {paragraph}{Μαθηματικά μοντέλα ελαστικών}{6}{section*.13}%
+\contentsline {subsubsection}{\numberline {1.1.2}Επίδραση θερμοκρασίας}{6}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}Μηχανισμοί παραγωγής θερμότητας}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Μηχανισμοί απαγωγής θερμότητας}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Μηχανισμοί φθοράς}{8}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Κατηγοριοποίηση μηχανισμών φθοράς}{9}{subsubsection.1.4.1}%
+\contentsline {paragraph}{Προσκολλητική (adhesive) φθορά.}{9}{section*.14}%
+\contentsline {paragraph}{Αποξεστική (abrasive) φθορά.}{9}{section*.15}%
+\contentsline {paragraph}{Φθορά κόπωσης (fatigue wear).}{9}{section*.16}%
+\contentsline {paragraph}{Χημική και διαβρωτική φθορά.}{9}{section*.17}%
+\contentsline {subsubsection}{\numberline {1.4.2}Η θεωρία των δύο μηχανισμών τριβής ελαστομερούς}{9}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Μακροσκοπικά φαινόμενα: σχηματισμός κόκκων (graining) και φυσαλίδων (blistering)}{10}{subsubsection.1.4.3}%
+\contentsline {paragraph}{Σχηματισμός κόκκων -- \textit {Graining}.}{10}{section*.19}%
+\contentsline {paragraph}{Σχηματισμός φυσαλίδων -- \textit {Blistering}.}{11}{section*.20}%
+\contentsline {subsubsection}{\numberline {1.4.4}Επίδραση κατακόρυφου φορτίου, πίεσης και γεωμετρίας ανάρτησης}{11}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}Σχέση φθοράς και πρόσφυσης}{12}{subsubsection.1.4.5}%
+\contentsline {section}{\numberline {2}Μαθηματική \& θερμοδυναμική μοντέλοποίηση ελαστικών}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Συνδυαστικό μοντέλο πρόσφυσης}{14}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Μεγέθη ολίσθησης}{14}{subsubsection.2.1.1}%
+\contentsline {paragraph}{Γωνία ολίσθησης $\alpha $ (Slip Angle).}{14}{section*.23}%
+\contentsline {paragraph}{Λόγος ολίσθησης $\kappa $ (Slip Ratio).}{15}{section*.25}%
+\contentsline {subsubsection}{\numberline {2.1.2}Μοντέλο Pacejka -- Combined Slip}{15}{subsubsection.2.1.2}%
+\contentsline {paragraph}{Φαινόμενο load sensitivity.}{16}{section*.27}%
+\contentsline {paragraph}{Αντιστροφή συνάρτησης}{17}{section*.28}%
+\contentsline {paragraph}{Εξάρτηση με θερμοκρασία και φθορά.}{17}{section*.30}%
+\contentsline {subsection}{\numberline {2.2}Εξάρτηση πρόσφυσης από θερμοκρασία}{18}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Εξάρτηση πρόσφυσης από φθορά}{19}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Περιγραφή θερμοδυναμικού μοντέλου ελαστικού}{20}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Υπολογισμός θερμότητας}{21}{subsubsection.2.4.1}%
+\contentsline {paragraph}{Θερμότητα λόγω τριβής.}{21}{section*.35}%
+\contentsline {paragraph}{Θερμότητα λόγω υστέρησης.}{21}{section*.36}%
+\contentsline {paragraph}{Θερμότητα συναγωγής.}{22}{section*.37}%
+\contentsline {paragraph}{Θερμότητα αγωγής με οδόστρωμα.}{22}{section*.38}%
+\contentsline {subsubsection}{\numberline {2.4.2}Εξίσωση κατάστασης}{23}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Μοντελοποίηση φθοράς}{23}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Ρυθμός τριβολογικής φθοράς}{23}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Ρυθμός graining}{25}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Ρυθμός blistering}{25}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Συνολικός ρυθμός φθοράς}{25}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Ολοκλήρωση σε συσσωρευμένη φθορά}{26}{subsubsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.6}Ανάλυση ευαισθησίας στις παραμέτρους του μοντέλου}{26}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Μοντέλο Οχήματος}{28}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Συστήματα συντεταγμένων}{28}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Κινηματικές εξισώσεις δίτροχου μοντέλου}{29}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Εξισώσεις κίνησης οχήματος}{29}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Υπολογισμός ταχυτήτων των τροχών}{30}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Υπολογισμός αεροδυναμικών φορτίσεων}{31}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Υπολογισμός μεταφοράς βάρους}{32}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Υπολογισμός κατακόρυφου φορτίου τροχών}{32}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Μοντελοποίηση πρόωσης και πέδησης}{34}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Μοντέλο πέδησης}{34}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Μοντέλο πρόωσης}{35}{subsubsection.3.6.2}%
+\contentsline {section}{\numberline {4}Εκτίμηση μεταβλητών κατάστασης οχήματος}{37}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Εισαγωγή -- επίλυση κατάστασης οχήματος}{37}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Υπολογισμός κινηματικών μεγεθών}{37}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Κατάστρωση εξισώσεων}{40}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Υπολογισμός ταχυτήτων και επιταχύνσεων}{41}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Υπολογισμός δυνάμεων}{41}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Υπολογισμός διαμήκων φορτίων}{42}{subsubsection.4.3.3}%
+\contentsline {paragraph}{Περίπτωση πρόωσης}{43}{section*.51}%
+\contentsline {paragraph}{Περίπτωση πέδησης}{43}{section*.52}%
+\contentsline {paragraph}{Κορεσμός}{44}{section*.53}%
+\contentsline {subsubsection}{\numberline {4.3.4}Τελικό σύστημα εξισώσεων}{45}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Αριθμητικός επιλύτης}{45}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Ορισμός αντικειμενικής συνάρτησης}{45}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Υλοποίηση περιορισμών}{45}{subsubsection.4.4.2}%
+\contentsline {paragraph}{Διαθέσιμη πρόσφυση ελαστικών}{46}{section*.55}%
+\contentsline {paragraph}{Συνθήκη μη-ανατροπής}{46}{section*.56}%
+\contentsline {subsection}{\numberline {4.5}Εξαγωγή αποτελεσμάτων}{46}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Μεταβλητές κατάστασης}{46}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Θερμοκρασία και φθορά}{48}{subsubsection.4.5.2}%
+\contentsline {paragraph}{Θερμοκρασία}{48}{section*.60}%
+\contentsline {paragraph}{Φθορά}{49}{section*.61}%
+\contentsline {section}{\numberline {5}Βαθμονόμηση θερμοδυναμικού μοντέλου από πειραματικά δεδομένα}{50}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Πειραματικές μετρήσεις}{50}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Προσδιορισμός παραμέτρων}{50}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Ενσωμάτωση μοντέλου ελαστικών σε προσομοιωτή γύρου}{52}{section.6}%
+\contentsline {section}{\numberline {7}Αποτελέσματα}{52}{section.7}%
+\contentsline {section}{\numberline {8}Συμπεράσματα - βελτιώσεις}{52}{section.8}%

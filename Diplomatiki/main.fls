@@ -247,6 +247,8 @@ INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzl
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypatterns.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
@@ -396,6 +398,16 @@ INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\mathtools\mathtools.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\mathtools\mhsetup.sty
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
@@ -426,45 +438,17 @@ INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT .\Title.tex
 INPUT .\Title.tex
 INPUT Title.tex
 INPUT .\Title.tex
 INPUT .\Title.tex
 INPUT Title.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT .\pyrforos_bw.jpg
 INPUT .\pyrforos_bw.jpg
 INPUT pyrforos_bw.jpg
-OUTPUT main.xdv
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
@@ -474,20 +458,40 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+OUTPUT main.xdv
+INPUT .\plagiarism.tex
+INPUT .\plagiarism.tex
+INPUT plagiarism.tex
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
 OUTPUT main.toc
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
 OUTPUT main.lof
+INPUT .\Nomenclature.tex
+INPUT .\Nomenclature.tex
+INPUT .\Nomenclature.tex
+INPUT .\Nomenclature.tex
+INPUT Nomenclature.tex
 INPUT .\Contents.tex
 INPUT .\Contents.tex
 INPUT Contents.tex
@@ -584,67 +588,141 @@ INPUT Tyremodel\WearModel.tex
 INPUT .\Tyremodel\WearModel.tex
 INPUT .\Tyremodel\WearModel.tex
 INPUT Tyremodel\WearModel.tex
-INPUT .\Tyremodel\ParameterTables.tex
-INPUT .\Tyremodel\ParameterTables.tex
-INPUT Tyremodel\ParameterTables.tex
-INPUT .\Tyremodel\ParameterTables.tex
-INPUT .\Tyremodel\ParameterTables.tex
-INPUT Tyremodel\ParameterTables.tex
+INPUT .\Tyremodel\SensitivityAnalysis.tex
+INPUT .\Tyremodel\SensitivityAnalysis.tex
+INPUT Tyremodel\SensitivityAnalysis.tex
+INPUT .\Tyremodel\SensitivityAnalysis.tex
+INPUT .\Tyremodel\SensitivityAnalysis.tex
+INPUT Tyremodel\SensitivityAnalysis.tex
+INPUT .\figures\sensitivity_analysis.jpg
+INPUT .\figures\sensitivity_analysis.jpg
+INPUT figures\sensitivity_analysis.jpg
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT VehicleModel\VehicleModel.tex
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT .\VehicleModel\VehicleModel.tex
 INPUT VehicleModel\VehicleModel.tex
+INPUT .\VehicleModel\VehicleKinematics.tex
+INPUT VehicleModel\VehicleKinematics.tex
+INPUT .\VehicleModel\VehicleKinematics.tex
+INPUT VehicleModel\VehicleKinematics.tex
+INPUT .\figures\two-track.png
+INPUT .\figures\two-track.png
+INPUT figures\two-track.png
+INPUT .\VehicleModel\AeroLoads.tex
+INPUT VehicleModel\AeroLoads.tex
+INPUT .\VehicleModel\AeroLoads.tex
+INPUT VehicleModel\AeroLoads.tex
+INPUT .\VehicleModel\WeightTransfer.tex
+INPUT VehicleModel\WeightTransfer.tex
+INPUT .\VehicleModel\WeightTransfer.tex
+INPUT VehicleModel\WeightTransfer.tex
+INPUT .\figures\longitudinal-weight-transfer.png
+INPUT .\figures\longitudinal-weight-transfer.png
+INPUT figures\longitudinal-weight-transfer.png
+INPUT .\figures\lateral-weight-transfer.png
+INPUT .\figures\lateral-weight-transfer.png
+INPUT figures\lateral-weight-transfer.png
+INPUT .\VehicleModel\AccelBraking.tex
+INPUT VehicleModel\AccelBraking.tex
+INPUT .\VehicleModel\AccelBraking.tex
+INPUT VehicleModel\AccelBraking.tex
+INPUT .\figures\Balance_bar_scheme.jpg
+INPUT .\figures\Balance_bar_scheme.jpg
+INPUT figures\Balance_bar_scheme.jpg
+INPUT .\StateSolver\stateSolver.tex
+INPUT .\StateSolver\stateSolver.tex
+INPUT StateSolver\stateSolver.tex
+INPUT .\StateSolver\stateSolver.tex
+INPUT .\StateSolver\stateSolver.tex
+INPUT StateSolver\stateSolver.tex
+INPUT .\StateSolver\introductoryExplanation.tex
+INPUT .\StateSolver\introductoryExplanation.tex
+INPUT StateSolver\introductoryExplanation.tex
+INPUT .\StateSolver\introductoryExplanation.tex
+INPUT .\StateSolver\introductoryExplanation.tex
+INPUT StateSolver\introductoryExplanation.tex
+INPUT .\figures\fig_slip_est_flow.tex
+INPUT .\figures\fig_slip_est_flow.tex
+INPUT figures\fig_slip_est_flow.tex
+INPUT .\figures\fig_slip_est_flow.tex
+INPUT .\figures\fig_slip_est_flow.tex
+INPUT figures\fig_slip_est_flow.tex
+INPUT .\StateSolver\kinematicPreparation.tex
+INPUT .\StateSolver\kinematicPreparation.tex
+INPUT StateSolver\kinematicPreparation.tex
+INPUT .\StateSolver\kinematicPreparation.tex
+INPUT .\StateSolver\kinematicPreparation.tex
+INPUT StateSolver\kinematicPreparation.tex
+INPUT .\figures\barcelona_curvilinear2.png
+INPUT .\figures\barcelona_curvilinear2.png
+INPUT figures\barcelona_curvilinear2.png
+INPUT .\StateSolver\equationPreparation.tex
+INPUT .\StateSolver\equationPreparation.tex
+INPUT StateSolver\equationPreparation.tex
+INPUT .\StateSolver\equationPreparation.tex
+INPUT .\StateSolver\equationPreparation.tex
+INPUT StateSolver\equationPreparation.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\figures\fig_induced_drag.tex
+INPUT figures\fig_induced_drag.tex
+INPUT .\figures\fig_induced_drag.tex
+INPUT figures\fig_induced_drag.tex
+INPUT .\figures\fig_longitudinal_force_flow.tex
+INPUT figures\fig_longitudinal_force_flow.tex
+INPUT .\figures\fig_longitudinal_force_flow.tex
+INPUT figures\fig_longitudinal_force_flow.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\LapSim\LapSim.tex
-INPUT LapSim\LapSim.tex
-INPUT .\LapSim\LapSim.tex
-INPUT LapSim\LapSim.tex
-INPUT .\LapSim\SlipEstimation.tex
-INPUT .\LapSim\SlipEstimation.tex
-INPUT LapSim\SlipEstimation.tex
-INPUT .\LapSim\SlipEstimation.tex
-INPUT .\LapSim\SlipEstimation.tex
-INPUT LapSim\SlipEstimation.tex
-INPUT .\figures\fig_slip_est_flow.tex
-INPUT .\figures\fig_slip_est_flow.tex
-INPUT figures\fig_slip_est_flow.tex
-INPUT .\figures\fig_slip_est_flow.tex
-INPUT .\figures\fig_slip_est_flow.tex
-INPUT figures\fig_slip_est_flow.tex
-INPUT .\LapSim\ParameterID.tex
-INPUT .\LapSim\ParameterID.tex
-INPUT LapSim\ParameterID.tex
-INPUT .\LapSim\ParameterID.tex
-INPUT .\LapSim\ParameterID.tex
-INPUT LapSim\ParameterID.tex
-INPUT .\LapSim\GGV.tex
-INPUT .\LapSim\GGV.tex
-INPUT LapSim\GGV.tex
-INPUT .\LapSim\GGV.tex
-INPUT .\LapSim\GGV.tex
-INPUT LapSim\GGV.tex
-INPUT .\figures\fig_ggv_flow.tex
-INPUT .\figures\fig_ggv_flow.tex
-INPUT figures\fig_ggv_flow.tex
-INPUT .\figures\fig_ggv_flow.tex
-INPUT .\figures\fig_ggv_flow.tex
-INPUT figures\fig_ggv_flow.tex
-INPUT .\Results\Results.tex
-INPUT .\Results\Results.tex
-INPUT Results\Results.tex
-INPUT .\Results\Results.tex
-INPUT .\Results\Results.tex
-INPUT Results\Results.tex
-INPUT .\Conclusions\Conclusions.tex
-INPUT .\Conclusions\Conclusions.tex
-INPUT Conclusions\Conclusions.tex
-INPUT .\Conclusions\Conclusions.tex
-INPUT .\Conclusions\Conclusions.tex
-INPUT Conclusions\Conclusions.tex
+INPUT .\StateSolver\numericalSolver.tex
+INPUT .\StateSolver\numericalSolver.tex
+INPUT StateSolver\numericalSolver.tex
+INPUT .\StateSolver\numericalSolver.tex
+INPUT .\StateSolver\numericalSolver.tex
+INPUT StateSolver\numericalSolver.tex
+INPUT .\figures\curveEntry.jpg
+INPUT .\figures\curveEntry.jpg
+INPUT figures\curveEntry.jpg
+INPUT .\figures\curveMiddle.jpg
+INPUT .\figures\curveMiddle.jpg
+INPUT figures\curveMiddle.jpg
+INPUT .\figures\curveExit.jpg
+INPUT .\figures\curveExit.jpg
+INPUT figures\curveExit.jpg
+INPUT .\figures\slipRatioFL.jpg
+INPUT .\figures\slipRatioFL.jpg
+INPUT figures\slipRatioFL.jpg
+INPUT .\figures\slipRatioFR.jpg
+INPUT .\figures\slipRatioFR.jpg
+INPUT figures\slipRatioFR.jpg
+INPUT .\figures\slipRatioRL.jpg
+INPUT .\figures\slipRatioRL.jpg
+INPUT figures\slipRatioRL.jpg
+INPUT .\figures\slipRatioRR.jpg
+INPUT .\figures\slipRatioRR.jpg
+INPUT figures\slipRatioRR.jpg
+INPUT .\figures\steerAngle.jpg
+INPUT .\figures\steerAngle.jpg
+INPUT figures\steerAngle.jpg
+INPUT .\figures\chassisSlipAngle.jpg
+INPUT .\figures\chassisSlipAngle.jpg
+INPUT figures\chassisSlipAngle.jpg
+INPUT .\ParameterFitting\ParameterFitting.tex
+INPUT .\ParameterFitting\ParameterFitting.tex
+INPUT ParameterFitting\ParameterFitting.tex
+INPUT .\ParameterFitting\ParameterFitting.tex
+INPUT .\ParameterFitting\ParameterFitting.tex
+INPUT ParameterFitting\ParameterFitting.tex
 INPUT .\bibliography\bibliography.tex
 INPUT .\bibliography\bibliography.tex
 INPUT bibliography\bibliography.tex
