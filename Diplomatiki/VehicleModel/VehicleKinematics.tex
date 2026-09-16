@@ -30,6 +30,35 @@
   \item Τοπικό σύστημα τροχού $uvw$ -- ο άξονας $u$ είναι προσανατολισμένος με την κατεύθυνση κύλισης (ένα σύστημα για κάθε τροχό).
 \end{itemize}
 
+Μεταξύ των συστημάτων αξόνων, ορίζονται οι εξής γωνίες:
+
+\begin{itemize}
+  \item $\beta$ Η γωνία πλευρικής ολίσθησης του οχήματος. Μετρά μεταξύ της κατεύθυνσης του οχήματος και της συνισταμένης ταχύτητας του κέντρου μάζας.
+  \item $\delta_i$ Η γωνία διεύθυνσης του τροχού με δείκτη $i$. Μετρά μεταξύ της κατεύθυνσης του τροχού και της κατεύθυνσης του οχήματος.
+\end{itemize}
+
+\noindent
+Επομένως, ένα διάνυσμα $P$ μετασχηματίζεται μεταξύ των συστημάτων ως:
+
+\begin{equation}
+  \begin{aligned}
+    P_{xy} &= R(\beta)P_{\hat{X}\hat{Y}}\\
+    P_{uv} &= R(-\delta)P_{xy}
+  \end{aligned}
+  \label{eq:vectorTransformations}
+\end{equation}
+
+\noindent
+Όπου $R(\theta)$ το μητρώο περιστροφής κατά $\theta$. Οι αντίστροφοι μετασχηματισμοί λαμβάνονται χρησιμοποιώντας τις αντίθετες γωνίες.
+
+\begin{equation}
+  R(\theta) = \begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \phantom{-}\cos\theta
+\end{pmatrix}
+\label{eq:rotationMatrix}
+\end{equation}
+
 \begin{figure}[ht!]
     \begin{center}
         \includegraphics[width=0.7\textwidth]{figures/two-track.png}
@@ -43,16 +72,15 @@
 
 \subsubsection{Εξισώσεις κίνησης οχήματος}
 
-Οι εξισώσεις κίνησης του οχήματος εξάγονται από τις δυναμικές εξισώσεις ισορροπίας των τριών βαθμών ελευθερίας. Οι εξισώσεις κίνησης διατυπώνονται όπως φαίνεται στις \cref{eq:vehicleMotion}
+Οι εξισώσεις κίνησης του οχήματος εξάγονται από τις δυναμικές εξισώσεις ισορροπίας των τριών βαθμών ελευθερίας. Οι εξισώσεις κίνησης διατυπώνονται όπως φαίνεται στις \cref{eq:vehicleMotion1,eq:vehicleMotion2,eq:vehicleMotion3}.
+Ο πρώτος όρος των \cref{eq:vehicleMotion1,eq:vehicleMotion2} περιγράφει τη γενική κεντρομόλο δύναμη του οχήματος σε κάθε άξονα.
 
-\begin{equation}
-  \begin{aligned}
-    M\dfrac{d}{dt}U_x(t) &= M\dot{\psi} U_y + F_x\\
-    M\dfrac{d}{dt}U_y(t) &= -M\dot{\psi} U_x + F_y\\[10pt]
+\begin{align}
+    M\dfrac{d}{dt}U_x(t) &= M\dot{\psi} U_y + F_x\label{eq:vehicleMotion1}\\[6pt]
+    M\dfrac{d}{dt}U_y(t) &= -M\dot{\psi} U_x + F_y\label{eq:vehicleMotion2}\\[10pt]
     I_z\dfrac{d}{dt}\dot{\psi}(t) &=\sum_{i=FL,\dots, RR} \Bigl(\vec{r}_i\times\vec{F}_i\Bigr)_z
-  \end{aligned}
-  \label{eq:vehicleMotion}
-\end{equation}
+  \label{eq:vehicleMotion3}
+\end{align}
 
 Όπου:
 \begin{itemize}
@@ -71,7 +99,7 @@
 εκφράζονται στο τοπικό σύστημα αξόνων του οχήματος και μετασχηματίζονται αργότερα κατά περίπτωση.
 
 \begin{equation}
-  \vec{u}_i = \vec{U}_{CoG} + \vec{\dot{\psi}}\times \vec{r_i}
+  \vec{U}_i = \vec{U}_{CoG} + \vec{\dot{\psi}}\times \vec{r_i}
   \label{eq:wheelVelocity}
 \end{equation}
 

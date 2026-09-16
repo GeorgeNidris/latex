@@ -7,11 +7,12 @@
 \usepackage{afterpage}
 
 \usepackage{tikz}
-\usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols,patterns}
+\usetikzlibrary{calc,trees,positioning,arrows.meta,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols,patterns, fit}
 \tikzset{>={Latex[width=2mm, length=1.2mm]}}
 
 
 \usepackage{fontspec}
+
 
 \usepackage{cleveref}
 
@@ -45,6 +46,7 @@
 \newfontfamily{\greekfont}{CMU Serif}
 \newfontfamily{\greekfontsf}{CMU Sans Serif}
 \newfontfamily{\greekfonttt}{inconsolata}
+
 
 \setdefaultlanguage{greek}
 \setotherlanguages{english}
@@ -148,6 +150,7 @@
 }
 
 \usepackage{longtable}
+\usepackage{mathtools}
 
 %--------------------------------------------%
 
@@ -177,8 +180,20 @@
 \renewcommand{\crefrangeconjunction}{-}
 \newcommand{\greektext}[1]{{\greekfont #1}}
 
-\thispagestyle{empty}
+\pagestyle{empty} 
 \subfile{Title}
+\newpage
+\clearpage
+\thispagestyle{empty}   % no page number/header on this page
+\null
+%\vspace*{\fill}
+%\begin{center}
+%    \Large Κενή σελίδα
+%\end{center}
+%\vfill
+\clearpage
+\thispagestyle{empty}   % no page number/header on this page
+\input{plagiarism.tex}
 \newpage
 \thispagestyle{empty}
 \tableofcontents
@@ -217,4 +232,3 @@
 \fancyfoot[L]{\greektext{\myClass}}
 
 \end{document}
-

@@ -1,0 +1,43 @@
+% figures/fig_steering_and_forces.tex
+% Wheel steered by angle delta with forces F_x, F_y in the local frame
+\begin{tikzpicture}[>=Latex, thick, font=\small]
+
+    \def\deltaFig{25}          % steering angle in degrees
+
+    % ---- Wheel rectangle (top view), rotated by delta about the origin ----
+    \begin{scope}[rotate=\deltaFig]
+    \draw[thick, fill=black!5, rounded corners=8pt] (-1.5, -2.5) rectangle (1.5, 2.5);
+    \end{scope}
+
+    % ---- Vehicle reference frame axes ----
+    \draw[dashed,->, thick] (0,0) -- (0,5) node[right] {$x$};
+    \draw[dashed,->, thick] (0,0) -- (-4,0) node[below]  {$y$};
+
+ % ---- Wheel direction (rotated by delta from vehicle x) ----
+    \draw[dashed, gray!100, ->] (0,0) -- ({5*sin(-\deltaFig)}, {5*cos(-\deltaFig)}) node[right] {$u$};
+
+    \draw[dashed, gray!100, ->] (0,0) -- ({-5*cos(-\deltaFig)}, {5*sin(-\deltaFig)}) node[below] {$v$};
+
+    % ---- Reference dashed line (vehicle x direction, along wheel center) ----
+    \draw[dashed, gray!60] (0,-2) -- (0,0);
+
+    % ---- Steering angle arc ----
+    \draw[<->] (0,4) arc[start angle=90, end angle={90+\deltaFig}, radius=4]
+        node[midway, above, yshift=1pt] {$\delta$};
+
+    % ---- Wheel-center coordinate (used to anchor force vectors) ----
+    \coordinate (W) at ({0}, {0});
+    \fill (W) circle (1pt);
+
+    % ---- Forces in the WHEEL local frame ----
+    % F_x along wheel longitudinal axis (rolling direction)
+    % F_y perpendicular to wheel plane (lateral)
+    \draw[->, thick] (W) -- ++({-3*cos(-\deltaFig)}, {3*sin(-\deltaFig)})
+        node[above left]  {$F_v$};
+
+    \draw[->, thick] (0,0) -- (0,{3*sin(-\deltaFig)}) node[right] {$F_x$};
+    \draw[dashed, gray!60] (0,{3*sin(-\deltaFig)}) -- ({-3*cos(-\deltaFig)},{3*sin(-\deltaFig)});
+    \draw[->, thick] (0,0) -- ({-3*cos(-\deltaFig)},0) node[above] {$F_y$};
+    \draw[dashed, gray!60] ({-3*cos(-\deltaFig)},0) -- ({-3*cos(-\deltaFig)},{3*sin(-\deltaFig)});
+
+\end{tikzpicture}

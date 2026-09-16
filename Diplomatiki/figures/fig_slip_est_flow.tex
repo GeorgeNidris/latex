@@ -3,7 +3,7 @@
 \centering
 \begin{tikzpicture}[
     node distance=0.55cm and 1.0cm,
-    block/.style   ={rectangle, draw=black, fill=white,      text width=5.2cm,
+    block/.style   ={rectangle, draw=black, fill=white,      text width=7cm,
                      align=center, rounded corners=4pt, minimum height=0.9cm, font=\small},
     io/.style      ={rectangle, draw=black, fill=black!5,    text width=5.2cm,
                      align=center, rounded corners=2pt, minimum height=0.9cm, font=\small},
@@ -14,35 +14,41 @@
     arr/.style     ={->, thick, black}
 ]
 
-  \node[io]                       (inp)    {Είσοδοι: γεωμετρία πίστας, ταχύτητα};
-  \node[block, below=of inp]      (resamp) {Επαναδειγματοληψία σε ομοιόμορφο πλέγμα};
-  \node[block, below=of resamp]   (kinem)  {Κινηματική προεπεξεργασία και εξομάλυνση};
-  \node[block, below=of kinem]    (fz)     {Κατανομή κατακόρυφων φορτίων ανά τροχό};
-  \node[block, below=of fz]       (solve)  {Επίλυση ισορροπίας για γωνία διεύθυνσης \\ και πλευρική ολίσθηση αμαξώματος};
+  \node[io]                       (inp)    {Είσοδοι: γεωμετρία πίστας, χρονοσειρά ταχύτητας};
+  \node[block, below=of inp]   (kinem)  {Υπολογισμός επιταχύνσεων οχήματος $\alpha_X, \alpha_Y$};
+  \node[block, below=of kinem]    (startOfIteration)     {Αρχικοποίηση πλευρικής ολίσθησης\\ και γωνίας τιμονιού ($\beta_0, \delta_0$)};
+  \node[block, below=of startOfIteration]    (fz)     {Υπολογισμός κατακόρυφων\\ φορτίων ανά τροχό $F_{z,i}$};
+  \node[block, below=of fz]    (wheelSlips)     {Υπολογισμός ταχυτήτων και\\ μεγεθών ολίσθησης τροχών $\alpha_i,\kappa_i$};
+  \node[block, below=of wheelSlips]    (tyreForces)     {Υπολογισμός πρόσφυσης\\ ελαστικών $F_{u,i}, F_{v,i}$};
+  \node[block, below=of tyreForces]       (solve)  {Επίλυση εξισώσεων ισορροπίας\\ (μόνιμη κατάσταση)};
   \node[decision, below=of solve] (conv)   {σύγκλιση;};
-  \node[block, below=of conv]     (wheels) {Υπολογισμός ταχυτήτων ανά τροχό};
-  \node[block, below=of wheels]   (slip)   {Υπολογισμός γωνιών και λόγων ολίσθησης};
-  \node[outbox, below=of slip]    (out)    {Έξοδος: ολισθήσεις και δυνάμεις ανά τροχό};
+  \node[outbox, below=of conv]    (out)    {Έξοδος: ολισθήσεις και δυνάμεις ανά τροχό ($\alpha_i, \kappa_i, F_{u,i}, F_{v,i}$)};
 
-  \draw[arr] (inp)    -- (resamp);
-  \draw[arr] (resamp) -- (kinem);
-  \draw[arr] (kinem)  -- (fz);
-  \draw[arr] (fz)     -- (solve);
-  \draw[arr] (solve)  -- (conv);
-  \draw[arr] (conv)   -- node[right, font=\scriptsize]{ναι} (wheels);
-  \draw[arr] (wheels) -- (slip);
-  \draw[arr] (slip)   -- (out);
+  \draw[arr] (inp)    -- (kinem);
+  \draw[arr] (kinem)  -- (startOfIteration);
+  \draw[arr] (startOfIteration)     -- (fz);
+  \draw[arr] (fz)  -- (wheelSlips);
+  \draw[arr] (wheelSlips)     -- (tyreForces);
+  \draw[arr] (tyreForces)     -- (solve);
+  \draw[arr] (solve)     -- (conv);
+  \draw[arr] (conv)   -- node[right, font=\scriptsize]{ναι} (out);
 
   % failure branch
   \node[font=\scriptsize, right=0.8cm of conv, align=center]
     (fail) {επισήμανση\\ασύγκλιτου σημείου};
   \draw[arr, dashed] (conv.east) -- (fail.west)
       node[midway, above, font=\scriptsize]{όχι};
+      
+        % ----- dashed box around the iteration loop -----
+  \node[draw=black, dashed, rounded corners=6pt,
+        inner sep=8pt, fit=(wheelSlips)(fz)(tyreForces)(solve)] 
+        (loopbox) {};
+        
+  \node[anchor=south, font=\normalsize, xshift=-4pt, rotate=90] 
+      at (loopbox.west) {Επαναληπτική διαδικασία};
 
 \end{tikzpicture}
-\caption{Ροή εκτίμησης ολισθήσεων και δυνάμεων ανά τροχό από δεδομένα πίστας και
-ταχύτητας. Το ακριβές περιεχόμενο κάθε βήματος (κινηματικές σχέσεις, κριτήριο
-σύγκλισης, μοντέλο κατανομής φορτίων) περιγράφεται στο κείμενο.}
+\caption{Διάγραμμα ροής -- εκτίμηση ολισθήσεων και δυνάμεων ανά τροχό από δεδομένα γύρου.}
 \label{fig:slip_est_flow}
 \end{figure}
 % ----- τέλος flowchart -----

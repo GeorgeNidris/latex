@@ -1,0 +1,48 @@
+\begin{figure}[htbp!]
+\centering
+\begin{tikzpicture}[
+    node distance=0.6cm and 1.0cm,
+    block/.style   ={rectangle, draw=black, fill=white,   text width=8cm,
+                     align=center, rounded corners=4pt, minimum height=0.9cm, font=\small},
+    io/.style      ={rectangle, draw=black, fill=black!5, text width=6cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small},
+    outbox/.style  ={rectangle, draw=black, fill=black!12, text width=6cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small\bfseries},
+    decision/.style={diamond,   draw=black, fill=white,   text width=2.6cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
+    arr/.style     ={->, thick, black}
+]
+
+  \node[block]          (fyFront)  {Υπολογισμός πλευρικής δύναμης εμπρόσθιων τροχών $F_{y,front,0}$\\ υπό υπόθεση $F_x = 0$};
+  \node[block, below=of fyFront]                  (fxRear)   {Εκτίμηση απαιτούμενης διαμήκους δύναμης οπίσθιων τροχών ($F_{x,rear,0}$)};
+  \node[decision, below=of fxRear]                (sign)     {$F_{x,rear,0} \geq 0$;};
+
+  % --- Traction branch (right) ---
+  \node[block, right=1.6cm of sign, xshift=1.2cm] (traction) {Πρόωση:\\ κατανομή $F_{x,rear,0}$  στους δύο\\ κινητήριους τροχούς};
+
+  % --- Braking branch (left) ---
+  \node[block, below=1.4cm of sign]               (splitBrk) {Πέδηση:\\ διανομή συνολικής δύναμης\\ πέδησης εμπρός/πίσω $F_{x,front}, F_{x,rear}$};
+  \node[block, below=of splitBrk]                 (recFy)    {Επανυπολογισμός $F_{y,front}$ λαμβάνοντας υπόψη νέα $F_{x,front}$};
+  \node[block, below=of recFy]                    (recFxr)   {Επανυπολογισμός $F_{x,rear}$ και κατανομή στους κινητήριους τροχούς};
+
+  % --- Output ---
+  \node[outbox, below=1.4cm of recFxr]            (out)      {Έξοδος: δυνάμεις $F_x, F_y$ ανά τροχό};
+
+  % --- Arrows ---
+  \draw[arr] (fyFront) -- (fxRear);
+  \draw[arr] (fxRear)  -- (sign);
+
+  % Braking branch (straight down)
+  \draw[arr] (sign)    -- node[right]{όχι (πέδηση)} (splitBrk);
+  \draw[arr] (splitBrk) -- (recFy);
+  \draw[arr] (recFy)   -- (recFxr);
+  \draw[arr] (recFxr)  -- (out);
+
+  % Traction branch (right, then down and back)
+  \draw[arr] (sign.east) -- node[above]{ναι (πρόωση)} (traction.west);
+  \draw[arr] (traction.south) |- (out.east);
+
+\end{tikzpicture}
+\caption{Διάγραμμα ροής -- διαδικασία υπολογισμού διαμήκων φορτίων πρόωσης και πέδησης.}
+\label{fig:force_distribution_flow}
+\end{figure}
