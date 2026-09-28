@@ -1,0 +1,39 @@
+% ----- TikZ: binary search for longitudinal acceleration limits -----
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.55cm and 0.8cm,
+    block/.style   ={rectangle, draw=black, fill=white,      text width=5.2cm,
+                     align=center, rounded corners=4pt, minimum height=0.9cm, font=\small},
+    io/.style      ={rectangle, draw=black, fill=black!5,    text width=5.2cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small},
+    outbox/.style  ={rectangle, draw=black, fill=black!12,   text width=5.2cm,
+                     align=center, rounded corners=2pt, minimum height=0.9cm, font=\small\bfseries},
+    decision/.style={diamond,   draw=black, fill=white,      text width=2.4cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
+    arr/.style     ={->, thick, black}
+]
+
+  \node[io]                          (inp)  {Είσοδος: ταχύτητα $v$, αρχικά όρια $[a_{lo},\ a_{hi}]$};
+  \node[block, below=of inp]         (mid)  {$a_{mid} \leftarrow (a_{lo}+a_{hi})/2$};
+  \node[block, below=of mid]         (viol) {Υπολογισμός ελλείμματος\\ πρόσφυσης $g_1(a_{mid}; v)$};
+  \node[decision, below=of viol]     (feas) {$g_1 <= 0$;};
+  \node[block, below=1.3cm of feas]  (upd)  {$a_{lo} \leftarrow a_{mid}$ (ναι) \\ $a_{hi} \leftarrow a_{mid}$ (όχι)};
+  \node[decision, below=of upd]      (conv) {$a_{hi}-a_{lo} < \varepsilon$;};
+  \node[outbox, below=of conv]       (out)  {Έξοδος: $a_{x,\max} = a_{lo}$ (ή $a_{x,\min}=a_{hi}$ για πέδηση)};
+
+  \draw[arr] (inp)  -- (mid);
+  \draw[arr] (mid)  -- (viol);
+  \draw[arr] (viol) -- (feas);
+  \draw[arr] (feas) -- (upd);
+  \draw[arr] (upd)  -- (conv);
+  \draw[arr] (conv) -- node[right, font=\scriptsize]{ναι} (out);
+
+  % loop back to mid on "όχι"
+  \draw[arr] (conv.east) -| ++(2.2cm,0) |- node[right, pos=0.25, font=\scriptsize]{όχι} (mid.east);
+
+\end{tikzpicture}
+\caption{Διάγραμμα ροής -- δυαδική αναζήτηση διαμήκους ορίου πρόσφυσης σε ευθεία.}
+\label{fig:binary_search_flow}
+\end{figure}
+% ----- τέλος flowchart -----

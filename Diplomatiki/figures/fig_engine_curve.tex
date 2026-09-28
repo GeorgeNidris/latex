@@ -1,0 +1,69 @@
+% ----- pgfplots: engine torque & power vs rpm -----
+% Requires in main preamble:
+%   \usepackage{pgfplots}
+%   \pgfplotsset{compat=1.18}   % or newer
+%
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+        name=torqueAxis,
+        width=0.85\textwidth,
+        height=6.5cm,
+        xlabel={Στροφές κινητήρα [rpm]},
+        ylabel={Ροπή [Nm]},
+        axis y line*=left,
+        xmin=0, xmax=19000,
+        ymin=0, ymax=450,
+        xtick={0,2000,4000,6000,8000,10000,12000,14000,16000,18000},
+        scaled x ticks=false,
+        xticklabel style={/pgf/number format/1000 sep=\,},
+        grid=both,
+        grid style={dotted, gray!50},
+        tick align=outside,
+        legend style={
+            at={(0.02,0.98)}, anchor=north west,
+            draw=black!40, fill=white, fill opacity=0.9, text opacity=1,
+            font=\small,
+            row sep=1pt
+        }
+    ]
+        \addplot+[
+            color=blue!60!black,
+            mark=*, mark size=1.8pt,
+            thick,
+            mark options={fill=blue!60!black, draw=blue!60!black}
+        ] table[x index=0, y index=1] {figures/engine_curve.dat};
+        \addlegendentry{Ροπή}
+
+        % Phantom entry for the power series so both labels live in one legend
+        \addlegendimage{
+            color=red!60!black,
+            mark=square*, mark size=1.6pt,
+            thick, densely dashed,
+            mark options={solid, fill=red!60!black, draw=red!60!black}
+        }
+        \addlegendentry{Ισχύς}
+    \end{axis}
+
+    \begin{axis}[
+        width=0.85\textwidth,
+        height=6.5cm,
+        axis y line*=right,
+        axis x line=none,
+        ylabel={Ισχύς [kW]},
+        xmin=0, xmax=19000,
+        ymin=0, ymax=700,
+    ]
+        \addplot+[
+            color=red!60!black,
+            mark=square*, mark size=1.6pt,
+            thick, densely dashed,
+            mark options={solid, fill=red!60!black, draw=red!60!black}
+        ] table[x index=0, y index=2] {figures/engine_curve.dat};
+    \end{axis}
+\end{tikzpicture}
+\caption{Καμπύλη ροπής κινητήρα.}
+\label{fig:engine_curve}
+\end{figure}
+% ----- τέλος engine curve -----

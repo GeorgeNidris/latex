@@ -27,7 +27,7 @@
 \contentsline {paragraph}{Γωνία ολίσθησης $\alpha $ (Slip Angle).}{14}{section*.23}%
 \contentsline {paragraph}{Λόγος ολίσθησης $\kappa $ (Slip Ratio).}{15}{section*.25}%
 \contentsline {subsubsection}{\numberline {2.1.2}Μοντέλο Pacejka -- Combined Slip}{15}{subsubsection.2.1.2}%
-\contentsline {paragraph}{Φαινόμενο load sensitivity.}{16}{section*.27}%
+\contentsline {paragraph}{Ευαισθησία σε κατακόρυφο φορτίο.}{16}{section*.27}%
 \contentsline {paragraph}{Αντιστροφή συνάρτησης}{17}{section*.28}%
 \contentsline {paragraph}{Εξάρτηση με θερμοκρασία και φθορά.}{17}{section*.30}%
 \contentsline {subsection}{\numberline {2.2}Εξάρτηση πρόσφυσης από θερμοκρασία}{18}{subsection.2.2}%
@@ -82,5 +82,18 @@
 \contentsline {subsection}{\numberline {5.1}Πειραματικές μετρήσεις}{50}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Προσδιορισμός παραμέτρων}{50}{subsection.5.2}%
 \contentsline {section}{\numberline {6}Ενσωμάτωση μοντέλου ελαστικών σε προσομοιωτή γύρου}{52}{section.6}%
-\contentsline {section}{\numberline {7}Αποτελέσματα}{52}{section.7}%
-\contentsline {section}{\numberline {8}Συμπεράσματα - βελτιώσεις}{52}{section.8}%
+\contentsline {subsection}{\numberline {6.1}Βασική αρχή προσομοιωτών ψευδό-μόνιμης κατάστασης}{52}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Δημιουργία διαγράμματος επιδόσεων - διάγραμμα GGV}{53}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Διαμήκη όρια σε ευθεία}{54}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Διακριτοποίηση διαμήκους επιτάχυνσης}{55}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Επίλυση εγκάρσιας επιτάχυνσης}{56}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Ενσωμάτωση ορίου κινητήρα}{57}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Διόρθωση για φθορά και θερμοκρασία}{57}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}Σχολιασμός διαγράμματος επιδόσεων}{58}{subsubsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.3}Ενσωμάτωση με προσομοιωτή γύρου - openLAP}{60}{subsection.6.3}%
+\contentsline {paragraph}{Ενσωμάτωση μοντέλου οχήματος.}{60}{section*.69}%
+\contentsline {paragraph}{Επίδραση θερμοκρασίας και φθοράς.}{60}{section*.70}%
+\contentsline {section}{\numberline {7}Αποτελέσματα}{62}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Δεδομένα οχήματος και πίστας}{62}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Βαθμονόμηση θερμοδυναμικού μοντέλου}{63}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Συμπεράσματα - βελτιώσεις}{65}{section.8}%

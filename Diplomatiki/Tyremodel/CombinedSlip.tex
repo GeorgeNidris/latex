@@ -114,7 +114,7 @@ $\alpha = 0$. Μη μηδενική $\alpha$ σημαίνει ότι ο τροχ
 \end{align}
 
 
-\paragraph{Φαινόμενο load sensitivity.}
+\paragraph{Ευαισθησία σε κατακόρυφο φορτίο.}
 Ο συντελεστής τριβής $\mu$ δεν είναι σταθερός αλλά μειώνεται ελαφρά καθώς αυξάνεται το
 κατακόρυφο φορτίο. Το φαινόμενο αυτό -- όπως περιγράφηκε στο \cref{sec:tyre_theory} -- μοντελοποιείται
 με γραμμική παρεμβολή ανάμεσα σε δύο γνωστά σημεία (με δείκτες 1 \& 2).
@@ -123,11 +123,14 @@ $\alpha = 0$. Μη μηδενική $\alpha$ σημαίνει ότι ο τροχ
 
 \begin{align}
     \mu_{x,max}(F_z) &= (F_z - F_{z1})
-    \dfrac{\mu_{x,max2} - \mu_{x,max1}}{F_{z2}-F_{z2}} + \mu_{x,max1}\\[10pt]
+    \dfrac{\mu_{x,max2} - \mu_{x,max1}}{F_{z2}-F_{z2}} + \mu_{x,max1}
+    \label{eq:mu_load1}\\[10pt]
     \mu_{y,max}(F_z) &= (F_z - F_{z1})
-    \dfrac{\mu_{y,max2} - \mu_{y,max1}}{F_{z2}-F_{z2}} + \mu_{y,max1}\\[10pt]
+    \dfrac{\mu_{y,max2} - \mu_{y,max1}}{F_{z2}-F_{z2}} + \mu_{y,max1}
+    \label{eq:mu_load2}\\[10pt]
     \kappa_{max}(F_z) &= (F_z - F_{z1})
-    \dfrac{\kappa_{max2} - \kappa_{y,max1}}{F_{z2}-F_{z2}} + \kappa_{max1}\\[10pt]
+    \dfrac{\kappa_{max2} - \kappa_{y,max1}}{F_{z2}-F_{z2}} + \kappa_{max1}
+    \label{eq:mu_load3}\\[10pt]
     \alpha_{max}(F_z) &= (F_z - F_{z1})
     \dfrac{\alpha_{max2} - \alpha_{y,max1}}{F_{z2}-F_{z2}} + \alpha_{max1}
     \label{eq:mu_load}
@@ -269,6 +272,7 @@ $\alpha = 0$. Μη μηδενική $\alpha$ σημαίνει ότι ο τροχ
    &+ \Bigl(0.5 + 0.5\sin\bigl(\tan^{-1}(g_s(w - w_{p3}))\bigr)\Bigr)
      \cdot \bigl(\ell_4(w) - \ell_3(w)\bigr)
 \end{aligned}
+\label{eq:wearScaleFactor}
 \end{equation}
 
 Οι παράμετροι $a_i, b_i$ ($i = 1,\dots,4$) περιγράφουν την κλίση και το σημείο

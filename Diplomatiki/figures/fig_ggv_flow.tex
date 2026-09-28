@@ -1,54 +1,41 @@
-% ----- TikZ: high-level GGV pipeline (mirrors vehicle_model_clean/GGV) -----
+% ----- TikZ: high-level GGV pipeline (hybrid ODE + warm-sweep) -----
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
     node distance=0.55cm and 1.0cm,
-    block/.style   ={rectangle, draw=black, fill=white,      text width=6.0cm,
+    block/.style   ={rectangle, draw=black, fill=white,      text width=7.0cm,
                      align=center, rounded corners=4pt, minimum height=0.95cm, font=\small},
-    io/.style      ={rectangle, draw=black, fill=black!5,    text width=6.0cm,
+    io/.style      ={rectangle, draw=black, fill=black!5,    text width=7.0cm,
                      align=center, rounded corners=2pt, minimum height=0.9cm, font=\small},
-    outbox/.style  ={rectangle, draw=black, fill=black!12,   text width=6.0cm,
+    outbox/.style  ={rectangle, draw=black, fill=black!12,   text width=7.0cm,
                      align=center, rounded corners=2pt, minimum height=0.9cm, font=\small\bfseries},
+    decision/.style={diamond,   draw=black, fill=white,      text width=3.2cm,
+                     align=center, font=\scriptsize, inner sep=1pt},
     arr/.style     ={->, thick, black}
 ]
 
   \node[io]                            (inp)    {Είσοδοι: παράμετροι οχήματος, \\
-                                                  θερμοκρασία ελαστικών, ταχύτητες υπολογισμού};
+                                                  θερμοκρασία ελαστικών, ταχύτητες};
 
   \node[block, below=of inp]           (long)   {Για κάθε ταχύτητα: \\
-                                                  εύρεση ορίων διαμήκους επιτάχυνσης \\
-                                                  (πλήρης επιτάχυνση και φρέναρσμα)};
+                                                  εύρεση ορίων διαμήκους επιτάχυνσης};
 
-  \node[block, below=of long]          (grid)   {Δημιουργία πλέγματος διαμήκους επιτάχυνσης, \\
-                                                  με πύκνωση σημείων στα άκρα};
+  \node[block, below=of long]          (grid)   {Δημιουργία ομοιόμορφου πλέγματος \\
+                                                  διαμήκους επιτάχυνσης};
 
-  \node[block, below=of grid]          (ode)    {Για κάθε σημείο του πλέγματος: \\
-                                                  ολοκλήρωση ODE με ράμπα γωνίας διεύθυνσης \\
-                                                  σε θετική και αρνητική κατεύθυνση};
+  \node[block, below=of grid]          (ode)    {Ολοκλήρωση εξισώσεων κίνησης \\
+                                                  με σταδιακή αύξηση γωνίας διεύθυνσης};
 
-  \node[block, below=of ode]           (cross)  {Διασταύρωση με εναλλακτική μέθοδο \\
-                                                  σάρωσης γωνίας διεύθυνσης};
+  \node[outbox, below=of ode]           (out)    {Έξοδος: γεωγραφικός τόπος GGV \\
+                                                  για κάθε ταχύτητα, θετικά και αρνητικά όρια};
 
-  \node[block, below=of cross]         (rescue) {Επαναδιόρθωση οριακών σημείων \\
-                                                  με warm-start από γειτονικές λύσεις};
-
-  \node[outbox, below=of rescue]       (out)    {Έξοδος: πλήρης φάκελος GGV \\
-                                                  ανά ταχύτητα};
-
-  \draw[arr] (inp)    -- (long);
-  \draw[arr] (long)   -- (grid);
-  \draw[arr] (grid)   -- (ode);
-  \draw[arr] (ode)    -- (cross);
-  \draw[arr] (cross)  -- (rescue);
-  \draw[arr] (rescue) -- (out);
+  \draw[arr] (inp)   -- (long);
+  \draw[arr] (long)  -- (grid);
+  \draw[arr] (grid)  -- (ode);
+  \draw[arr] (ode)   -- (out);
 
 \end{tikzpicture}
-\caption{Ροή δημιουργίας διαγράμματος GGV. Το πλέγμα ταχύτητας-διαμήκους επιτάχυνσης
-σαρώνεται με ολοκλήρωση δυναμικού μοντέλου οχήματος υπό ράμπα γωνίας διεύθυνσης· κάθε
-σημείο δίνει ένα άνω και ένα κάτω όριο πλευρικής επιτάχυνσης. Ασυγκλισία και οριακές
-περιπτώσεις αντιμετωπίζονται μέσω διαδοχικών επιπέδων επίλυσης, ώστε ο τελικός φάκελος
-GGV να είναι πλήρης και ομαλός. Οι αριθμητικές λεπτομέρειες κάθε βήματος αναλύονται στο
-κείμενο.}
+\caption{Διαδικασία δημιουργίας διαγράμματος GGV.}
 \label{fig:ggv_flow}
 \end{figure}
 % ----- τέλος flowchart -----

@@ -25,6 +25,8 @@
 \Crefname{section}{Κεφάλαιο}{Κεφάλαια}
 \crefname{subsection}{υποκεφάλαιο}{υποκεφάλαια}
 \Crefname{subsection}{Υποκεφάλαιο}{Υποκεφάλαια}
+\crefname{table}{πίνακας}{πίνακες}
+\Crefname{table}{Πίνακας}{Πίνακες}
 \AtBeginDocument{%
   \renewcommand{\creflastconjunction}{ και }%
   \renewcommand{\crefpairconjunction}{ και }%
@@ -54,7 +56,21 @@
 \usepackage{subfiles}
 
 % Bibliography: biblatex + biber (handles UTF-8 / Greek natively)
-\usepackage[backend=biber, style=numeric, sorting=none, autolang=other]{biblatex}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\DeclareLanguageMapping{greek}{english}
+\DefineBibliographyStrings{english}{%
+  in            = {},
+  bypublisher   = {},
+  byeditor      = {},
+  bytranslator  = {},
+  andothers     = {et al\adddot},
+  pages         = {},
+  page          = {},
+  volume        = {vol\adddot},
+  number        = {no\adddot},
+}
+\renewcommand*{\finalnamedelim}{\addcomma\space}
+\renewcommand*{\multinamedelim}{\addcomma\space}
 \addbibresource{bibliography/references.bib}
 
 
@@ -151,6 +167,9 @@
 
 \usepackage{longtable}
 \usepackage{mathtools}
+\usepackage{placeins}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
 
 %--------------------------------------------%
 
@@ -158,7 +177,7 @@
 
 
 \newcommand{\myClass}{Διπλωματική εργασία -- Γεώργιος Νιδριώτης}
-
+\newcommand{\openLap}{\textit{OpenLAP }}
 \newcommand{\myTitle}{Προσομοίωση γύρου αγωνιστικού οχήματος με ενσωματωμένο θερμοδυναμικό μοντέλο ελαστικών}
 
 \newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}

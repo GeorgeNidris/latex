@@ -14,8 +14,17 @@
 \contentsline {figure}{\numberline {14}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Σχηματική αναπαράσταση ρυθμιστικής ράβδου (balance bar) \blx@tocontentsinit {0}\cite {balanceBar}}}{35}{figure.caption.46}%
 \contentsline {figure}{\numberline {15}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Διάγραμμα ροής -- εκτίμηση ολισθήσεων και δυνάμεων ανά τροχό από δεδομένα γύρου.}}{38}{figure.caption.47}%
 \contentsline {figure}{\numberline {16}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Αποτύπωση πίστας \textit {Circuit de Barcelona - Catalunya} σε καμπυλόγραμμες συντεταγμένες.}}{39}{figure.caption.48}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ανάλυση δυνάμεων κατευθυντήριου τροχού}}{43}{figure.caption.50}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ανάλυση δυνάμεων κατευθυντήριου τροχού -- επαγόμενη αντίσταση}}{43}{figure.caption.50}%
 \contentsline {figure}{\numberline {18}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Διάγραμμα ροής -- διαδικασία υπολογισμού διαμήκων φορτίων πρόωσης και πέδησης.}}{44}{figure.caption.54}%
 \contentsline {figure}{\numberline {19}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ενδεικτική σχηματική αναπαράσταση αποτελεσμάτων επίλυσης της κατάστασης οχήματος.}}{47}{figure.caption.57}%
 \contentsline {figure}{\numberline {20}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ενδεικτικά αποτελέσματα λόγου ολίσθησης σε γύρο της πίστας \textit {Circuit de Barcelona - Catalunya}}}{47}{figure.caption.58}%
 \contentsline {figure}{\numberline {21}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ενδεικτικά αποτελέσματα των μεταβλητών κατάστασης σε γύρο της πίστας \textit {Circuit de Barcelona - Catalunya}}}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {22}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ενδεικτικό διάγραμμα επιδόσεων (\textit {GGV}) \blx@tocontentsinit {0}\cite {TUM_GGGVDiagrams}}}{53}{figure.caption.62}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Διαδικασία δημιουργίας διαγράμματος GGV.}}{54}{figure.caption.63}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Διάγραμμα ροής -- δυαδική αναζήτηση διαμήκους ορίου πρόσφυσης σε ευθεία.}}{55}{figure.caption.64}%
+\contentsline {figure}{\numberline {25}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Μέθοδος εύρεσης μέγιστης πλευρικής επιτάχυνσης \blx@tocontentsinit {0}\cite {TUM_GGGVDiagrams}}}{56}{figure.caption.65}%
+\contentsline {figure}{\numberline {26}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ποσοστιαίο σφάλμα προσέγγισης κοινής θερμοκρασίας - στις θετικές τιμές υπερεκτιμώνται οι επιδόσεις του οχήματος.}}{58}{figure.caption.66}%
+\contentsline {figure}{\numberline {27}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Ενδεικτική μορφή διαγράμματος επιδόσεων σε προβολή σε δύο επίπεδα}}{59}{figure.caption.67}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Μορφή διαγράμματος επιδόσεων σε διαφορετικές ταχύτητες}}{60}{figure.caption.68}%
+\contentsline {figure}{\numberline {29}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Καμπύλη ροπής κινητήρα.}}{63}{figure.caption.73}%
+\contentsline {figure}{\numberline {30}{\ignorespaces \xpg@aux {}{greek}\ignorespaces Σύγκριση θερμοκρασίας μοντέλου με πειραματική σε γύρο της πίστας \textit {Circuit de Barcelona - Catalunya}}}{64}{figure.caption.74}%
