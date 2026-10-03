@@ -1,0 +1,37 @@
+Για την εκτίμηση της εξέλιξης της επίδοσης σε διάρκεια αγώνα, εκτελέστηκε προσομοίωση $30$ διαδοχικών γύρων. Σε κάθε γύρο $k$ ο φάκελος \textit{GGV} συρρικνώνεται με βάση τη σωρευτική φθορά $W_{\mathrm{cum}}(k)$ (γραμμική ποινή με $k_W=0.3$) και τις αρχικές θερμοκρασίες των ελαστικών, που ταυτίζονται με τις τελικές του προηγούμενου γύρου. Έτσι αναπαράγεται ποιοτικά η τυπική τάση αύξησης του χρόνου γύρου με τη φθορά των ελαστικών, καθώς και η σταθεροποίηση των θερμοκρασιών λειτουργίας μετά τους πρώτους γύρους.\\[8pt]
+
+\begin{figure}[htbp!]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/stint30laps/laptime_vs_lap.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/stint30laps/wearPerLap_vs_lap.jpg}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/stint30laps/cumWear_vs_laptime.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/stint30laps/T_end_vs_lap.jpg}
+    \end{subfigure}
+    \caption{Αποτελέσματα stint $30$ γύρων: χρόνος γύρου, φθορά ανά γύρο, σωρευτική φθορά έναντι χρόνου γύρου (χρωματισμός κατά $k$), τελικές θερμοκρασίες ανά ελαστικό.}
+    \label{fig:stint30_overview}
+\end{figure}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/stint30laps/scale_vs_lap.jpg}
+    \caption{Συντελεστής κλίμακας του φακέλου \textit{GGV} που χρησιμοποιήθηκε σε κάθε γύρο.}
+    \label{fig:stint30_scale}
+\end{figure}
+
+\FloatBarrier

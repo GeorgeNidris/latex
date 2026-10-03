@@ -22,6 +22,42 @@
     \item Επανάληψη προσομοίωσης γύρου με τις καταστάσεις ελαστικού κατά μήκος της πίστας του βήματος \ref{bullet:tempReconstruction}.
 \end{enumerate}
 
-Τα βήματα \ref{bullet:tempReconstruction} και 3 θα μπορούσαν να επαναληφθούν έως να επέλθει σύγκλιση, ωστόσο, προς αποφυγή περιττών υπολογιστικών κύκλων, θεωρείται πως μια επανάληψη είναι αρκετή ώστε να αποτυπώσει την επίδραση της κατάστασης των ελαστικών στον χρόνο ενός γύρου.
+Τα βήματα \ref{bullet:tempReconstruction} και 3 θα μπορούσαν να επαναληφθούν έως να επέλθει σύγκλιση, ωστόσο, προς αποφυγή περιττών υπολογιστικών κύκλων, θεωρείται πως μια επανάληψη είναι αρκετή ώστε να αποτυπώσει την επίδραση της κατάστασης των ελαστικών στον χρόνο ενός γύρου (\cref{fig:iterT_tempPerTyre,fig:iterT_velocity}). Παρακάτω φαίνεται η σύγκριση μεταξύ της εξέλιξης της θερμοκρασίας αλλά και του προφίλ της ταχύτητας στις δύο διαδοχικές προσομοιώσεις του γύρου.
+
+\begin{figure}[htbp!]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/iterativeT/T_convergence_FL.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/iterativeT/T_convergence_FR.jpg}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/iterativeT/T_convergence_RL.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/iterativeT/T_convergence_RR.jpg}
+    \end{subfigure}
+    \caption{Σύγκριση $T_i(x)$ ανά ελαστικό ανάμεσα στην πρώτη (ονομαστικός φάκελος) και στη δεύτερη επανάληψη (κλιμακωμένος φάκελος).}
+    \label{fig:iterT_tempPerTyre}
+\end{figure}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/iterativeT/vel_iter.jpg}
+    \caption{Προφίλ ταχύτητας $U(x)$ για τις δύο διαδοχικές επαναλήψεις.}
+    \label{fig:iterT_velocity}
+\end{figure}
+
+\FloatBarrier
 
 
