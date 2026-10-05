@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{graphicx}
+\usepackage{xspace}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[hidelinks]{hyperref}
@@ -174,11 +175,20 @@
 
 %--------------------------------------------%
 
+% Συνέχεια σε μονή σελίδα -- προσθέτει "Κενή σελίδα" αν χρειάζεται
+\newcommand{\clearoddpage}{%
+  \clearpage
+  \ifodd\value{page}\else
+    \null\thispagestyle{empty}\vfill
+    \begin{center}-- Κενή σελίδα --\end{center}
+    \vfill\clearpage
+  \fi}
+
 \begin{document}
 
 
 \newcommand{\myClass}{Διπλωματική εργασία -- Γεώργιος Νιδριώτης}
-\newcommand{\openLap}{\textit{OpenLAP }}
+\newcommand{\openLap}{\textit{OpenLAP}\xspace}
 \newcommand{\myTitle}{Προσομοίωση γύρου αγωνιστικού οχήματος με ενσωματωμένο θερμοδυναμικό μοντέλο ελαστικών}
 
 \newcommand{\dpart}[2]{\dfrac{\partial #1}{\partial #2}}
@@ -202,19 +212,13 @@
 
 \pagestyle{empty} 
 \subfile{Title}
-\newpage
-\clearpage
-\thispagestyle{empty}   % no page number/header on this page
-\null
-%\vspace*{\fill}
-%\begin{center}
-%    \Large Κενή σελίδα
-%\end{center}
-%\vfill
-\clearpage
-\thispagestyle{empty}   % no page number/header on this page
+\clearoddpage
 \input{plagiarism.tex}
-\newpage
+\clearpage
+\input{Acknowledgements.tex}
+\clearoddpage
+\input{Abstract}
+\clearoddpage
 \thispagestyle{empty}
 \tableofcontents
 \newpage
@@ -222,7 +226,7 @@
 \newpage
 \clearpage
 \input{Nomenclature}
-\clearpage
+\clearoddpage % η Εισαγωγή ξεκινά σε μονή (φυσική) σελίδα
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -238,7 +242,7 @@
 \subfile{Contents}
 \label{TextLastPage}
 \setcounter{equation}{0}
-\clearpage
+\clearoddpage
 \appendix
 \pagenumbering{roman}
 \renewcommand{\thesection}{\Roman{section}}

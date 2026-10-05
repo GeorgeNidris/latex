@@ -7,19 +7,19 @@
 ή σε φρενάρισμα οι εμπρόσθιοι τροχοί.\\[10pt]
 \noindent
 Με βάση τις απλοποιήσεις του μοντέλου που θεωρούν το αμάξωμα ως άκαμπτο, αμελούμε τις
-ελαστικές μεταφορές βάρους και την κλίση του αμαξώματος επάνω στις αναρτήσεις. ακολουθώντας
+ελαστικές μεταφορές βάρους και την κλίση του αμαξώματος επάνω στις αναρτήσεις. Ακολουθώντας
 τα διαγράμματα ελευθέρου σώματος που περιγράφονται στα 
 \cref{fig:longitudinalWeightTransfer,fig:lateralWeightTransfer}, προκύπτουν οι 
 \cref{eq:longitudinalWeightTransfer,eq:lateralWeightTransfer} από ισορροπία ροπών.
 
 
 \begin{equation}
-    WF_{z,\text{long}} = \dfrac{Ma_xh}{L}
+    WT_{long} = \dfrac{Ma_xh}{L}
     \label{eq:longitudinalWeightTransfer}
 \end{equation}
 
 \begin{equation}
-    WF_{z,\text{lat}} = \dfrac{Ma_yh}{t_{avg}}
+    WT_{lat} = \dfrac{Ma_yh}{t_{avg}}
     \label{eq:lateralWeightTransfer}
 \end{equation}
 
@@ -29,8 +29,8 @@
     \item $h$, το ύψος του κέντρου μάζας,
     \item $L$, το μεταξόνιο,
     \item $t_{avg} = \dfrac{t_f+t_r}{2}$, ο μέσος όρος των μετατροχίων του εμπρόσθιου και οπίσθιου άξονα,
-    \item $\alpha_x = \dfrac{\Sigma F_x}{M}$, η διαμήκης επιτάχυνση του οχήματος,
-    \item $\alpha_y = \dfrac{\Sigma F_y}{M}$, η εγκάρσια επιτάχυνση του οχήματος.
+    \item $a_x = \dfrac{\Sigma F_x}{M}$, η διαμήκης επιτάχυνση του οχήματος,
+    \item $a_y = \dfrac{\Sigma F_y}{M}$, η εγκάρσια επιτάχυνση του οχήματος.
 \end{itemize}
 
 \begin{figure}[ht!]
@@ -38,7 +38,7 @@
         \includegraphics[width=0.7\textwidth]{figures/longitudinal-weight-transfer.png}
     \end{center}
     \caption{Διάγραμμα ελευθέρου σώματος -- διαμήκης μεταφορά βάρους \cite{tsiotras}.}
-\label{fig:longitudinalWeightTransfer}.
+\label{fig:longitudinalWeightTransfer}
 \end{figure}
 
 \begin{figure}[ht!]
@@ -46,7 +46,7 @@
         \includegraphics[width=0.6\textwidth]{figures/lateral-weight-transfer.png}
     \end{center}
     \caption{Διάγραμμα ελευθέρου σώματος -- εγκάρσια μεταφορά βάρους.}
-\label{fig:lateralWeightTransfer}.
+\label{fig:lateralWeightTransfer}
 \end{figure}
 
 \subsection{Υπολογισμός κατακόρυφου φορτίου τροχών}
@@ -55,12 +55,12 @@
 στις σχέσεις \ref{eq:normalLoads}.
 
 \begin{equation}
-   F_{z,static,f} = MgWD
+   F_{z,static,f} = \dfrac{MgWD}{2}
    \label{eq:staticFrontWeight} 
 \end{equation}
 
 \begin{equation}
-   F_{z,static,r} = Mg(1-WD)
+   F_{z,static,r} = \dfrac{Mg(1-WD)}{2}
    \label{eq:staticRearWeight} 
 \end{equation}
 

@@ -155,7 +155,7 @@
 
 %% ---- INTEGRATION ----
 \node[block, below=of ggvout] (lapsim)
-    {Ενσωμάτωση με\\openLAP\\(QSS lap simulator)};
+    {Ενσωμάτωση με\\OpenLAP\\(QSS lap simulator)};
 \draw[arr] (ggvout) -- (lapsim);
 
 \node[result, below=of lapsim] (laptime)
@@ -163,7 +163,7 @@
 \draw[arr] (lapsim) -- (laptime);
 
 \end{tikzpicture}
-\caption{Μεθοδολογία δημιουργίας διαγράμματος GGV. Για κάθε συνδυασμό ταχύτητας $(v)$ και διαμήκους επιτάχυνσης $(a_x)$, binary search ορίζει την ελάχιστη ακτίνα στροφής $R_{\min}$ που αντιστοιχεί στη μέγιστη πλευρική επιτάχυνση $a_{y,\max}$. Το GGV τροφοδοτείται στον openLAP για υπολογισμό χρόνου γύρου.}
+\caption{Μεθοδολογία δημιουργίας διαγράμματος GGV. Για κάθε συνδυασμό ταχύτητας $(v)$ και διαμήκους επιτάχυνσης $(a_x)$, binary search ορίζει την ελάχιστη ακτίνα στροφής $R_{\min}$ που αντιστοιχεί στη μέγιστη πλευρική επιτάχυνση $a_{y,\max}$. Το GGV τροφοδοτείται στον OpenLAP για υπολογισμό χρόνου γύρου.}
 \label{fig:ggv_pipeline}
 \end{figure}
 

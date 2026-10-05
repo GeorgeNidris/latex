@@ -15,7 +15,7 @@
 ]
 
   \node[io]                       (inp)    {Είσοδοι: γεωμετρία πίστας, χρονοσειρά ταχύτητας};
-  \node[block, below=of inp]   (kinem)  {Υπολογισμός επιταχύνσεων οχήματος $\alpha_X, \alpha_Y$};
+  \node[block, below=of inp]   (kinem)  {Υπολογισμός επιταχύνσεων οχήματος $a_X, a_Y$};
   \node[block, below=of kinem]    (startOfIteration)     {Αρχικοποίηση πλευρικής ολίσθησης\\ και γωνίας τιμονιού ($\beta_0, \delta_0$)};
   \node[block, below=of startOfIteration]    (fz)     {Υπολογισμός κατακόρυφων\\ φορτίων ανά τροχό $F_{z,i}$};
   \node[block, below=of fz]    (wheelSlips)     {Υπολογισμός ταχυτήτων και\\ μεγεθών ολίσθησης τροχών $\alpha_i,\kappa_i$};
